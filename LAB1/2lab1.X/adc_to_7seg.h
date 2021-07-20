@@ -12,6 +12,7 @@
 
 #include <xc.h> // include processor files - each processor file is guarded.  
 
+unsigned char num = 0;
 unsigned char num0 = 0;
 unsigned char num1 = 0;
 unsigned char adcdig = 0;

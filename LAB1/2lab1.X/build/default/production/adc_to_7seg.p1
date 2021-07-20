@@ -234,19 +234,25 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f887.h: 3546: __asm("EECON2 equ 018Dh");
 [; <" EECON2 equ 018Dh ;# ">
 "15 ./adc_to_7seg.h
-[; ;./adc_to_7seg.h: 15: unsigned char num0 = 0;
+[; ;./adc_to_7seg.h: 15: unsigned char num = 0;
+[v _num `uc ~T0 @X0 1 e ]
+[i _num
+-> -> 0 `i `uc
+]
+"16
+[; ;./adc_to_7seg.h: 16: unsigned char num0 = 0;
 [v _num0 `uc ~T0 @X0 1 e ]
 [i _num0
 -> -> 0 `i `uc
 ]
-"16
-[; ;./adc_to_7seg.h: 16: unsigned char num1 = 0;
+"17
+[; ;./adc_to_7seg.h: 17: unsigned char num1 = 0;
 [v _num1 `uc ~T0 @X0 1 e ]
 [i _num1
 -> -> 0 `i `uc
 ]
-"17
-[; ;./adc_to_7seg.h: 17: unsigned char adcdig = 0;
+"18
+[; ;./adc_to_7seg.h: 18: unsigned char adcdig = 0;
 [v _adcdig `uc ~T0 @X0 1 e ]
 [i _adcdig
 -> -> 0 `i `uc
@@ -257,13 +263,16 @@ Version 4.0 HI-TECH Software Intermediate Code
 {
 [e :U _hex ]
 [f ]
-"6
-[; ;adc_to_7seg.c: 6:     num0 = adcdig & 0x0F;
-[e = _num0 -> & -> _adcdig `i -> 15 `i `uc ]
 "7
-[; ;adc_to_7seg.c: 7:     num1 = (adcdig & 0xF0)/(0x10);
-[e = _num1 -> / & -> _adcdig `i -> 240 `i -> 16 `i `uc ]
+[; ;adc_to_7seg.c: 7:     num = adcdig >> 4;
+[e = _num -> >> -> _adcdig `i -> 4 `i `uc ]
 "8
-[; ;adc_to_7seg.c: 8: }
+[; ;adc_to_7seg.c: 8:     num1 = num & 0x0F;
+[e = _num1 -> & -> _num `i -> 15 `i `uc ]
+"9
+[; ;adc_to_7seg.c: 9:     num0 = adcdig & 0x0F;
+[e = _num0 -> & -> _adcdig `i -> 15 `i `uc ]
+"10
+[; ;adc_to_7seg.c: 10: }
 [e :UE 138 ]
 }

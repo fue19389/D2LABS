@@ -131,6 +131,10 @@ void main () {
     while(1){                 //Loop principal   
         t7();                 //Call para conversión a HEX
         
+        if(adcdig >= PORTC){
+            PORTD = 0x10;
+        }
+        
         if(ADCON0bits.GO == 0){
             __delay_us(100);           //Delay para no traslapar conversiones
             ADCON0bits.GO = 1;
@@ -166,6 +170,7 @@ void cfg_io(){
     PORTB = 0x00; // CLEAR de los puertos
     PORTC = 0x00;
     PORTA = 0x00;
+    PORTE = 0x00;
   
 }
 void cfg_clk(){

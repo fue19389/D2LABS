@@ -2695,6 +2695,7 @@ extern char * ftoa(float f, int * status);
 
 # 1 "./adc_to_7seg.h" 1
 # 15 "./adc_to_7seg.h"
+unsigned char num = 0;
 unsigned char num0 = 0;
 unsigned char num1 = 0;
 unsigned char adcdig = 0;
@@ -2788,6 +2789,10 @@ void main () {
     while(1){
         t7();
 
+        if(adcdig >= PORTC){
+            PORTD = 0x10;
+        }
+
         if(ADCON0bits.GO == 0){
             _delay((unsigned long)((100)*(4000000/4000000.0)));
             ADCON0bits.GO = 1;
@@ -2823,6 +2828,7 @@ void cfg_io(){
     PORTB = 0x00;
     PORTC = 0x00;
     PORTA = 0x00;
+    PORTE = 0x00;
 
 }
 void cfg_clk(){

@@ -13,24 +13,22 @@
 [v _int_t0 int_t0 `(v  1 e 1 0 ]
 "120
 [v _main main `(v  1 e 1 0 ]
-"143
+"147
 [v _t7 t7 `(v  1 e 1 0 ]
-"153
+"157
 [v _cfg_io cfg_io `(v  1 e 1 0 ]
-"171
+"176
 [v _cfg_clk cfg_clk `(v  1 e 1 0 ]
-"179
+"184
 [v _cfg_inte cfg_inte `(v  1 e 1 0 ]
-"188
+"193
 [v _cfg_iocb cfg_iocb `(v  1 e 1 0 ]
-"195
+"200
 [v _cfg_t0 cfg_t0 `(v  1 e 1 0 ]
-"208
+"213
 [v _cfg_adc cfg_adc `(v  1 e 1 0 ]
 "5 C:\Users\gerar\Desktop\UVG\6to Semestre\Digital_2\D2LABS\LAB1\2lab1.X\adc_to_7seg.c
 [v _hex hex `(v  1 e 1 0 ]
-"5 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\awdiv.c
-[v ___awdiv __awdiv `(i  1 e 2 0 ]
 "10 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\sprcadd.c
 [v ___fladd __fladd `(d  1 e 4 0 ]
 "4 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\Umul8_16.c
@@ -40,10 +38,12 @@
 "39
 [v ___memcpyee __memcpyee `(v  1 e 1 0 ]
 "15 C:\Users\gerar\Desktop\UVG\6to Semestre\Digital_2\D2LABS\LAB1\2lab1.X/adc_to_7seg.h
-[v _num0 num0 `uc  1 e 1 0 ]
+[v _num num `uc  1 e 1 0 ]
 "16
-[v _num1 num1 `uc  1 e 1 0 ]
+[v _num0 num0 `uc  1 e 1 0 ]
 "17
+[v _num1 num1 `uc  1 e 1 0 ]
+"18
 [v _adcdig adcdig `uc  1 e 1 0 ]
 "57 C:\Users\gerar\Desktop\UVG\6to Semestre\Digital_2\D2LABS\LAB1\2lab1.X\1111.c
 [v _tab7seg tab7seg `[16]uc  1 e 16 0 ]
@@ -75,6 +75,8 @@
 [v _PORTC PORTC `VEuc  1 e 1 @7 ]
 "352
 [v _PORTD PORTD `VEuc  1 e 1 @8 ]
+"414
+[v _PORTE PORTE `VEuc  1 e 1 @9 ]
 [s S22 . 1 `uc 1 RBIF 1 0 :1:0 
 `uc 1 INTF 1 0 :1:1 
 `uc 1 T0IF 1 0 :1:2 
@@ -152,33 +154,33 @@
 [v _TRISD TRISD `VEuc  1 e 1 @136 ]
 "1664
 [v _TRISE TRISE `VEuc  1 e 1 @137 ]
-[s S230 . 1 `uc 1 SCS 1 0 :1:0 
+[s S231 . 1 `uc 1 SCS 1 0 :1:0 
 `uc 1 LTS 1 0 :1:1 
 `uc 1 HTS 1 0 :1:2 
 `uc 1 OSTS 1 0 :1:3 
 `uc 1 IRCF 1 0 :3:4 
 ]
 "1882
-[s S236 . 1 `uc 1 . 1 0 :4:0 
+[s S237 . 1 `uc 1 . 1 0 :4:0 
 `uc 1 IRCF0 1 0 :1:4 
 `uc 1 IRCF1 1 0 :1:5 
 `uc 1 IRCF2 1 0 :1:6 
 ]
-[u S241 . 1 `S230 1 . 1 0 `S236 1 . 1 0 ]
-[v _OSCCONbits OSCCONbits `VES241  1 e 1 @143 ]
+[u S242 . 1 `S231 1 . 1 0 `S237 1 . 1 0 ]
+[v _OSCCONbits OSCCONbits `VES242  1 e 1 @143 ]
 "2346
 [v _WPUB WPUB `VEuc  1 e 1 @149 ]
 "2416
 [v _IOCB IOCB `VEuc  1 e 1 @150 ]
-[s S257 . 1 `uc 1 . 1 0 :4:0 
+[s S258 . 1 `uc 1 . 1 0 :4:0 
 `uc 1 VCFG0 1 0 :1:4 
 `uc 1 VCFG1 1 0 :1:5 
 `uc 1 . 1 0 :1:6 
 `uc 1 ADFM 1 0 :1:7 
 ]
 "2991
-[u S263 . 1 `S257 1 . 1 0 ]
-[v _ADCON1bits ADCON1bits `VES263  1 e 1 @159 ]
+[u S264 . 1 `S258 1 . 1 0 ]
+[v _ADCON1bits ADCON1bits `VES264  1 e 1 @159 ]
 "3387
 [v _ANSEL ANSEL `VEuc  1 e 1 @392 ]
 "3449
@@ -186,60 +188,47 @@
 "120 C:\Users\gerar\Desktop\UVG\6to Semestre\Digital_2\D2LABS\LAB1\2lab1.X\1111.c
 [v _main main `(v  1 e 1 0 ]
 {
-"139
-} 0
 "143
+} 0
+"147
 [v _t7 t7 `(v  1 e 1 0 ]
 {
-"147
+"151
 } 0
 "5 C:\Users\gerar\Desktop\UVG\6to Semestre\Digital_2\D2LABS\LAB1\2lab1.X\adc_to_7seg.c
 [v _hex hex `(v  1 e 1 0 ]
 {
-"8
-} 0
-"5 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\awdiv.c
-[v ___awdiv __awdiv `(i  1 e 2 0 ]
-{
 "10
-[v ___awdiv@quotient quotient `i  1 a 2 2 ]
-"11
-[v ___awdiv@sign sign `uc  1 a 1 1 ]
-[v ___awdiv@counter counter `uc  1 a 1 0 ]
-"5
-[v ___awdiv@divisor divisor `i  1 p 2 3 ]
-[v ___awdiv@dividend dividend `i  1 p 2 5 ]
-"41
 } 0
-"195 C:\Users\gerar\Desktop\UVG\6to Semestre\Digital_2\D2LABS\LAB1\2lab1.X\1111.c
+"200 C:\Users\gerar\Desktop\UVG\6to Semestre\Digital_2\D2LABS\LAB1\2lab1.X\1111.c
 [v _cfg_t0 cfg_t0 `(v  1 e 1 0 ]
 {
-"206
+"211
 } 0
-"188
+"193
 [v _cfg_iocb cfg_iocb `(v  1 e 1 0 ]
 {
-"193
+"198
 } 0
-"153
+"157
 [v _cfg_io cfg_io `(v  1 e 1 0 ]
 {
-"170
+"175
 } 0
-"179
+"184
 [v _cfg_inte cfg_inte `(v  1 e 1 0 ]
 {
-"187
+"192
 } 0
-"171
+"176
 [v _cfg_clk cfg_clk `(v  1 e 1 0 ]
 {
-"178
+"183
 } 0
-"208
+"213
 [v _cfg_adc cfg_adc `(v  1 e 1 0 ]
 {
-"219
+"224
 } 0
 "69
 [v _isr isr `II(v  1 e 1 0 ]

@@ -2627,6 +2627,7 @@ extern __bank0 __bit __timeout;
 # 13 "./adc_to_7seg.h" 2
 
 
+unsigned char num = 0;
 unsigned char num0 = 0;
 unsigned char num1 = 0;
 unsigned char adcdig = 0;
@@ -2635,6 +2636,8 @@ void hex();
 
 
 void hex(void){
+
+    num = adcdig >> 4;
+    num1 = num & 0x0F;
     num0 = adcdig & 0x0F;
-    num1 = (adcdig & 0xF0)/(0x10);
 }
