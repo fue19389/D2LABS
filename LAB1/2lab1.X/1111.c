@@ -34,6 +34,7 @@
 #include <xc.h>
 #include <stdio.h>
 #include <stdlib.h>
+#include "adc_to_7seg.h"
 
 /*------------------------------------------------------------------------------
                        Directivas del preprocesador
@@ -53,16 +54,12 @@ void int_t0();
 void int_iocb();
 void int_adc();
 
-char tab7seg[10]={0x3F,0x06,0x5B,0x4F,0x66,0x6D,0x7D,0x07,0x7F,0x67};
-int num;
-int num0 = 0;
-int num1 = 0;
-int num2 = 0;
+char tab7seg[16]={0x3F,0x06,0x5B,0x4F,0x66,0x6D,0x7D,0x07,0x7F,0x67,0x77,0x7c,
+0x39,0x5E,0x79,0x71};
 char cont;
-int udisp = 0;
-int ddisp = 0;
-int cdisp = 0;
-void decim();
+unsigned char udisp = 0;
+unsigned char ddisp = 0;
+void t7();
 
 
 
@@ -78,7 +75,7 @@ void __interrupt() isr(void){
         int_adc();
     }
     if (INTCONbits.T0IF){
-        T0IF = 0;
+        int_t0();
     }
 }
 
@@ -96,10 +93,26 @@ void int_iocb(){
 void int_adc(){               //Interrupción ADC
     if(ADCON0bits.CHS == 5){  //Primer ciclo de ADC (ADRESH A PUERTO)
         PORTD = ADRESH;
-        }   
+    }
     PIR1bits.ADIF = 0;        //Clear de bandera ADC
 }
 
+void int_t0(){
+    PORTA = 0X00;             //Clear del puertof 
+    if (cont == 0X00){        //Primer ciclo display 7seg unidades
+        PORTA = udisp;
+        PORTB = 0x04;         //Enable del display 7seg unidades
+        cont++;               //Incrementar variable de ciclo
+    }
+    else if (cont == 0X01){   //Segundo ciclo display 7seg decenas
+        PORTA = ddisp;
+        PORTB = 0x08;         //Enable del display 7seg decenas
+        cont = 0x00;               //Incrementar variable de ciclo
+    }
+ 
+    TMR0 = 254;               //N para el TIMER0 
+    INTCONbits.T0IF = 0;      //Clear la bandera de TIMER0    
+}
 
 /*------------------------------------------------------------------------------
                                     MAIN
@@ -116,7 +129,7 @@ void main () {
                               LOOP PRINCIPAL
 ------------------------------------------------------------------------------*/
     while(1){                 //Loop principal   
-        decim();              //Call para conversión a decimal
+        t7();              //Call para conversión a decimal
         
         if(ADCON0bits.GO == 0){
             __delay_us(100);           //Delay para no traslapar conversiones
@@ -129,26 +142,11 @@ void main () {
 /*------------------------------------------------------------------------------
                                  FUNCIONES
 ------------------------------------------------------------------------------*/
-void decim(void){
-    num = PORTC;
-    num2 = (num / 100);
-    num = (num - (num2*100));
-    num1 = (num /10);
-    num = num - (num1*10);
-    num0 = num;
-    
+void t7(void){
+    hex();
     udisp = tab7seg[num0];
-    ddisp = tab7seg[num1];
-    cdisp = tab7seg[num2];           
+    ddisp = tab7seg[num1];         
 }
-
-
-
-
-
-
-
-
 
 
 /*------------------------------------------------------------------------------
@@ -156,10 +154,10 @@ void decim(void){
 ------------------------------------------------------------------------------*/
 void cfg_io(){
     ANSELH = 0x00;   //Seteo de inputs como digitales
-    ANSEL = 0x20;   //Se habilitan RE0 y RE1 como analógicas
+    ANSEL = 0x20;   //Seteo de inputs RE0 y RE1 como analógicos
     
-    TRISB = 0x03; // Pines RB0 y RB1 como salidas
-    TRISC = 0x00; // PORTC Y PORTA como salidas
+    TRISB = 0x03; // Pines RB0, RB1, como entradas
+    TRISC = 0x00; // PORTC, PORTA, PORTD como salidas
     TRISA = 0X00;
     TRISD = 0X00;
     TRISE = 0x03;   //Entradas RE0 y RE1
