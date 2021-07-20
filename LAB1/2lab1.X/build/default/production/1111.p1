@@ -16,7 +16,7 @@ Version 4.0 HI-TECH Software Intermediate Code
 "482
 [; ;C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f887.h: 482: extern volatile INTCONbits_t INTCONbits __attribute__((address(0x00B)));
 [v _INTCONbits `VS15 ~T0 @X0 0 e@11 ]
-"54 1111.c
+"57 1111.c
 [v _int_iocb `(v ~T0 @X0 0 e? ]
 "543 C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f887.h
 [; ;C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f887.h: 543:     struct {
@@ -29,9 +29,9 @@ Version 4.0 HI-TECH Software Intermediate Code
 "553
 [; ;C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f887.h: 553: extern volatile PIR1bits_t PIR1bits __attribute__((address(0x00C)));
 [v _PIR1bits `VS18 ~T0 @X0 0 e@12 ]
-"55 1111.c
+"58 1111.c
 [v _int_adc `(v ~T0 @X0 0 e? ]
-"53
+"56
 [v _int_t0 `(v ~T0 @X0 0 e? ]
 "234 C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f887.h
 [; ;C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f887.h: 234:     struct {
@@ -83,23 +83,31 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f887.h: 59: extern volatile unsigned char TMR0 __attribute__((address(0x001)));
 [v _TMR0 `Vuc ~T0 @X0 0 e@1 ]
 [p mainexit ]
-"47 1111.c
+"50 1111.c
 [v _cfg_io `(v ~T0 @X0 0 e? ]
-"48
-[v _cfg_clk `(v ~T0 @X0 0 e? ]
-"49
-[v _cfg_inte `(v ~T0 @X0 0 e? ]
-"50
-[v _cfg_iocb `(v ~T0 @X0 0 e? ]
 "51
-[v _cfg_adc `(v ~T0 @X0 0 e? ]
+[v _cfg_clk `(v ~T0 @X0 0 e? ]
 "52
+[v _cfg_inte `(v ~T0 @X0 0 e? ]
+"53
+[v _cfg_iocb `(v ~T0 @X0 0 e? ]
+"54
+[v _cfg_adc `(v ~T0 @X0 0 e? ]
+"55
 [v _cfg_t0 `(v ~T0 @X0 0 e? ]
-"62
+"65
 [v _t7 `(v ~T0 @X0 0 e? ]
-"414 C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f887.h
-[; ;C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f887.h: 414: extern volatile unsigned char PORTE __attribute__((address(0x009)));
-[v _PORTE `Vuc ~T0 @X0 0 e@9 ]
+"358 C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f887.h
+[; ;C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f887.h: 358:     struct {
+[s S12 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S12 . RD0 RD1 RD2 RD3 RD4 RD5 RD6 RD7 ]
+"357
+[; ;C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f887.h: 357: typedef union {
+[u S11 `S12 1 ]
+[n S11 . . ]
+"369
+[; ;C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f887.h: 369: extern volatile PORTDbits_t PORTDbits __attribute__((address(0x008)));
+[v _PORTDbits `VS11 ~T0 @X0 0 e@8 ]
 [v F1256 `(v ~T0 @X0 1 tf1`ul ]
 "92 C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\pic.h
 [v __delay `JF1256 ~T0 @X0 0 e ]
@@ -149,6 +157,9 @@ Version 4.0 HI-TECH Software Intermediate Code
 "228
 [; ;C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f887.h: 228: extern volatile unsigned char PORTB __attribute__((address(0x006)));
 [v _PORTB `Vuc ~T0 @X0 0 e@6 ]
+"414
+[; ;C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f887.h: 414: extern volatile unsigned char PORTE __attribute__((address(0x009)));
+[v _PORTE `Vuc ~T0 @X0 0 e@9 ]
 "1868
 [; ;C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f887.h: 1868:     struct {
 [s S70 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :3 `uc 1 ]
@@ -460,7 +471,7 @@ Version 4.0 HI-TECH Software Intermediate Code
 [i _adcdig
 -> -> 0 `i `uc
 ]
-"57 1111.c
+"60 1111.c
 [v _tab7seg `uc ~T0 @X0 -> 16 `i e ]
 [i _tab7seg
 :U ..
@@ -482,331 +493,331 @@ Version 4.0 HI-TECH Software Intermediate Code
 -> -> 113 `i `uc
 ..
 ]
-"59
+"62
 [v _cont `uc ~T0 @X0 1 e ]
-"60
+"63
 [v _udisp `uc ~T0 @X0 1 e ]
 [i _udisp
 -> -> 0 `i `uc
 ]
-"61
+"64
 [v _ddisp `uc ~T0 @X0 1 e ]
 [i _ddisp
 -> -> 0 `i `uc
 ]
 [v $root$_isr `(v ~T0 @X0 0 e ]
-"69
+"72
 [v _isr `(v ~T1 @X0 1 ef ]
 {
 [e :U _isr ]
 [f ]
-"71
+"74
 [e $ ! != -> . . _INTCONbits 0 0 `i -> 0 `i 144  ]
 {
-"72
-[e ( _int_iocb ..  ]
-"73
-}
-[e :U 144 ]
-"74
-[e $ ! != -> . . _PIR1bits 0 6 `i -> 0 `i 145  ]
-{
 "75
-[e ( _int_adc ..  ]
+[e ( _int_iocb ..  ]
 "76
 }
-[e :U 145 ]
+[e :U 144 ]
 "77
-[e $ ! != -> . . _INTCONbits 0 2 `i -> 0 `i 146  ]
+[e $ ! != -> . . _PIR1bits 0 6 `i -> 0 `i 145  ]
 {
 "78
-[e ( _int_t0 ..  ]
+[e ( _int_adc ..  ]
 "79
 }
-[e :U 146 ]
+[e :U 145 ]
 "80
+[e $ ! != -> . . _INTCONbits 0 2 `i -> 0 `i 146  ]
+{
+"81
+[e ( _int_t0 ..  ]
+"82
+}
+[e :U 146 ]
+"83
 [e :UE 143 ]
 }
-"82
+"85
 [v _int_iocb `(v ~T0 @X0 1 ef ]
 {
 [e :U _int_iocb ]
 [f ]
-"84
+"87
 [e $ ! == -> . . _PORTBbits 0 0 `i -> 0 `i 148  ]
 {
-"85
-[e ++ _PORTC -> -> 1 `i `Vuc ]
-"86
-}
-[e :U 148 ]
-"87
-[e $ ! == -> . . _PORTBbits 0 1 `i -> 0 `i 149  ]
-{
 "88
-[e -- _PORTC -> -> 1 `i `Vuc ]
+[e ++ _PORTC -> -> 1 `i `Vuc ]
 "89
 }
-[e :U 149 ]
+[e :U 148 ]
 "90
-[e = . . _INTCONbits 0 0 -> -> 0 `i `uc ]
+[e $ ! == -> . . _PORTBbits 0 1 `i -> 0 `i 149  ]
+{
 "91
+[e -- _PORTC -> -> 1 `i `Vuc ]
+"92
+}
+[e :U 149 ]
+"93
+[e = . . _INTCONbits 0 0 -> -> 0 `i `uc ]
+"94
 [e :UE 147 ]
 }
-"93
+"96
 [v _int_adc `(v ~T0 @X0 1 ef ]
 {
 [e :U _int_adc ]
 [f ]
-"94
+"97
 [e $ ! == -> . . _ADCON0bits 0 2 `i -> 5 `i 151  ]
 {
-"95
+"98
 [e = _adcdig _ADRESH ]
-"96
+"99
 }
 [e :U 151 ]
-"97
+"100
 [e = . . _PIR1bits 0 6 -> -> 0 `i `uc ]
-"98
+"101
 [e :UE 150 ]
 }
-"100
+"103
 [v _int_t0 `(v ~T0 @X0 1 ef ]
 {
 [e :U _int_t0 ]
 [f ]
-"101
+"104
 [e = _PORTA -> -> 0 `i `uc ]
-"102
+"105
 [e $ ! == -> _cont `i -> 0 `i 153  ]
 {
-"103
-[e = _PORTA _udisp ]
-"104
-[e = _PORTD -> -> 4 `i `uc ]
-"105
-[e ++ _cont -> -> 1 `i `uc ]
 "106
+[e = _PORTA _udisp ]
+"107
+[e = _PORTD -> -> 4 `i `uc ]
+"108
+[e ++ _cont -> -> 1 `i `uc ]
+"109
 }
 [e $U 154  ]
-"107
+"110
 [e :U 153 ]
 [e $ ! == -> _cont `i -> 1 `i 155  ]
 {
-"108
-[e = _PORTA _ddisp ]
-"109
-[e = _PORTD -> -> 8 `i `uc ]
-"110
-[e = _cont -> -> 0 `i `uc ]
 "111
+[e = _PORTA _ddisp ]
+"112
+[e = _PORTD -> -> 8 `i `uc ]
+"113
+[e = _cont -> -> 0 `i `uc ]
+"114
 }
 [e :U 155 ]
 [e :U 154 ]
-"113
+"116
 [e = _TMR0 -> -> 254 `i `uc ]
-"114
+"117
 [e = . . _INTCONbits 0 2 -> -> 0 `i `uc ]
-"115
+"118
 [e :UE 152 ]
 }
 [v $root$_main `(v ~T0 @X0 0 e ]
-"120
+"123
 [v _main `(v ~T0 @X0 1 ef ]
 {
 [e :U _main ]
 [f ]
-"121
-[e ( _cfg_io ..  ]
-"122
-[e ( _cfg_clk ..  ]
-"123
-[e ( _cfg_inte ..  ]
 "124
-[e ( _cfg_iocb ..  ]
+[e ( _cfg_io ..  ]
 "125
-[e ( _cfg_adc ..  ]
+[e ( _cfg_clk ..  ]
 "126
-[e ( _cfg_t0 ..  ]
+[e ( _cfg_inte ..  ]
 "127
+[e ( _cfg_iocb ..  ]
+"128
+[e ( _cfg_adc ..  ]
+"129
+[e ( _cfg_t0 ..  ]
+"130
 [e = . . _ADCON0bits 1 1 -> -> 1 `i `uc ]
-"131
+"134
 [e :U 158 ]
 {
-"132
+"135
 [e ( _t7 ..  ]
-"134
+"137
 [e $ ! >= -> _adcdig `i -> _PORTC `i 160  ]
 {
-"135
-[e = _PORTE -> -> 4 `i `uc ]
-"136
+"138
+[e = . . _PORTDbits 0 0 -> -> 1 `i `uc ]
+"139
 }
 [e :U 160 ]
-"138
+"141
 [e $ ! == -> . . _ADCON0bits 1 1 `i -> 0 `i 161  ]
 {
-"139
+"142
 [e ( __delay (1 -> * -> -> 100 `i `d / -> -> 4000000 `l `d .4000000.0 `ul ]
-"140
+"143
 [e = . . _ADCON0bits 1 1 -> -> 1 `i `uc ]
-"141
+"144
 }
 [e :U 161 ]
-"142
+"145
 }
 [e :U 157 ]
 [e $U 158  ]
 [e :U 159 ]
-"143
+"146
 [e :UE 156 ]
 }
-"147
+"150
 [v _t7 `(v ~T0 @X0 1 ef ]
 {
 [e :U _t7 ]
 [f ]
-"148
-[e ( _hex ..  ]
-"149
-[e = _udisp -> *U + &U _tab7seg * -> _num0 `ux -> -> # *U &U _tab7seg `ui `ux `uc ]
-"150
-[e = _ddisp -> *U + &U _tab7seg * -> _num1 `ux -> -> # *U &U _tab7seg `ui `ux `uc ]
 "151
+[e ( _hex ..  ]
+"152
+[e = _udisp -> *U + &U _tab7seg * -> _num0 `ux -> -> # *U &U _tab7seg `ui `ux `uc ]
+"153
+[e = _ddisp -> *U + &U _tab7seg * -> _num1 `ux -> -> # *U &U _tab7seg `ui `ux `uc ]
+"154
 [e :UE 162 ]
 }
-"157
+"160
 [v _cfg_io `(v ~T0 @X0 1 ef ]
 {
 [e :U _cfg_io ]
 [f ]
-"158
-[e = _ANSELH -> -> 0 `i `uc ]
-"159
-[e = _ANSEL -> -> 32 `i `uc ]
 "161
-[e = _TRISB -> -> 3 `i `uc ]
+[e = _ANSELH -> -> 0 `i `uc ]
 "162
-[e = _TRISC -> -> 0 `i `uc ]
-"163
-[e = _TRISA -> -> 0 `i `uc ]
+[e = _ANSEL -> -> 32 `i `uc ]
 "164
-[e = _TRISD -> -> 0 `i `uc ]
+[e = _TRISB -> -> 3 `i `uc ]
 "165
-[e = _TRISE -> -> 3 `i `uc ]
+[e = _TRISC -> -> 0 `i `uc ]
+"166
+[e = _TRISA -> -> 0 `i `uc ]
 "167
-[e = . . _OPTION_REGbits 0 5 -> -> 0 `i `uc ]
+[e = _TRISD -> -> 0 `i `uc ]
 "168
-[e = _WPUB -> -> 3 `i `uc ]
+[e = _TRISE -> -> 3 `i `uc ]
 "170
-[e = _PORTB -> -> 0 `i `uc ]
+[e = . . _OPTION_REGbits 0 5 -> -> 0 `i `uc ]
 "171
-[e = _PORTC -> -> 0 `i `uc ]
-"172
-[e = _PORTA -> -> 0 `i `uc ]
+[e = _WPUB -> -> 3 `i `uc ]
 "173
-[e = _PORTE -> -> 0 `i `uc ]
+[e = _PORTB -> -> 0 `i `uc ]
+"174
+[e = _PORTC -> -> 0 `i `uc ]
 "175
+[e = _PORTA -> -> 0 `i `uc ]
+"176
+[e = _PORTE -> -> 0 `i `uc ]
+"178
 [e :UE 163 ]
 }
-"176
+"179
 [v _cfg_clk `(v ~T0 @X0 1 ef ]
 {
 [e :U _cfg_clk ]
 [f ]
-"177
-[e = . . _OSCCONbits 1 3 -> -> 0 `i `uc ]
-"178
-[e = . . _OSCCONbits 1 2 -> -> 1 `i `uc ]
-"179
-[e = . . _OSCCONbits 1 1 -> -> 1 `i `uc ]
 "180
-[e = . . _OSCCONbits 0 0 -> -> 1 `i `uc ]
+[e = . . _OSCCONbits 1 3 -> -> 0 `i `uc ]
+"181
+[e = . . _OSCCONbits 1 2 -> -> 1 `i `uc ]
 "182
-[e $UE 164  ]
+[e = . . _OSCCONbits 1 1 -> -> 1 `i `uc ]
 "183
+[e = . . _OSCCONbits 0 0 -> -> 1 `i `uc ]
+"185
+[e $UE 164  ]
+"186
 [e :UE 164 ]
 }
-"184
+"187
 [v _cfg_inte `(v ~T0 @X0 1 ef ]
 {
 [e :U _cfg_inte ]
 [f ]
-"185
-[e = . . _INTCONbits 0 7 -> -> 1 `i `uc ]
-"186
-[e = . . _INTCONbits 0 5 -> -> 1 `i `uc ]
-"187
-[e = . . _INTCONbits 0 3 -> -> 1 `i `uc ]
 "188
-[e = . . _INTCONbits 0 0 -> -> 0 `i `uc ]
+[e = . . _INTCONbits 0 7 -> -> 1 `i `uc ]
 "189
-[e = . . _INTCONbits 0 2 -> -> 0 `i `uc ]
+[e = . . _INTCONbits 0 5 -> -> 1 `i `uc ]
+"190
+[e = . . _INTCONbits 0 3 -> -> 1 `i `uc ]
 "191
-[e $UE 165  ]
+[e = . . _INTCONbits 0 0 -> -> 0 `i `uc ]
 "192
+[e = . . _INTCONbits 0 2 -> -> 0 `i `uc ]
+"194
+[e $UE 165  ]
+"195
 [e :UE 165 ]
 }
-"193
+"196
 [v _cfg_iocb `(v ~T0 @X0 1 ef ]
 {
 [e :U _cfg_iocb ]
 [f ]
-"194
-[e = _IOCB -> -> 3 `i `uc ]
-"195
-[e = . . _INTCONbits 0 0 -> -> 0 `i `uc ]
 "197
-[e $UE 166  ]
+[e = _IOCB -> -> 3 `i `uc ]
 "198
+[e = . . _INTCONbits 0 0 -> -> 0 `i `uc ]
+"200
+[e $UE 166  ]
+"201
 [e :UE 166 ]
 }
-"200
+"203
 [v _cfg_t0 `(v ~T0 @X0 1 ef ]
 {
 [e :U _cfg_t0 ]
 [f ]
-"201
-[e = . . _OPTION_REGbits 0 3 -> -> 0 `i `uc ]
-"202
-[e = . . _OPTION_REGbits 0 1 -> -> 0 `i `uc ]
-"203
-[e = . . _OPTION_REGbits 1 2 -> -> 1 `i `uc ]
 "204
-[e = . . _OPTION_REGbits 1 1 -> -> 1 `i `uc ]
+[e = . . _OPTION_REGbits 0 3 -> -> 0 `i `uc ]
 "205
-[e = . . _OPTION_REGbits 1 0 -> -> 1 `i `uc ]
+[e = . . _OPTION_REGbits 0 1 -> -> 0 `i `uc ]
+"206
+[e = . . _OPTION_REGbits 1 2 -> -> 1 `i `uc ]
 "207
-[e = _TMR0 -> -> 254 `i `uc ]
+[e = . . _OPTION_REGbits 1 1 -> -> 1 `i `uc ]
 "208
-[e = . . _INTCONbits 0 2 -> -> 0 `i `uc ]
+[e = . . _OPTION_REGbits 1 0 -> -> 1 `i `uc ]
 "210
-[e $UE 167  ]
+[e = _TMR0 -> -> 254 `i `uc ]
 "211
+[e = . . _INTCONbits 0 2 -> -> 0 `i `uc ]
+"213
+[e $UE 167  ]
+"214
 [e :UE 167 ]
 }
-"213
+"216
 [v _cfg_adc `(v ~T0 @X0 1 ef ]
 {
 [e :U _cfg_adc ]
 [f ]
-"214
+"217
 [e = . . _ADCON1bits 0 4 -> -> 0 `i `uc ]
-"215
-[e = . . _ADCON1bits 0 1 -> -> 0 `i `uc ]
-"216
-[e = . . _ADCON1bits 0 2 -> -> 0 `i `uc ]
 "218
-[e = . . _ADCON0bits 1 6 -> -> 0 `i `uc ]
+[e = . . _ADCON1bits 0 1 -> -> 0 `i `uc ]
 "219
-[e = . . _ADCON0bits 1 7 -> -> 0 `i `uc ]
-"220
-[e = . . _ADCON0bits 0 2 -> -> 5 `i `uc ]
+[e = . . _ADCON1bits 0 2 -> -> 0 `i `uc ]
 "221
-[e ( __delay (1 -> * -> -> 100 `i `d / -> -> 4000000 `l `d .4000000.0 `ul ]
+[e = . . _ADCON0bits 1 6 -> -> 0 `i `uc ]
 "222
-[e = . . _ADCON0bits 0 0 -> -> 1 `i `uc ]
+[e = . . _ADCON0bits 1 7 -> -> 0 `i `uc ]
+"223
+[e = . . _ADCON0bits 0 2 -> -> 5 `i `uc ]
 "224
+[e ( __delay (1 -> * -> -> 100 `i `d / -> -> 4000000 `l `d .4000000.0 `ul ]
+"225
+[e = . . _ADCON0bits 0 0 -> -> 1 `i `uc ]
+"227
 [e :UE 168 ]
 }

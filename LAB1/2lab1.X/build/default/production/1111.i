@@ -27,6 +27,9 @@
 
 
 
+
+
+
 # 1 "C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\\pic\\include\\xc.h" 1 3
 # 18 "C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\\pic\\include\\xc.h" 3
 extern const char __xc8_OPTIM_SPEED;
@@ -2507,7 +2510,7 @@ extern __bank0 unsigned char __resetbits;
 extern __bank0 __bit __powerdown;
 extern __bank0 __bit __timeout;
 # 28 "C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\\pic\\include\\xc.h" 2 3
-# 34 "1111.c" 2
+# 37 "1111.c" 2
 
 # 1 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c90\\stdio.h" 1 3
 
@@ -2606,7 +2609,7 @@ extern int vsscanf(const char *, const char *, va_list) __attribute__((unsupport
 #pragma printf_check(sprintf) const
 extern int sprintf(char *, const char *, ...);
 extern int printf(const char *, ...);
-# 35 "1111.c" 2
+# 38 "1111.c" 2
 
 # 1 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c90\\stdlib.h" 1 3
 
@@ -2691,7 +2694,7 @@ extern char * ltoa(char * buf, long val, int base);
 extern char * ultoa(char * buf, unsigned long val, int base);
 
 extern char * ftoa(float f, int * status);
-# 36 "1111.c" 2
+# 39 "1111.c" 2
 
 # 1 "./adc_to_7seg.h" 1
 # 15 "./adc_to_7seg.h"
@@ -2700,8 +2703,8 @@ unsigned char num0 = 0;
 unsigned char num1 = 0;
 unsigned char adcdig = 0;
 void hex();
-# 37 "1111.c" 2
-# 47 "1111.c"
+# 40 "1111.c" 2
+# 50 "1111.c"
 void cfg_io();
 void cfg_clk();
 void cfg_inte();
@@ -2790,7 +2793,7 @@ void main () {
         t7();
 
         if(adcdig >= PORTC){
-            PORTE = 0x04;
+            PORTDbits.RD0 = 1;
         }
 
         if(ADCON0bits.GO == 0){

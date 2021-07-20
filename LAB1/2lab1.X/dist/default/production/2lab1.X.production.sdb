@@ -3,29 +3,29 @@
 [d edition pro ]
 [d chip 16F887 ]
 [d frameptr 0 ]
-"69 C:\Users\gerar\Desktop\UVG\6to Semestre\Digital_2\D2LABS\LAB1\2lab1.X\1111.c
+"72 C:\Users\gerar\Desktop\UVG\6to Semestre\Digital_2\D2LABS\LAB1\2lab1.X\1111.c
 [v _isr isr `II(v  1 e 1 0 ]
-"82
+"85
 [v _int_iocb int_iocb `(v  1 e 1 0 ]
-"93
+"96
 [v _int_adc int_adc `(v  1 e 1 0 ]
-"100
+"103
 [v _int_t0 int_t0 `(v  1 e 1 0 ]
-"120
+"123
 [v _main main `(v  1 e 1 0 ]
-"147
+"150
 [v _t7 t7 `(v  1 e 1 0 ]
-"157
+"160
 [v _cfg_io cfg_io `(v  1 e 1 0 ]
-"176
+"179
 [v _cfg_clk cfg_clk `(v  1 e 1 0 ]
-"184
+"187
 [v _cfg_inte cfg_inte `(v  1 e 1 0 ]
-"193
+"196
 [v _cfg_iocb cfg_iocb `(v  1 e 1 0 ]
-"200
+"203
 [v _cfg_t0 cfg_t0 `(v  1 e 1 0 ]
-"213
+"216
 [v _cfg_adc cfg_adc `(v  1 e 1 0 ]
 "5 C:\Users\gerar\Desktop\UVG\6to Semestre\Digital_2\D2LABS\LAB1\2lab1.X\adc_to_7seg.c
 [v _hex hex `(v  1 e 1 0 ]
@@ -45,13 +45,13 @@
 [v _num1 num1 `uc  1 e 1 0 ]
 "18
 [v _adcdig adcdig `uc  1 e 1 0 ]
-"57 C:\Users\gerar\Desktop\UVG\6to Semestre\Digital_2\D2LABS\LAB1\2lab1.X\1111.c
+"60 C:\Users\gerar\Desktop\UVG\6to Semestre\Digital_2\D2LABS\LAB1\2lab1.X\1111.c
 [v _tab7seg tab7seg `[16]uc  1 e 16 0 ]
-"59
+"62
 [v _cont cont `uc  1 e 1 0 ]
-"60
+"63
 [v _udisp udisp `uc  1 e 1 0 ]
-"61
+"64
 [v _ddisp ddisp `uc  1 e 1 0 ]
 "59 C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f887.h
 [v _TMR0 TMR0 `VEuc  1 e 1 @1 ]
@@ -75,6 +75,18 @@
 [v _PORTC PORTC `VEuc  1 e 1 @7 ]
 "352
 [v _PORTD PORTD `VEuc  1 e 1 @8 ]
+[s S185 . 1 `uc 1 RD0 1 0 :1:0 
+`uc 1 RD1 1 0 :1:1 
+`uc 1 RD2 1 0 :1:2 
+`uc 1 RD3 1 0 :1:3 
+`uc 1 RD4 1 0 :1:4 
+`uc 1 RD5 1 0 :1:5 
+`uc 1 RD6 1 0 :1:6 
+`uc 1 RD7 1 0 :1:7 
+]
+"369
+[u S194 . 1 `S185 1 . 1 0 ]
+[v _PORTDbits PORTDbits `VES194  1 e 1 @8 ]
 "414
 [v _PORTE PORTE `VEuc  1 e 1 @9 ]
 [s S22 . 1 `uc 1 RBIF 1 0 :1:0 
@@ -130,7 +142,7 @@
 ]
 [u S127 . 1 `S107 1 . 1 0 `S112 1 . 1 0 `S121 1 . 1 0 `S124 1 . 1 0 ]
 [v _ADCON0bits ADCON0bits `VES127  1 e 1 @31 ]
-[s S203 . 1 `uc 1 PS 1 0 :3:0 
+[s S223 . 1 `uc 1 PS 1 0 :3:0 
 `uc 1 PSA 1 0 :1:3 
 `uc 1 T0SE 1 0 :1:4 
 `uc 1 T0CS 1 0 :1:5 
@@ -138,12 +150,12 @@
 `uc 1 nRBPU 1 0 :1:7 
 ]
 "1366
-[s S210 . 1 `uc 1 PS0 1 0 :1:0 
+[s S230 . 1 `uc 1 PS0 1 0 :1:0 
 `uc 1 PS1 1 0 :1:1 
 `uc 1 PS2 1 0 :1:2 
 ]
-[u S214 . 1 `S203 1 . 1 0 `S210 1 . 1 0 ]
-[v _OPTION_REGbits OPTION_REGbits `VES214  1 e 1 @129 ]
+[u S234 . 1 `S223 1 . 1 0 `S230 1 . 1 0 ]
+[v _OPTION_REGbits OPTION_REGbits `VES234  1 e 1 @129 ]
 "1416
 [v _TRISA TRISA `VEuc  1 e 1 @133 ]
 "1478
@@ -154,99 +166,99 @@
 [v _TRISD TRISD `VEuc  1 e 1 @136 ]
 "1664
 [v _TRISE TRISE `VEuc  1 e 1 @137 ]
-[s S231 . 1 `uc 1 SCS 1 0 :1:0 
+[s S252 . 1 `uc 1 SCS 1 0 :1:0 
 `uc 1 LTS 1 0 :1:1 
 `uc 1 HTS 1 0 :1:2 
 `uc 1 OSTS 1 0 :1:3 
 `uc 1 IRCF 1 0 :3:4 
 ]
 "1882
-[s S237 . 1 `uc 1 . 1 0 :4:0 
+[s S258 . 1 `uc 1 . 1 0 :4:0 
 `uc 1 IRCF0 1 0 :1:4 
 `uc 1 IRCF1 1 0 :1:5 
 `uc 1 IRCF2 1 0 :1:6 
 ]
-[u S242 . 1 `S231 1 . 1 0 `S237 1 . 1 0 ]
-[v _OSCCONbits OSCCONbits `VES242  1 e 1 @143 ]
+[u S263 . 1 `S252 1 . 1 0 `S258 1 . 1 0 ]
+[v _OSCCONbits OSCCONbits `VES263  1 e 1 @143 ]
 "2346
 [v _WPUB WPUB `VEuc  1 e 1 @149 ]
 "2416
 [v _IOCB IOCB `VEuc  1 e 1 @150 ]
-[s S258 . 1 `uc 1 . 1 0 :4:0 
+[s S279 . 1 `uc 1 . 1 0 :4:0 
 `uc 1 VCFG0 1 0 :1:4 
 `uc 1 VCFG1 1 0 :1:5 
 `uc 1 . 1 0 :1:6 
 `uc 1 ADFM 1 0 :1:7 
 ]
 "2991
-[u S264 . 1 `S258 1 . 1 0 ]
-[v _ADCON1bits ADCON1bits `VES264  1 e 1 @159 ]
+[u S285 . 1 `S279 1 . 1 0 ]
+[v _ADCON1bits ADCON1bits `VES285  1 e 1 @159 ]
 "3387
 [v _ANSEL ANSEL `VEuc  1 e 1 @392 ]
 "3449
 [v _ANSELH ANSELH `VEuc  1 e 1 @393 ]
-"120 C:\Users\gerar\Desktop\UVG\6to Semestre\Digital_2\D2LABS\LAB1\2lab1.X\1111.c
+"123 C:\Users\gerar\Desktop\UVG\6to Semestre\Digital_2\D2LABS\LAB1\2lab1.X\1111.c
 [v _main main `(v  1 e 1 0 ]
 {
-"143
+"146
 } 0
-"147
+"150
 [v _t7 t7 `(v  1 e 1 0 ]
 {
-"151
+"154
 } 0
 "5 C:\Users\gerar\Desktop\UVG\6to Semestre\Digital_2\D2LABS\LAB1\2lab1.X\adc_to_7seg.c
 [v _hex hex `(v  1 e 1 0 ]
 {
 "10
 } 0
-"200 C:\Users\gerar\Desktop\UVG\6to Semestre\Digital_2\D2LABS\LAB1\2lab1.X\1111.c
+"203 C:\Users\gerar\Desktop\UVG\6to Semestre\Digital_2\D2LABS\LAB1\2lab1.X\1111.c
 [v _cfg_t0 cfg_t0 `(v  1 e 1 0 ]
 {
-"211
+"214
 } 0
-"193
+"196
 [v _cfg_iocb cfg_iocb `(v  1 e 1 0 ]
 {
-"198
+"201
 } 0
-"157
+"160
 [v _cfg_io cfg_io `(v  1 e 1 0 ]
 {
-"175
+"178
 } 0
-"184
+"187
 [v _cfg_inte cfg_inte `(v  1 e 1 0 ]
 {
-"192
+"195
 } 0
-"176
+"179
 [v _cfg_clk cfg_clk `(v  1 e 1 0 ]
 {
-"183
+"186
 } 0
-"213
+"216
 [v _cfg_adc cfg_adc `(v  1 e 1 0 ]
 {
-"224
+"227
 } 0
-"69
+"72
 [v _isr isr `II(v  1 e 1 0 ]
 {
-"80
+"83
 } 0
-"100
+"103
 [v _int_t0 int_t0 `(v  1 e 1 0 ]
 {
-"115
+"118
 } 0
-"82
+"85
 [v _int_iocb int_iocb `(v  1 e 1 0 ]
 {
-"91
+"94
 } 0
-"93
+"96
 [v _int_adc int_adc `(v  1 e 1 0 ]
 {
-"98
+"101
 } 0

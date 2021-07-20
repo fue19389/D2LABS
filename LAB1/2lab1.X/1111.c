@@ -31,18 +31,21 @@
 // #pragma config statements should precede project file includes.
 // Use project enums instead of #define for ON and OFF.
 
+/*------------------------------------------------------------------------------
+ LIBRERIAS
+----------------------------------------------------------------------------- */ 
 #include <xc.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include "adc_to_7seg.h"
 
 /*------------------------------------------------------------------------------
-                       Directivas del preprocesador
+DIRECTIVAS DEL PROCESADOR
 ------------------------------------------------------------------------------*/
 #define _XTAL_FREQ 4000000
 
 /*------------------------------------------------------------------------------
-                       DECLARACIONES Y VARIABLES
+DECLARACIONES Y VARIABLES
 ------------------------------------------------------------------------------*/
 void cfg_io();
 void cfg_clk();
@@ -55,39 +58,39 @@ void int_iocb();
 void int_adc();
 
 char tab7seg[16]={0x3F,0x06,0x5B,0x4F,0x66,0x6D,0x7D,0x07,0x7F,0x67,0x77,0x7c,
-0x39,0x5E,0x79,0x71};
+0x39,0x5E,0x79,0x71};// Tabla 7seg para hex y decimal
 char cont;
-unsigned char udisp = 0;
-unsigned char ddisp = 0;
-void t7();
+unsigned char udisp = 0; // Posición de la primera cifra
+unsigned char ddisp = 0; // Posición de la segunda cifra
+void t7();               // Función para implementar librerías
 
 
 
 /*------------------------------------------------------------------------------
-                              INTERRUPCIONES
+INTERRUPCIONES
 ------------------------------------------------------------------------------*/
 void __interrupt() isr(void){
 
-    if (INTCONbits.RBIF){
+    if (INTCONbits.RBIF){     //Revisión bandera RB
         int_iocb();
     }
     if (PIR1bits.ADIF){       //Revisión bandera ADC
         int_adc();
     }
-    if (INTCONbits.T0IF){
+    if (INTCONbits.T0IF){     //Revisión bandera T0
         int_t0();
     }
 }
 
-void int_iocb(){
+void int_iocb(){              //Interrupción de pull ups
 
-    if (PORTBbits.RB0 == 0){
+    if (PORTBbits.RB0 == 0){  //Incrementar con B0
         PORTC++;
     }
-    if (PORTBbits.RB1 == 0){
+    if (PORTBbits.RB1 == 0){  //Decrementar con B1
         PORTC--;
     }
-    INTCONbits.RBIF = 0; 
+    INTCONbits.RBIF = 0;      //Clear de bandera RB
 }
 
 void int_adc(){               //Interrupción ADC
@@ -115,59 +118,59 @@ void int_t0(){
 }
 
 /*------------------------------------------------------------------------------
-                                    MAIN
+MAIN
 ------------------------------------------------------------------------------*/
-void main () {
-    cfg_io();
+void main () {                
+    cfg_io();                 //Llamado a configuraciones
     cfg_clk();
     cfg_inte();
     cfg_iocb();
     cfg_adc();
     cfg_t0();   
-    ADCON0bits.GO = 1;        // Inicio externo del loop del ADC
+    ADCON0bits.GO = 1;        //Inicio externo del loop del ADC
 /*------------------------------------------------------------------------------
-                              LOOP PRINCIPAL
+LOOP PRINCIPAL
 ------------------------------------------------------------------------------*/
-    while(1){                 //Loop principal   
-        t7();                 //Call para conversión a HEX
+    while(1){                    //Loop principal   
+        t7();                    //Call para conversión a HEX
         
-        if(adcdig >= PORTC){
-            PORTE = 0x04;
+        if(adcdig >= PORTC){     //Alarma si HEX supera contador
+            PORTDbits.RD0 = 1;
         }
         
-        if(ADCON0bits.GO == 0){
-            __delay_us(100);           //Delay para no traslapar conversiones
+        if(ADCON0bits.GO == 0){  //Proceso al acabar conversión
+            __delay_us(100);     //Delay para no traslapar conversiones
             ADCON0bits.GO = 1;
          }
     }
 }
 /*------------------------------------------------------------------------------
-                                 FUNCIONES
+FUNCIONES
 ------------------------------------------------------------------------------*/
-void t7(void){
-    hex();
-    udisp = tab7seg[num0];
+void t7(void){                   //Transformación ADC a 7seg
+    hex();                       //Función creada en librerías
+    udisp = tab7seg[num0];       //Display
     ddisp = tab7seg[num1];         
 }
 
 
 /*------------------------------------------------------------------------------
-                              CONFIG GENERAL
+CONFIG GENERAL
 ------------------------------------------------------------------------------*/
 void cfg_io(){
-    ANSELH = 0x00;   //Seteo de inputs como digitales
+    ANSELH = 0x00;  //Seteo de inputs como digitales
     ANSEL = 0x20;   //Seteo de inputs RE0 y RE1 como analógicos
     
-    TRISB = 0x03; // Pines RB0, RB1, como entradas
-    TRISC = 0x00; // PORTC, PORTA, PORTD como salidas
+    TRISB = 0x03;   //Pines RB0, RB1, como entradas
+    TRISC = 0x00;   //PORTC, PORTA, PORTD como salidas
     TRISA = 0X00;
     TRISD = 0X00;
     TRISE = 0x03;   //Entradas RE0 y RE1
   
-    OPTION_REGbits.nRBPU =  0 ; // se habilita el pull up interno en PORTB
-    WPUB = 0x03;  //  Pull ups para los pines RB0 y RB1
+    OPTION_REGbits.nRBPU =  0 ; //Se habilita el pull up interno en PORTB
+    WPUB = 0x03;                //Pull ups para los pines RB0 y RB1
     
-    PORTB = 0x00; // CLEAR de los puertos
+    PORTB = 0x00;   // CLEAR de los puertos
     PORTC = 0x00;
     PORTA = 0x00;
     PORTE = 0x00;
@@ -177,12 +180,12 @@ void cfg_clk(){
     OSCCONbits.IRCF2 = 0; // IRCF = 011 (500kHz) 
     OSCCONbits.IRCF1 = 1;
     OSCCONbits.IRCF0 = 1;
-    OSCCONbits.SCS = 1; //Reloj interno habilitado
+    OSCCONbits.SCS = 1;   //Reloj interno habilitado
     
     return;
 }
 void cfg_inte(){  
-    INTCONbits.GIE = 1; // Habilitar interrupciones globales
+    INTCONbits.GIE = 1;  // Habilitar interrupciones globales
     INTCONbits.T0IE = 1; // Habilitar interrupción de t0
     INTCONbits.RBIE = 1; // Habilitar interrupción de B
     INTCONbits.RBIF = 0; // Clear en bandera de B
@@ -200,17 +203,17 @@ void cfg_iocb(){
 void cfg_t0(){
     OPTION_REGbits.T0CS = 0;
     OPTION_REGbits.PSA = 0;
-    OPTION_REGbits.PS2 = 1; // PS 111 = 256
+    OPTION_REGbits.PS2 = 1;  // PS 111 = 256
     OPTION_REGbits.PS1 = 1;
     OPTION_REGbits.PS0 = 1;
     
-    TMR0 = 254; // N de t0 para 5ms
+    TMR0 = 254;              // N de t0 para 5ms
     INTCONbits.T0IF = 0;
             
     return;
 }
 
-void cfg_adc() {         //Configuración AD
+void cfg_adc() {            //Configuración ADC
     ADCON1bits.ADFM = 0;    //Justificar a la izquierda
     ADCON1bits.VCFG0 = 0;   //Voltaje de referencia Vss y Vdd
     ADCON1bits.VCFG1 = 0;   

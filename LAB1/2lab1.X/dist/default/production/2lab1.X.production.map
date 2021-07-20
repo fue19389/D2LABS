@@ -5,7 +5,7 @@ Linker command line:
 -W-3 --edf=C:\Program Files\Microchip\xc8\v2.31\pic\dat\en_msgs.txt -cn \
   -h+dist/default/production\2lab1.X.production.sym \
   --cmf=dist/default/production\2lab1.X.production.cmf -z -Q16F887 \
-  -oC:\Users\gerar\AppData\Local\Temp\scn0.2 --defsym=__MPLAB_BUILD=1 \
+  -oC:\Users\gerar\AppData\Local\Temp\sfac.2 --defsym=__MPLAB_BUILD=1 \
   -Mdist/default/production/2lab1.X.production.map -E1 -ver=XC8 Compiler \
   --acfsm=1493 -ASTACK=0110h-016Fh -pstack=STACK -ACODE=00h-07FFhx4 \
   -ASTRCODE=00h-01FFFh -ASTRING=00h-0FFhx32 -ACONST=00h-0FFhx32 \
@@ -18,7 +18,7 @@ Linker command line:
   -AEEDATA=00h-0FFh/02100h -peeprom_data=EEDATA -DEEDATA=2 -DCODE=2 \
   -DSTRCODE=2 -DSTRING=2 -DCONST=2 -DENTRY=2 \
   -preset_vec=00h,intentry=04h,init,end_init -ppowerup=CODE -pcinit=CODE \
-  -pfunctab=ENTRY -k C:\Users\gerar\AppData\Local\Temp\scn0.o \
+  -pfunctab=ENTRY -k C:\Users\gerar\AppData\Local\Temp\sfac.o \
   dist/default/production\2lab1.X.production.o 
 
 Object code version is 3.11
@@ -28,7 +28,7 @@ Machine type is 16F887
 
 
                 Name                               Link     Load   Length Selector   Space Scale
-C:\Users\gerar\AppData\Local\Temp\scn0.o
+C:\Users\gerar\AppData\Local\Temp\sfac.o
                 end_init                              C        C        3        8       0
                 reset_vec                             0        0        3        0       0
                 config                             2007     2007        2        0       4
@@ -36,24 +36,24 @@ dist/default/production\2lab1.X.production.o
                 cinit                                 F        F       19        8       0
                 intentry                              4        4        8        8       0
                 config                             2007     2007        2        0       4
-                text12                              128      128       11        8       0
-                text11                              116      116       12        8       0
-                text10                               8B       8B       1F        8       0
-                text9                                67       67       24        8       0
-                text8                                EE       EE       15        8       0
-                text7                               156      156        7        8       0
-                text6                               163      163        6        8       0
-                text5                                AA       AA       18        8       0
-                text4                               15D      15D        6        8       0
-                text3                               149      149        D        8       0
-                text2                                C2       C2       17        8       0
-                text1                                D9       D9       15        8       0
-                maintext                             28       28       3F        8       0
+                text12                              127      127       11        8       0
+                text11                              115      115       12        8       0
+                text10                               8A       8A       1F        8       0
+                text9                                66       66       24        8       0
+                text8                                ED       ED       15        8       0
+                text7                               155      155        7        8       0
+                text6                               162      162        6        8       0
+                text5                                A9       A9       18        8       0
+                text4                               15C      15C        6        8       0
+                text3                               148      148        D        8       0
+                text2                                C1       C1       17        8       0
+                text1                                D8       D8       15        8       0
+                maintext                             28       28       3E        8       0
                 cstackCOMMON                         77       77        7       70       1
-                inittext                            103      103       13        8       0
+                inittext                            102      102       13        8       0
                 dataBANK0                            20       20       10       20       1
                 bssCOMMON                            70       70        7       70       1
-                idataBANK0                          139      139       10        8       0
+                idataBANK0                          138      138       10        8       0
 
 TOTAL           Name                               Link     Load   Length     Space
         CLASS   STACK          
@@ -63,21 +63,21 @@ TOTAL           Name                               Link     Load   Length     Sp
                 cinit                                 F        F       19         0
                 intentry                              4        4        8         0
                 reset_vec                             0        0        3         0
-                text12                              128      128       11         0
-                text11                              116      116       12         0
-                text10                               8B       8B       1F         0
-                text9                                67       67       24         0
-                text8                                EE       EE       15         0
-                text7                               156      156        7         0
-                text6                               163      163        6         0
-                text5                                AA       AA       18         0
-                text4                               15D      15D        6         0
-                text3                               149      149        D         0
-                text2                                C2       C2       17         0
-                text1                                D9       D9       15         0
-                maintext                             28       28       3F         0
-                inittext                            103      103       13         0
-                idataBANK0                          139      139       10         0
+                text12                              127      127       11         0
+                text11                              115      115       12         0
+                text10                               8A       8A       1F         0
+                text9                                66       66       24         0
+                text8                                ED       ED       15         0
+                text7                               155      155        7         0
+                text6                               162      162        6         0
+                text5                                A9       A9       18         0
+                text4                               15C      15C        6         0
+                text3                               148      148        D         0
+                text2                                C1       C1       17         0
+                text1                                D8       D8       15         0
+                maintext                             28       28       3E         0
+                inittext                            102      102       13         0
+                idataBANK0                          138      138       10         0
 
         CLASS   STRCODE        
 
@@ -125,7 +125,7 @@ TOTAL           Name                               Link     Load   Length     Sp
 SEGMENTS        Name                           Load    Length   Top    Selector   Space  Class     Delta
 
                 reset_vec                      000000  000003  000003         0       0  CODE        2
-                intentry                       000004  000165  000169         8       0  CODE        2
+                intentry                       000004  000164  000168         8       0  CODE        2
                 dataBANK0                      000020  000010  000030        20       1  BANK0       1
                 bssCOMMON                      000070  00000E  00007E        70       1  COMMON      1
 
@@ -138,12 +138,12 @@ UNUSED ADDRESS RANGES
         BANK2            0110-016F             60           1
         BANK3            0190-01EF             60           1
         CODE             0003-0003              1           2
-                         0169-1FFF            800
+                         0168-1FFF            800
         CONST            0003-0003              1           2
-                         0169-1FFF            100
+                         0168-1FFF            100
         EEDATA           2100-21FF            100           2
         ENTRY            0003-0003              1           2
-                         0169-1FFF            100
+                         0168-1FFF            100
         IDLOC            2000-2003              4           2
         RAM              0030-006F             40           1
                          00A0-00EF             50
@@ -155,9 +155,9 @@ UNUSED ADDRESS RANGES
         SFR3             0180-018F             10           1
         STACK            0110-016F             60           1
         STRCODE          0003-0003              1           2
-                         0169-1FFF           1E97
+                         0168-1FFF           1E98
         STRING           0003-0003              1           2
-                         0169-1FFF            100
+                         0168-1FFF            100
 
                                   Symbol Table
 
@@ -176,6 +176,7 @@ _PORTB                   (abs)        0006
 _PORTBbits               (abs)        0006
 _PORTC                   (abs)        0007
 _PORTD                   (abs)        0008
+_PORTDbits               (abs)        0008
 _PORTE                   (abs)        0009
 _TMR0                    (abs)        0001
 _TRISA                   (abs)        0085
@@ -212,7 +213,7 @@ __Hsfr0                  sfr0         0000
 __Hsfr1                  sfr1         0000
 __Hsfr2                  sfr2         0000
 __Hsfr3                  sfr3         0000
-__Hspace_0               (abs)        0169
+__Hspace_0               (abs)        0168
 __Hspace_1               (abs)        007E
 __Hspace_2               (abs)        0000
 __Hspace_3               (abs)        0000
@@ -256,7 +257,7 @@ __Lspace_4               (abs)        0000
 __Lstack                 stack        0000
 __Lstrings               strings      0000
 __Ltext                  text         0000
-__S0                     (abs)        0169
+__S0                     (abs)        0168
 __S1                     (abs)        007E
 __S2                     (abs)        0000
 __S3                     (abs)        0000
@@ -266,38 +267,38 @@ ___sp                    stack        0000
 ___stackhi               (abs)        0000
 ___stacklo               (abs)        0000
 __end_of__initialization cinit        0024
-__end_of_cfg_adc         text8        0103
-__end_of_cfg_clk         text7        015D
-__end_of_cfg_inte        text6        0169
-__end_of_cfg_io          text5        00C2
-__end_of_cfg_iocb        text4        0163
-__end_of_cfg_t0          text3        0156
-__end_of_hex             text2        00D9
-__end_of_int_adc         text12       0139
-__end_of_int_iocb        text11       0128
-__end_of_int_t0          text10       00AA
-__end_of_isr             text9        008B
-__end_of_main            maintext     0067
-__end_of_t7              text1        00EE
+__end_of_cfg_adc         text8        0102
+__end_of_cfg_clk         text7        015C
+__end_of_cfg_inte        text6        0168
+__end_of_cfg_io          text5        00C1
+__end_of_cfg_iocb        text4        0162
+__end_of_cfg_t0          text3        0155
+__end_of_hex             text2        00D8
+__end_of_int_adc         text12       0138
+__end_of_int_iocb        text11       0127
+__end_of_int_t0          text10       00A9
+__end_of_isr             text9        008A
+__end_of_main            maintext     0066
+__end_of_t7              text1        00ED
 __initialization         cinit        000F
 __pbssCOMMON             bssCOMMON    0070
 __pcstackCOMMON          cstackCOMMON 0077
 __pdataBANK0             dataBANK0    0020
-__pidataBANK0            idataBANK0   0139
+__pidataBANK0            idataBANK0   0138
 __pintentry              intentry     0004
 __pmaintext              maintext     0028
-__ptext1                 text1        00D9
-__ptext10                text10       008B
-__ptext11                text11       0116
-__ptext12                text12       0128
-__ptext2                 text2        00C2
-__ptext3                 text3        0149
-__ptext4                 text4        015D
-__ptext5                 text5        00AA
-__ptext6                 text6        0163
-__ptext7                 text7        0156
-__ptext8                 text8        00EE
-__ptext9                 text9        0067
+__ptext1                 text1        00D8
+__ptext10                text10       008A
+__ptext11                text11       0115
+__ptext12                text12       0127
+__ptext2                 text2        00C1
+__ptext3                 text3        0148
+__ptext4                 text4        015C
+__ptext5                 text5        00A9
+__ptext6                 text6        0162
+__ptext7                 text7        0155
+__ptext8                 text8        00ED
+__ptext9                 text9        0066
 __size_of_cfg_adc        (abs)        0000
 __size_of_cfg_clk        (abs)        0000
 __size_of_cfg_inte       (abs)        0000
@@ -312,30 +313,30 @@ __size_of_isr            (abs)        0000
 __size_of_main           (abs)        0000
 __size_of_t7             (abs)        0000
 _adcdig                  bssCOMMON    0073
-_cfg_adc                 text8        00EE
-_cfg_clk                 text7        0156
-_cfg_inte                text6        0163
-_cfg_io                  text5        00AA
-_cfg_iocb                text4        015D
-_cfg_t0                  text3        0149
+_cfg_adc                 text8        00ED
+_cfg_clk                 text7        0155
+_cfg_inte                text6        0162
+_cfg_io                  text5        00A9
+_cfg_iocb                text4        015C
+_cfg_t0                  text3        0148
 _cont                    bssCOMMON    0072
 _ddisp                   bssCOMMON    0070
-_hex                     text2        00C2
-_int_adc                 text12       0128
-_int_iocb                text11       0116
-_int_t0                  text10       008B
-_isr                     text9        0067
+_hex                     text2        00C1
+_int_adc                 text12       0127
+_int_iocb                text11       0115
+_int_t0                  text10       008A
+_isr                     text9        0066
 _main                    maintext     0028
 _num                     bssCOMMON    0076
 _num0                    bssCOMMON    0075
 _num1                    bssCOMMON    0074
-_t7                      text1        00D9
+_t7                      text1        00D8
 _tab7seg                 dataBANK0    0020
 _udisp                   bssCOMMON    0071
 btemp                    (abs)        007E
 end_of_initialization    cinit        0024
-init_fetch0              inittext     0103
-init_ram0                inittext     0107
+init_fetch0              inittext     0102
+init_ram0                inittext     0106
 interrupt_function       intentry     0004
 intlevel0                functab      0000
 intlevel1                functab      0000
@@ -354,7 +355,7 @@ FUNCTION INFORMATION:
 
  *************** function _main *****************
  Defined at:
-		line 120 in file "1111.c"
+		line 123 in file "1111.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -389,7 +390,7 @@ Total ram usage:        1 bytes
 
  *************** function _t7 *****************
  Defined at:
-		line 147 in file "1111.c"
+		line 150 in file "1111.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -449,7 +450,7 @@ Total ram usage:        2 bytes
 
  *************** function _cfg_t0 *****************
  Defined at:
-		line 200 in file "1111.c"
+		line 203 in file "1111.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -479,7 +480,7 @@ Total ram usage:        0 bytes
 
  *************** function _cfg_iocb *****************
  Defined at:
-		line 193 in file "1111.c"
+		line 196 in file "1111.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -509,7 +510,7 @@ Total ram usage:        0 bytes
 
  *************** function _cfg_io *****************
  Defined at:
-		line 157 in file "1111.c"
+		line 160 in file "1111.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -539,7 +540,7 @@ Total ram usage:        0 bytes
 
  *************** function _cfg_inte *****************
  Defined at:
-		line 184 in file "1111.c"
+		line 187 in file "1111.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -569,7 +570,7 @@ Total ram usage:        0 bytes
 
  *************** function _cfg_clk *****************
  Defined at:
-		line 176 in file "1111.c"
+		line 179 in file "1111.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -599,7 +600,7 @@ Total ram usage:        0 bytes
 
  *************** function _cfg_adc *****************
  Defined at:
-		line 213 in file "1111.c"
+		line 216 in file "1111.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -629,7 +630,7 @@ Total ram usage:        1 bytes
 
  *************** function _isr *****************
  Defined at:
-		line 69 in file "1111.c"
+		line 72 in file "1111.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -661,7 +662,7 @@ Total ram usage:        2 bytes
 
  *************** function _int_t0 *****************
  Defined at:
-		line 100 in file "1111.c"
+		line 103 in file "1111.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -690,7 +691,7 @@ Total ram usage:        1 bytes
 
  *************** function _int_iocb *****************
  Defined at:
-		line 82 in file "1111.c"
+		line 85 in file "1111.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -719,7 +720,7 @@ Total ram usage:        1 bytes
 
  *************** function _int_adc *****************
  Defined at:
-		line 93 in file "1111.c"
+		line 96 in file "1111.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -751,25 +752,25 @@ MODULE INFORMATION
 
 Module		Function		Class		Link	Load	Size
 adc_to_7seg.c
-		_hex           		CODE           	00C2	0000	23
+		_hex           		CODE           	00C1	0000	23
 
 adc_to_7seg.c estimated size: 23
 
 1111.c
-		_int_iocb      		CODE           	0116	0000	18
-		_cfg_adc       		CODE           	00EE	0000	21
-		_cfg_io        		CODE           	00AA	0000	24
-		_int_t0        		CODE           	008B	0000	31
-		_cfg_iocb      		CODE           	015D	0000	6
-		_main          		CODE           	0028	0000	63
-		_cfg_t0        		CODE           	0149	0000	13
-		_t7            		CODE           	00D9	0000	21
-		_isr           		CODE           	0067	0000	36
-		_cfg_inte      		CODE           	0163	0000	6
-		_cfg_clk       		CODE           	0156	0000	7
-		_int_adc       		CODE           	0128	0000	17
+		_int_iocb      		CODE           	0115	0000	18
+		_cfg_adc       		CODE           	00ED	0000	21
+		_cfg_io        		CODE           	00A9	0000	24
+		_int_t0        		CODE           	008A	0000	31
+		_cfg_iocb      		CODE           	015C	0000	6
+		_main          		CODE           	0028	0000	62
+		_cfg_t0        		CODE           	0148	0000	13
+		_t7            		CODE           	00D8	0000	21
+		_isr           		CODE           	0066	0000	36
+		_cfg_inte      		CODE           	0162	0000	6
+		_cfg_clk       		CODE           	0155	0000	7
+		_int_adc       		CODE           	0127	0000	17
 
-1111.c estimated size: 263
+1111.c estimated size: 262
 
 shared
 		__initialization		CODE           	000F	0000	21
