@@ -130,7 +130,7 @@
 ]
 [u S127 . 1 `S107 1 . 1 0 `S112 1 . 1 0 `S121 1 . 1 0 `S124 1 . 1 0 ]
 [v _ADCON0bits ADCON0bits `VES127  1 e 1 @31 ]
-[s S202 . 1 `uc 1 PS 1 0 :3:0 
+[s S203 . 1 `uc 1 PS 1 0 :3:0 
 `uc 1 PSA 1 0 :1:3 
 `uc 1 T0SE 1 0 :1:4 
 `uc 1 T0CS 1 0 :1:5 
@@ -138,12 +138,12 @@
 `uc 1 nRBPU 1 0 :1:7 
 ]
 "1366
-[s S209 . 1 `uc 1 PS0 1 0 :1:0 
+[s S210 . 1 `uc 1 PS0 1 0 :1:0 
 `uc 1 PS1 1 0 :1:1 
 `uc 1 PS2 1 0 :1:2 
 ]
-[u S213 . 1 `S202 1 . 1 0 `S209 1 . 1 0 ]
-[v _OPTION_REGbits OPTION_REGbits `VES213  1 e 1 @129 ]
+[u S214 . 1 `S203 1 . 1 0 `S210 1 . 1 0 ]
+[v _OPTION_REGbits OPTION_REGbits `VES214  1 e 1 @129 ]
 "1416
 [v _TRISA TRISA `VEuc  1 e 1 @133 ]
 "1478

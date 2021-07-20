@@ -132,7 +132,7 @@ void main () {
         t7();                 //Call para conversión a HEX
         
         if(adcdig >= PORTC){
-            PORTD = 0x10;
+            PORTE = 0x04;
         }
         
         if(ADCON0bits.GO == 0){

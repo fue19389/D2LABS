@@ -2790,7 +2790,7 @@ void main () {
         t7();
 
         if(adcdig >= PORTC){
-            PORTD = 0x10;
+            PORTE = 0x04;
         }
 
         if(ADCON0bits.GO == 0){

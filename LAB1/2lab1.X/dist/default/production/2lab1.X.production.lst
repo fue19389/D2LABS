@@ -1,7 +1,7 @@
 
 
 Microchip MPLAB XC8 Assembler V2.31 build 20201012212115 
-                                                                                               Tue Jul 20 01:47:52 2021
+                                                                                               Tue Jul 20 01:50:44 2021
 
 Microchip MPLAB XC8 C Compiler v2.31 (Free license) build 20201012212115 Og1 
      1                           	processor	16F887
@@ -327,8 +327,8 @@ Microchip MPLAB XC8 C Compiler v2.31 (Free license) build 20201012212115 Og1
    313  0146  345E               	retlw	94
    314  0147  3479               	retlw	121
    315  0148  3471               	retlw	113
-   316  0009                     _PORTE	set	9
-   317  0006                     _PORTB	set	6
+   316  0006                     _PORTB	set	6
+   317  0009                     _PORTE	set	9
    318  0001                     _TMR0	set	1
    319  0008                     _PORTD	set	8
    320  0005                     _PORTA	set	5
@@ -592,8 +592,8 @@ Microchip MPLAB XC8 C Compiler v2.31 (Free license) build 20201012212115 Og1
    578  0055  2858               	goto	l853
    579  0056                     u100:
    580  0056                     l851:
-   581  0056  3010               	movlw	16
-   582  0057  0088               	movwf	8	;volatile
+   581  0056  3004               	movlw	4
+   582  0057  0089               	movwf	9	;volatile
    583  0058                     l853:
    584  0058  189F               	btfsc	31,1	;volatile
    585  0059  285B               	goto	u111
@@ -1599,7 +1599,7 @@ EEDATA             100      0       0       0        0.0%
 
 
 Microchip Technology PIC Macro Assembler V2.31 build 20201012212115 
-Symbol Table                                                                                   Tue Jul 20 01:47:52 2021
+Symbol Table                                                                                   Tue Jul 20 01:50:44 2021
 
                       pc 0002                       u15 00C5                       _t7 00D9  
                      fsr 0004                      ?_t7 0077                      l122 00ED  
