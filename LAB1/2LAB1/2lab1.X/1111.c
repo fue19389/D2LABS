@@ -3,8 +3,8 @@
 //Autor: Gerardo Fuentes
 //Compilador: XC8, MPLABX V5.45
 
-//Programa: contador  interrupción
-//Hardware: LEDS 
+//Programa: Librerias, ADC, T0, RB
+//Hardware: Leds, transistores, 7segmentos
 /*------------------------------------------------------------------------------
                         BITS DE CONFIGURACIÓN
 ------------------------------------------------------------------------------*/
@@ -37,7 +37,7 @@
 #include <xc.h>
 #include <stdio.h>
 #include <stdlib.h>
-#include "adc_to_7seg.h"
+#include "adc_to_7seg.h"  //Implementación primera librería
 
 /*------------------------------------------------------------------------------
 DIRECTIVAS DEL PROCESADOR
@@ -110,7 +110,7 @@ void int_t0(){
     else if (cont == 0X01){   //Segundo ciclo display 7seg decenas
         PORTA = ddisp;
         PORTD = 0x08;         //Enable del display 7seg decenas
-        cont = 0x00;               //Incrementar variable de ciclo
+        cont = 0x00;          //Incrementar variable de ciclo
     }
  
     TMR0 = 254;               //N para el TIMER0 

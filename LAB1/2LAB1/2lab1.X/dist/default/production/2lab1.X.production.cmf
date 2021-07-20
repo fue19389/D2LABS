@@ -33,7 +33,7 @@ idataBANK0 CODE 0 138 138 10 2
 dataBANK0 BANK0 1 20 20 10 1
 bssCOMMON COMMON 1 70 70 7 1
 config CONFIG 4 2007 2007 2 2
-$C:\Users\gerar\AppData\Local\Temp\sfac.o
+$C:\Users\gerar\AppData\Local\Temp\sb08.o
 reset_vec CODE 0 0 0 3 2
 end_init CODE 0 C C 3 2
 config CONFIG 4 2007 2007 2 2
@@ -82,28 +82,28 @@ STRING 168-1FFF 2
 # All other numeric values are in decimal.
 %LINETAB
 $dist/default/production\2lab1.X.production.o
-F cinit CODE >672:C:\Users\gerar\AppData\Local\Temp\sfac.s
-F cinit CODE >675:C:\Users\gerar\AppData\Local\Temp\sfac.s
-F cinit CODE >740:C:\Users\gerar\AppData\Local\Temp\sfac.s
-10 cinit CODE >741:C:\Users\gerar\AppData\Local\Temp\sfac.s
-11 cinit CODE >742:C:\Users\gerar\AppData\Local\Temp\sfac.s
-12 cinit CODE >743:C:\Users\gerar\AppData\Local\Temp\sfac.s
-13 cinit CODE >744:C:\Users\gerar\AppData\Local\Temp\sfac.s
-14 cinit CODE >745:C:\Users\gerar\AppData\Local\Temp\sfac.s
-15 cinit CODE >746:C:\Users\gerar\AppData\Local\Temp\sfac.s
-16 cinit CODE >747:C:\Users\gerar\AppData\Local\Temp\sfac.s
-17 cinit CODE >748:C:\Users\gerar\AppData\Local\Temp\sfac.s
-18 cinit CODE >749:C:\Users\gerar\AppData\Local\Temp\sfac.s
-1D cinit CODE >753:C:\Users\gerar\AppData\Local\Temp\sfac.s
-1E cinit CODE >754:C:\Users\gerar\AppData\Local\Temp\sfac.s
-1F cinit CODE >755:C:\Users\gerar\AppData\Local\Temp\sfac.s
-20 cinit CODE >756:C:\Users\gerar\AppData\Local\Temp\sfac.s
-21 cinit CODE >757:C:\Users\gerar\AppData\Local\Temp\sfac.s
-22 cinit CODE >758:C:\Users\gerar\AppData\Local\Temp\sfac.s
-23 cinit CODE >759:C:\Users\gerar\AppData\Local\Temp\sfac.s
-24 cinit CODE >765:C:\Users\gerar\AppData\Local\Temp\sfac.s
-24 cinit CODE >767:C:\Users\gerar\AppData\Local\Temp\sfac.s
-25 cinit CODE >768:C:\Users\gerar\AppData\Local\Temp\sfac.s
+F cinit CODE >672:C:\Users\gerar\AppData\Local\Temp\sb08.s
+F cinit CODE >675:C:\Users\gerar\AppData\Local\Temp\sb08.s
+F cinit CODE >740:C:\Users\gerar\AppData\Local\Temp\sb08.s
+10 cinit CODE >741:C:\Users\gerar\AppData\Local\Temp\sb08.s
+11 cinit CODE >742:C:\Users\gerar\AppData\Local\Temp\sb08.s
+12 cinit CODE >743:C:\Users\gerar\AppData\Local\Temp\sb08.s
+13 cinit CODE >744:C:\Users\gerar\AppData\Local\Temp\sb08.s
+14 cinit CODE >745:C:\Users\gerar\AppData\Local\Temp\sb08.s
+15 cinit CODE >746:C:\Users\gerar\AppData\Local\Temp\sb08.s
+16 cinit CODE >747:C:\Users\gerar\AppData\Local\Temp\sb08.s
+17 cinit CODE >748:C:\Users\gerar\AppData\Local\Temp\sb08.s
+18 cinit CODE >749:C:\Users\gerar\AppData\Local\Temp\sb08.s
+1D cinit CODE >753:C:\Users\gerar\AppData\Local\Temp\sb08.s
+1E cinit CODE >754:C:\Users\gerar\AppData\Local\Temp\sb08.s
+1F cinit CODE >755:C:\Users\gerar\AppData\Local\Temp\sb08.s
+20 cinit CODE >756:C:\Users\gerar\AppData\Local\Temp\sb08.s
+21 cinit CODE >757:C:\Users\gerar\AppData\Local\Temp\sb08.s
+22 cinit CODE >758:C:\Users\gerar\AppData\Local\Temp\sb08.s
+23 cinit CODE >759:C:\Users\gerar\AppData\Local\Temp\sb08.s
+24 cinit CODE >765:C:\Users\gerar\AppData\Local\Temp\sb08.s
+24 cinit CODE >767:C:\Users\gerar\AppData\Local\Temp\sb08.s
+25 cinit CODE >768:C:\Users\gerar\AppData\Local\Temp\sb08.s
 4 intentry CODE >72:C:\Users\gerar\Desktop\UVG\6to Semestre\Digital_2\D2LABS\LAB1\2lab1.X\1111.c
 127 text12 CODE >96:C:\Users\gerar\Desktop\UVG\6to Semestre\Digital_2\D2LABS\LAB1\2lab1.X\1111.c
 127 text12 CODE >97:C:\Users\gerar\Desktop\UVG\6to Semestre\Digital_2\D2LABS\LAB1\2lab1.X\1111.c
@@ -215,23 +215,23 @@ EC text1 CODE >154:C:\Users\gerar\Desktop\UVG\6to Semestre\Digital_2\D2LABS\LAB1
 57 maintext CODE >141:C:\Users\gerar\Desktop\UVG\6to Semestre\Digital_2\D2LABS\LAB1\2lab1.X\1111.c
 5B maintext CODE >142:C:\Users\gerar\Desktop\UVG\6to Semestre\Digital_2\D2LABS\LAB1\2lab1.X\1111.c
 5F maintext CODE >143:C:\Users\gerar\Desktop\UVG\6to Semestre\Digital_2\D2LABS\LAB1\2lab1.X\1111.c
-102 inittext CODE >714:C:\Users\gerar\AppData\Local\Temp\sfac.s
-102 inittext CODE >715:C:\Users\gerar\AppData\Local\Temp\sfac.s
-103 inittext CODE >716:C:\Users\gerar\AppData\Local\Temp\sfac.s
-104 inittext CODE >717:C:\Users\gerar\AppData\Local\Temp\sfac.s
-105 inittext CODE >718:C:\Users\gerar\AppData\Local\Temp\sfac.s
-106 inittext CODE >725:C:\Users\gerar\AppData\Local\Temp\sfac.s
-106 inittext CODE >726:C:\Users\gerar\AppData\Local\Temp\sfac.s
-10B inittext CODE >727:C:\Users\gerar\AppData\Local\Temp\sfac.s
-10C inittext CODE >728:C:\Users\gerar\AppData\Local\Temp\sfac.s
-10D inittext CODE >729:C:\Users\gerar\AppData\Local\Temp\sfac.s
-10E inittext CODE >730:C:\Users\gerar\AppData\Local\Temp\sfac.s
-10F inittext CODE >731:C:\Users\gerar\AppData\Local\Temp\sfac.s
-110 inittext CODE >732:C:\Users\gerar\AppData\Local\Temp\sfac.s
-111 inittext CODE >733:C:\Users\gerar\AppData\Local\Temp\sfac.s
-112 inittext CODE >734:C:\Users\gerar\AppData\Local\Temp\sfac.s
-113 inittext CODE >735:C:\Users\gerar\AppData\Local\Temp\sfac.s
-114 inittext CODE >736:C:\Users\gerar\AppData\Local\Temp\sfac.s
+102 inittext CODE >714:C:\Users\gerar\AppData\Local\Temp\sb08.s
+102 inittext CODE >715:C:\Users\gerar\AppData\Local\Temp\sb08.s
+103 inittext CODE >716:C:\Users\gerar\AppData\Local\Temp\sb08.s
+104 inittext CODE >717:C:\Users\gerar\AppData\Local\Temp\sb08.s
+105 inittext CODE >718:C:\Users\gerar\AppData\Local\Temp\sb08.s
+106 inittext CODE >725:C:\Users\gerar\AppData\Local\Temp\sb08.s
+106 inittext CODE >726:C:\Users\gerar\AppData\Local\Temp\sb08.s
+10B inittext CODE >727:C:\Users\gerar\AppData\Local\Temp\sb08.s
+10C inittext CODE >728:C:\Users\gerar\AppData\Local\Temp\sb08.s
+10D inittext CODE >729:C:\Users\gerar\AppData\Local\Temp\sb08.s
+10E inittext CODE >730:C:\Users\gerar\AppData\Local\Temp\sb08.s
+10F inittext CODE >731:C:\Users\gerar\AppData\Local\Temp\sb08.s
+110 inittext CODE >732:C:\Users\gerar\AppData\Local\Temp\sb08.s
+111 inittext CODE >733:C:\Users\gerar\AppData\Local\Temp\sb08.s
+112 inittext CODE >734:C:\Users\gerar\AppData\Local\Temp\sb08.s
+113 inittext CODE >735:C:\Users\gerar\AppData\Local\Temp\sb08.s
+114 inittext CODE >736:C:\Users\gerar\AppData\Local\Temp\sb08.s
 # %SYMTAB Section
 # An enumeration of all symbols in the program.
 # The beginning of the section is indicated by %SYMTAB.
@@ -260,25 +260,25 @@ __Hstrings 0 0 ABS 0 strings -
 _IOCB 96 0 ABS 0 - dist/default/production\2lab1.X.production.o
 _TMR0 1 0 ABS 0 - dist/default/production\2lab1.X.production.o
 _WPUB 95 0 ABS 0 - dist/default/production\2lab1.X.production.o
-___sp 0 0 STACK 2 stack C:\Users\gerar\AppData\Local\Temp\sfac.o
+___sp 0 0 STACK 2 stack C:\Users\gerar\AppData\Local\Temp\sb08.o
 _cont 72 0 COMMON 1 bssCOMMON dist/default/production\2lab1.X.production.o
 _main 50 0 CODE 0 maintext dist/default/production\2lab1.X.production.o
 _num0 75 0 COMMON 1 bssCOMMON dist/default/production\2lab1.X.production.o
 _num1 74 0 COMMON 1 bssCOMMON dist/default/production\2lab1.X.production.o
 btemp 7E 0 ABS 0 - dist/default/production\2lab1.X.production.o
-start 18 0 CODE 0 init C:\Users\gerar\AppData\Local\Temp\sfac.o
+start 18 0 CODE 0 init C:\Users\gerar\AppData\Local\Temp\sb08.o
 __size_of_main 0 0 ABS 0 - dist/default/production\2lab1.X.production.o
 __HbssCOMMON 0 0 ABS 0 bssCOMMON -
 _OPTION_REGbits 81 0 ABS 0 - dist/default/production\2lab1.X.production.o
 __LidataBANK0 0 0 ABS 0 idataBANK0 -
 __Hpowerup 0 0 CODE 0 powerup -
 __size_of_int_iocb 0 0 ABS 0 - dist/default/production\2lab1.X.production.o
-intlevel0 0 0 ENTRY 0 functab C:\Users\gerar\AppData\Local\Temp\sfac.o
-intlevel1 0 0 ENTRY 0 functab C:\Users\gerar\AppData\Local\Temp\sfac.o
-intlevel2 0 0 ENTRY 0 functab C:\Users\gerar\AppData\Local\Temp\sfac.o
-intlevel3 0 0 ENTRY 0 functab C:\Users\gerar\AppData\Local\Temp\sfac.o
-intlevel4 0 0 ENTRY 0 functab C:\Users\gerar\AppData\Local\Temp\sfac.o
-intlevel5 0 0 ENTRY 0 functab C:\Users\gerar\AppData\Local\Temp\sfac.o
+intlevel0 0 0 ENTRY 0 functab C:\Users\gerar\AppData\Local\Temp\sb08.o
+intlevel1 0 0 ENTRY 0 functab C:\Users\gerar\AppData\Local\Temp\sb08.o
+intlevel2 0 0 ENTRY 0 functab C:\Users\gerar\AppData\Local\Temp\sb08.o
+intlevel3 0 0 ENTRY 0 functab C:\Users\gerar\AppData\Local\Temp\sb08.o
+intlevel4 0 0 ENTRY 0 functab C:\Users\gerar\AppData\Local\Temp\sb08.o
+intlevel5 0 0 ENTRY 0 functab C:\Users\gerar\AppData\Local\Temp\sb08.o
 __LbssCOMMON 0 0 ABS 0 bssCOMMON -
 _OSCCONbits 8F 0 ABS 0 - dist/default/production\2lab1.X.production.o
 wtemp0 7E 0 ABS 0 - dist/default/production\2lab1.X.production.o
@@ -296,14 +296,14 @@ __Lmaintext 0 0 ABS 0 maintext -
 __end_of_cfg_io 182 0 CODE 0 text5 dist/default/production\2lab1.X.production.o
 __end_of_cfg_t0 2AA 0 CODE 0 text3 dist/default/production\2lab1.X.production.o
 __end_of_int_iocb 24E 0 CODE 0 text11 dist/default/production\2lab1.X.production.o
-___stackhi 0 0 ABS 0 - C:\Users\gerar\AppData\Local\Temp\sfac.o
-___stacklo 0 0 ABS 0 - C:\Users\gerar\AppData\Local\Temp\sfac.o
+___stackhi 0 0 ABS 0 - C:\Users\gerar\AppData\Local\Temp\sb08.o
+___stacklo 0 0 ABS 0 - C:\Users\gerar\AppData\Local\Temp\sb08.o
 __end_of_int_t0 152 0 CODE 0 text10 dist/default/production\2lab1.X.production.o
 start_initialization 1E 0 CODE 0 cinit dist/default/production\2lab1.X.production.o
 __size_of_cfg_adc 0 0 ABS 0 - dist/default/production\2lab1.X.production.o
 __size_of_cfg_clk 0 0 ABS 0 - dist/default/production\2lab1.X.production.o
 __end_of_t7 1DA 0 CODE 0 text1 dist/default/production\2lab1.X.production.o
-___int_sp 0 0 STACK 2 stack C:\Users\gerar\AppData\Local\Temp\sfac.o
+___int_sp 0 0 STACK 2 stack C:\Users\gerar\AppData\Local\Temp\sb08.o
 __end_of_int_adc 270 0 CODE 0 text12 dist/default/production\2lab1.X.production.o
 __Hbank0 0 0 ABS 0 bank0 -
 __Hbank1 0 0 ABS 0 bank1 -
@@ -358,7 +358,7 @@ __end_of_cfg_clk 2B8 0 CODE 0 text7 dist/default/production\2lab1.X.production.o
 __end_of_hex 1B0 0 CODE 0 text2 dist/default/production\2lab1.X.production.o
 __end_of_isr 114 0 CODE 0 text9 dist/default/production\2lab1.X.production.o
 __Lintentry 8 0 CODE 0 intentry -
-reset_vec 0 0 CODE 0 reset_vec C:\Users\gerar\AppData\Local\Temp\sfac.o
+reset_vec 0 0 CODE 0 reset_vec C:\Users\gerar\AppData\Local\Temp\sb08.o
 _int_t0 114 0 CODE 0 text10 dist/default/production\2lab1.X.production.o
 __pdataBANK0 20 0 BANK0 1 dataBANK0 dist/default/production\2lab1.X.production.o
 __ptext10 114 0 CODE 0 text10 dist/default/production\2lab1.X.production.o
