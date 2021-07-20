@@ -2697,6 +2697,7 @@ extern char * ftoa(float f, int * status);
 # 15 "./adc_to_7seg.h"
 unsigned char num0 = 0;
 unsigned char num1 = 0;
+unsigned char adcdig = 0;
 void hex();
 # 37 "1111.c" 2
 # 47 "1111.c"
@@ -2748,7 +2749,7 @@ void int_iocb(){
 
 void int_adc(){
     if(ADCON0bits.CHS == 5){
-        PORTD = ADRESH;
+        adcdig = ADRESH;
     }
     PIR1bits.ADIF = 0;
 }
@@ -2757,12 +2758,12 @@ void int_t0(){
     PORTA = 0X00;
     if (cont == 0X00){
         PORTA = udisp;
-        PORTB = 0x04;
+        PORTD = 0x04;
         cont++;
     }
     else if (cont == 0X01){
         PORTA = ddisp;
-        PORTB = 0x08;
+        PORTD = 0x08;
         cont = 0x00;
     }
 
@@ -2792,9 +2793,7 @@ void main () {
             ADCON0bits.GO = 1;
          }
     }
-    return;
 }
-
 
 
 

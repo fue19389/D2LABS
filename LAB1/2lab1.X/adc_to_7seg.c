@@ -3,6 +3,6 @@
 #include "adc_to_7seg.h"
 
 void hex(void){
-    num0 = PORTD & 0x0F;
-    num1 = PORTD & 0xF0 ;
+    num0 = adcdig & 0x0F;
+    num1 = (adcdig & 0xF0)/(0x10);
 }

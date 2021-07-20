@@ -1,7 +1,4 @@
 Version 4.0 HI-TECH Software Intermediate Code
-"352 C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f887.h
-[; ;C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f887.h: 352: extern volatile unsigned char PORTD __attribute__((address(0x008)));
-[v _PORTD `Vuc ~T0 @X0 0 e@8 ]
 "54 C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f887.h
 [; ;C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f887.h: 54: __asm("INDF equ 00h");
 [; <" INDF equ 00h ;# ">
@@ -248,6 +245,12 @@ Version 4.0 HI-TECH Software Intermediate Code
 [i _num1
 -> -> 0 `i `uc
 ]
+"17
+[; ;./adc_to_7seg.h: 17: unsigned char adcdig = 0;
+[v _adcdig `uc ~T0 @X0 1 e ]
+[i _adcdig
+-> -> 0 `i `uc
+]
 "5 adc_to_7seg.c
 [; ;adc_to_7seg.c: 5: void hex(void){
 [v _hex `(v ~T0 @X0 1 ef ]
@@ -255,11 +258,11 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e :U _hex ]
 [f ]
 "6
-[; ;adc_to_7seg.c: 6:     num0 = PORTD & 0x0F;
-[e = _num0 -> & -> _PORTD `i -> 15 `i `uc ]
+[; ;adc_to_7seg.c: 6:     num0 = adcdig & 0x0F;
+[e = _num0 -> & -> _adcdig `i -> 15 `i `uc ]
 "7
-[; ;adc_to_7seg.c: 7:     num1 = PORTD & 0xF0 ;
-[e = _num1 -> & -> _PORTD `i -> 240 `i `uc ]
+[; ;adc_to_7seg.c: 7:     num1 = (adcdig & 0xF0)/(0x10);
+[e = _num1 -> / & -> _adcdig `i -> 240 `i -> 16 `i `uc ]
 "8
 [; ;adc_to_7seg.c: 8: }
 [e :UE 138 ]

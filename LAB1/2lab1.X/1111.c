@@ -92,7 +92,7 @@ void int_iocb(){
 
 void int_adc(){               //Interrupción ADC
     if(ADCON0bits.CHS == 5){  //Primer ciclo de ADC (ADRESH A PUERTO)
-        PORTD = ADRESH;
+        adcdig = ADRESH;
     }
     PIR1bits.ADIF = 0;        //Clear de bandera ADC
 }
@@ -101,12 +101,12 @@ void int_t0(){
     PORTA = 0X00;             //Clear del puertof 
     if (cont == 0X00){        //Primer ciclo display 7seg unidades
         PORTA = udisp;
-        PORTB = 0x04;         //Enable del display 7seg unidades
+        PORTD = 0x04;         //Enable del display 7seg unidades
         cont++;               //Incrementar variable de ciclo
     }
     else if (cont == 0X01){   //Segundo ciclo display 7seg decenas
         PORTA = ddisp;
-        PORTB = 0x08;         //Enable del display 7seg decenas
+        PORTD = 0x08;         //Enable del display 7seg decenas
         cont = 0x00;               //Incrementar variable de ciclo
     }
  
@@ -129,16 +129,14 @@ void main () {
                               LOOP PRINCIPAL
 ------------------------------------------------------------------------------*/
     while(1){                 //Loop principal   
-        t7();              //Call para conversión a decimal
+        t7();                 //Call para conversión a HEX
         
         if(ADCON0bits.GO == 0){
             __delay_us(100);           //Delay para no traslapar conversiones
             ADCON0bits.GO = 1;
-         }  
+         }
     }
-    return;
 }
-
 /*------------------------------------------------------------------------------
                                  FUNCIONES
 ------------------------------------------------------------------------------*/
@@ -188,7 +186,7 @@ void cfg_inte(){
     return;
 }  
 void cfg_iocb(){
-    IOCB = 0X03 ;        // Habilitar PORTC 0 y 1 para interrupción
+    IOCB = 0X03 ;        // Habilitar PORTB 0 y 1 para interrupción
     INTCONbits.RBIF = 0; // Clear de la bandera B
     
     return;   

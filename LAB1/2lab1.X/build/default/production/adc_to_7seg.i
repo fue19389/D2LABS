@@ -2629,11 +2629,12 @@ extern __bank0 __bit __timeout;
 
 unsigned char num0 = 0;
 unsigned char num1 = 0;
+unsigned char adcdig = 0;
 void hex();
 # 3 "adc_to_7seg.c" 2
 
 
 void hex(void){
-    num0 = PORTD & 0x0F;
-    num1 = PORTD & 0xF0 ;
+    num0 = adcdig & 0x0F;
+    num1 = (adcdig & 0xF0)/(0x10);
 }

@@ -14,6 +14,7 @@
 
 unsigned char num0 = 0;
 unsigned char num1 = 0;
+unsigned char adcdig = 0;
 void hex();
 
 #endif	/* XC_HEADER_TEMPLATE_H */
