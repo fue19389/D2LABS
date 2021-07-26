@@ -2560,11 +2560,11 @@ void Lcd_Port(char a) {
 }
 
 void Lcd_Cmd(char a) {
-    PORTCbits.RC6 = 0;
+    PORTCbits.RC0 = 0;
     Lcd_Port(a);
-    RC7 = 1;
+    RC1 = 1;
     _delay((unsigned long)((4)*(8000000/4000.0)));
-    RC7 = 0;
+    RC1 = 0;
 }
 
 void Lcd_Clear(void) {
@@ -2601,11 +2601,11 @@ void Lcd_Write_Char(char a) {
 
 
 
-    PORTCbits.RC6 = 1;
+    PORTCbits.RC0 = 1;
     Lcd_Port(a);
-    RC7 = 1;
+    RC1 = 1;
     _delay((unsigned long)((40)*(8000000/4000000.0)));
-    RC7 = 0;
+    RC1 = 0;
     _delay((unsigned long)((40)*(8000000/4000000.0)));
 
 
