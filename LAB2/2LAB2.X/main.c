@@ -64,6 +64,7 @@ void cfg_adc(void);
 void cfg_inte(void);
 void cfg_clk(void);
 void int_adc(void);
+void int_uart(void);
 void cfg_usart(void);
 void send_crct(char st[]);
 void send_char(char dato);
@@ -72,12 +73,15 @@ double conv(unsigned char aa);
 
 unsigned char V1;
 unsigned char V2;
+unsigned char V3 = 0;
 
-char f[10];
+char f1[10];
+char f2[10];
+char op1 = 0;
 double v11;
 double v22;
-double g = 0;
-char val = 0;
+double v33;
+
 
 /*------------------------------------------------------------------------------
 INTERRUPCIONES
@@ -88,21 +92,47 @@ void __interrupt() isr(void){
     if (PIR1bits.ADIF){       //Revisión bandera ADC
         int_adc();
     }
+    if (PIR1bits.RCIF){       //Revisión entrada UART
+        int_uart();
+    }
 }
 
 void int_adc(){               //Interrupción ADC
     if(ADCON0bits.CHS == 5){  //Primer ciclo de ADC (ADRESH A PUERTO)
         V1 = ADRESH;
-        ADCON0bits.CHS = 6;
+        /*PORTA = ADRESH;*/
         }   
-    else if(ADCON0bits.CHS == 6){                     //Segundo ciclo de ADC (ADRESH A PUERTO)
+    else{                     //Segundo ciclo de ADC (ADRESH A PUERTO)
         V2 = ADRESH;
-        ADCON0bits.CHS = 5;
         }   
     PIR1bits.ADIF = 0;        //Clear de bandera ADC
     
 }
 
+void int_uart(){
+    TXREG = '\f';
+    if (RCREG == 43){
+        TXREG = 43;
+        __delay_ms(1);
+        TXREG = 0x0D;                    // Realizar Enter
+        
+        op1 = 1;                         // Set bandera caracter  
+            while (op1 == 1){                // Loop para caracter
+                if (RCREG != 43){            // Esperar un nuevo dato
+                    PORTA = RCREG;           // Envío a PORTA
+                    __delay_ms(1500);        // Delay para transmitir
+                    op1 = 0;                 // Clear bandera caracter
+                }
+        //PORTA++;
+        __delay_ms(3000);   
+    }
+    if (RCREG == 45){
+        TXREG = 45;
+        //PORTA--;
+        __delay_ms(3000);   
+    }
+}
+}    
 /*------------------------------------------------------------------------------
 MAIN
 ------------------------------------------------------------------------------*/
@@ -114,36 +144,41 @@ void main() {
     cfg_adc();
     cfg_usart();
     
+    Lcd_Init();
+    ADCON0bits.GO = 1;
   
-  Lcd_Init();
-  ADCON0bits.GO = 1;
-  
-  while(1){
+    while(1){
+    
       Lcd_Clear();
       Lcd_Set_Cursor(1,1);
-      Lcd_Write_String("S1:   S2:   S3:");
+      Lcd_Write_String(" S1:   S2:  S3:  ");
       v11 = conv(V1);
       v22 = conv(V2);
+      v33 = conv(V3);
       
-   
-    
+
       Lcd_Set_Cursor(2,1);
-      sprintf(f, "%3.2fV",v11);
-      Lcd_Write_String(f);
+      sprintf(f1, "%3.1fV %3.2fV %3.2fV",v11, v22, v33);
+      Lcd_Write_String(f1);
 
-    
-   
+
       TXREG = '\f';
-      send_crct(f);
+      send_crct(f1);
+     
     
-      __delay_ms(2000);
-
+      __delay_ms(100);
+      
       if(ADCON0bits.GO == 0){  //Proceso al acabar conversión
-              __delay_us(100);     //Delay para no traslapar conversiones
-              ADCON0bits.GO = 1;
+        if (ADCON0bits.CHS == 5){
+            ADCON0bits.CHS = 6;
         }
-      return;
-    }
+        else{
+            ADCON0bits.CHS = 5;
+          }
+        __delay_us(50);     //Delay para no traslapar conversiones
+        ADCON0bits.GO = 1;
+      }  
+   }
 }
 
 /*------------------------------------------------------------------------------
@@ -158,6 +193,7 @@ void cfg_io(void) {
     TRISA = 0X00;
     TRISD = 0X00;
     TRISE = 0x03;   //Entradas RE0 y RE1
+    PORTA = 0X00;
     return;
 }
 
@@ -201,6 +237,8 @@ void cfg_inte(){
     INTCONbits.GIE = 1;  //Enable Interrupciones globales
     INTCONbits.PEIE = 1; //Enable interrupciones perifericas
     PIE1bits.RCIE = 1;   //Enable interrupcion del UART
+    PIE1bits.ADIE = 1;   //Enable interrupción del ADC
+    PIR1bits.ADIF = 0;
 }
 
 /*------------------------------------------------------------------------------
