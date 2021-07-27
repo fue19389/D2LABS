@@ -2896,6 +2896,7 @@ void cfg_adc(void);
 void cfg_inte(void);
 void cfg_clk(void);
 void int_adc(void);
+void int_uart(void);
 void cfg_usart(void);
 void send_crct(char st[]);
 void send_char(char dato);
@@ -2904,19 +2905,14 @@ double conv(unsigned char aa);
 
 unsigned char V1;
 unsigned char V2;
+unsigned char V3 = 0;
 
-<<<<<<< HEAD
-char bmenu = 1;
 char f1[10];
 char f2[10];
-char op1 = 0;
-=======
-char f[10];
->>>>>>> parent of a4453d3 (Todo funciona menos último contador)
 double v11;
 double v22;
-double g = 0;
-char val = 0;
+double v33;
+
 
 
 
@@ -2927,49 +2923,36 @@ void __attribute__((picinterrupt(("")))) isr(void){
     if (PIR1bits.ADIF){
         int_adc();
     }
+    if (PIR1bits.RCIF){
+        int_uart();
+    }
 }
 
 void int_adc(){
     if(ADCON0bits.CHS == 5){
         V1 = ADRESH;
-        ADCON0bits.CHS = 6;
+
         }
-    else if(ADCON0bits.CHS == 6){
+    else{
         V2 = ADRESH;
-        ADCON0bits.CHS = 5;
         }
     PIR1bits.ADIF = 0;
 
 }
 
-<<<<<<< HEAD
 void int_uart(){
-    TXREG = 12;
+    TXREG = '\f';
     if (RCREG == 43){
-        TXREG = 42;
-        _delay((unsigned long)((100)*(8000000/4000.0)));
-        TXREG = 0x0D;
-
-        op1 = 1;
-            while (op1 == 1){
-                if (RCREG != 43){
-                    PORTA = RCREG;
-                    _delay((unsigned long)((1500)*(8000000/4000.0)));
-                    op1 = 0;
-                }
-
+        TXREG = 43;
+        PORTA++;
         _delay((unsigned long)((3000)*(8000000/4000.0)));
     }
     if (RCREG == 45){
         TXREG = 45;
-
+        PORTA--;
         _delay((unsigned long)((3000)*(8000000/4000.0)));
     }
-        bmenu = 1;
 }
-}
-=======
->>>>>>> parent of a4453d3 (Todo funciona menos último contador)
 
 
 
@@ -2981,58 +2964,41 @@ void main() {
     cfg_adc();
     cfg_usart();
 
+    Lcd_Init();
+    ADCON0bits.GO = 1;
 
-  Lcd_Init();
-  ADCON0bits.GO = 1;
+    while(1){
 
-  while(1){
       Lcd_Clear();
       Lcd_Set_Cursor(1,1);
-      Lcd_Write_String("S1:   S2:   S3:");
+      Lcd_Write_String(" S1:   S2:  S3:  ");
       v11 = conv(V1);
       v22 = conv(V2);
-
+      v33 = conv(V3);
 
 
       Lcd_Set_Cursor(2,1);
-      sprintf(f, "%3.2fV",v11);
-      Lcd_Write_String(f);
+      sprintf(f1, "%3.1fV %3.2fV %3.2fV",v11, v22, v33);
+      Lcd_Write_String(f1);
 
-      if(PIR1bits.TXIF){
-
-<<<<<<< HEAD
-        if (bmenu == 1){
-            TXREG = 12;
-            _delay((unsigned long)((1)*(8000000/4000.0)));
-            TXREG = f1;
-            _delay((unsigned long)((1)*(8000000/4000.0)));
-            }
-            bmenu = 0;
-        }
-=======
->>>>>>> parent of a4453d3 (Todo funciona menos último contador)
 
       TXREG = '\f';
-      send_crct(f);
+      send_crct(f1);
 
-      _delay((unsigned long)((2000)*(8000000/4000.0)));
+
+      _delay((unsigned long)((100)*(8000000/4000.0)));
 
       if(ADCON0bits.GO == 0){
-              _delay((unsigned long)((100)*(8000000/4000000.0)));
-              ADCON0bits.GO = 1;
+        if (ADCON0bits.CHS == 5){
+            ADCON0bits.CHS = 6;
         }
-<<<<<<< HEAD
         else{
             ADCON0bits.CHS = 5;
           }
         _delay((unsigned long)((50)*(8000000/4000000.0)));
         ADCON0bits.GO = 1;
-    }
-}
-=======
-      return;
-    }
->>>>>>> parent of a4453d3 (Todo funciona menos último contador)
+      }
+   }
 }
 
 
@@ -3047,6 +3013,7 @@ void cfg_io(void) {
     TRISA = 0X00;
     TRISD = 0X00;
     TRISE = 0x03;
+    PORTA = 0X00;
     return;
 }
 
@@ -3090,8 +3057,26 @@ void cfg_inte(){
     INTCONbits.GIE = 1;
     INTCONbits.PEIE = 1;
     PIE1bits.RCIE = 1;
+    PIE1bits.ADIE = 1;
+    PIR1bits.ADIF = 0;
 }
-# 269 "main.c"
+
+
+
+
+void send_crct(char st[]){
+    int i = 0;
+    while (st[i] != 0){
+        send_char(st[i]);
+        i++;
+    }
+}
+
+void send_char(char dato){
+    while(!TXIF);
+    TXREG = dato;
+}
+
 double conv(unsigned char aa){
     double result;
     result = aa*0.0196;
