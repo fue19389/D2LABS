@@ -2907,6 +2907,7 @@ unsigned char V1;
 unsigned char V2;
 unsigned char V3 = 0;
 
+char bmenu = 1;
 char f1[10];
 char f2[10];
 char op1 = 0;
@@ -2942,10 +2943,10 @@ void int_adc(){
 }
 
 void int_uart(){
-    TXREG = '\f';
+    TXREG = 12;
     if (RCREG == 43){
-        TXREG = 43;
-        _delay((unsigned long)((1)*(8000000/4000.0)));
+        TXREG = 42;
+        _delay((unsigned long)((100)*(8000000/4000.0)));
         TXREG = 0x0D;
 
         op1 = 1;
@@ -2963,6 +2964,7 @@ void int_uart(){
 
         _delay((unsigned long)((3000)*(8000000/4000.0)));
     }
+        bmenu = 1;
 }
 }
 
@@ -2993,9 +2995,16 @@ void main() {
       sprintf(f1, "%3.1fV %3.2fV %3.2fV",v11, v22, v33);
       Lcd_Write_String(f1);
 
+      if(PIR1bits.TXIF){
 
-      TXREG = '\f';
-      send_crct(f1);
+        if (bmenu == 1){
+            TXREG = 12;
+            _delay((unsigned long)((1)*(8000000/4000.0)));
+            TXREG = f1;
+            _delay((unsigned long)((1)*(8000000/4000.0)));
+            }
+            bmenu = 0;
+        }
 
 
       _delay((unsigned long)((100)*(8000000/4000.0)));
@@ -3009,8 +3018,8 @@ void main() {
           }
         _delay((unsigned long)((50)*(8000000/4000000.0)));
         ADCON0bits.GO = 1;
-      }
-   }
+    }
+}
 }
 
 
@@ -3072,23 +3081,7 @@ void cfg_inte(){
     PIE1bits.ADIE = 1;
     PIR1bits.ADIF = 0;
 }
-
-
-
-
-void send_crct(char st[]){
-    int i = 0;
-    while (st[i] != 0){
-        send_char(st[i]);
-        i++;
-    }
-}
-
-void send_char(char dato){
-    while(!TXIF);
-    TXREG = dato;
-}
-
+# 269 "main.c"
 double conv(unsigned char aa){
     double result;
     result = aa*0.0196;

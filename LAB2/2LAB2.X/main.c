@@ -75,6 +75,7 @@ unsigned char V1;
 unsigned char V2;
 unsigned char V3 = 0;
 
+char bmenu = 1;
 char f1[10];
 char f2[10];
 char op1 = 0;
@@ -110,10 +111,10 @@ void int_adc(){               //Interrupción ADC
 }
 
 void int_uart(){
-    TXREG = '\f';
+    TXREG = 12;
     if (RCREG == 43){
-        TXREG = 43;
-        __delay_ms(1);
+        TXREG = 42;
+        __delay_ms(100);
         TXREG = 0x0D;                    // Realizar Enter
         
         op1 = 1;                         // Set bandera caracter  
@@ -131,6 +132,7 @@ void int_uart(){
         //PORTA--;
         __delay_ms(3000);   
     }
+        bmenu = 1;
 }
 }    
 /*------------------------------------------------------------------------------
@@ -161,11 +163,18 @@ void main() {
       sprintf(f1, "%3.1fV %3.2fV %3.2fV",v11, v22, v33);
       Lcd_Write_String(f1);
 
-
-      TXREG = '\f';
-      send_crct(f1);
-     
+      if(PIR1bits.TXIF){               // Bandera TXREG envío
+            
+        if (bmenu == 1){             // Revisión de bandera para menú
+            TXREG = 12;              // Clear consola
+            __delay_ms(1);
+            TXREG = f1; // Display virtual terminal
+            __delay_ms(1);       // Delay para transmitir
+            }
+            bmenu = 0;               // Clear de bandera menú
+        }            
     
+     
       __delay_ms(100);
       
       if(ADCON0bits.GO == 0){  //Proceso al acabar conversión
@@ -177,9 +186,9 @@ void main() {
           }
         __delay_us(50);     //Delay para no traslapar conversiones
         ADCON0bits.GO = 1;
-      }  
-   }
+    }  
 }
+}    
 
 /*------------------------------------------------------------------------------
 CONFIG GENERAL
@@ -244,7 +253,7 @@ void cfg_inte(){
 /*------------------------------------------------------------------------------
 FUNCIONES
 ------------------------------------------------------------------------------*/
-void send_crct(char st[]){
+/*void send_crct(char st[]){
     int i = 0;              //Se declara una variable que recorrera la cadena
     while (st[i] != 0){     //Mientras st no sea igual a 0
         send_char(st[i]);  //Se enviara el caracter por caracter
@@ -255,7 +264,7 @@ void send_crct(char st[]){
 void send_char(char dato){
     while(!TXIF);           //Mientras la bandera de transmisión sea 0
     TXREG = dato;           //Se envía el caracter
-}
+}*/
 
 double conv(unsigned char aa){
     double result;
