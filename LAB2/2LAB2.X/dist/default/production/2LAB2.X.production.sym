@@ -1,35 +1,34 @@
-___lwdiv@dividend 26 0 BANK0 1
-___lldiv@counter 2C 0 BANK0 1
-sprintf@fval CD 0 BANK1 1
-___awdiv@counter 29 0 BANK0 1
+___lwdiv@dividend 22 0 BANK0 1
+___lldiv@counter 78 0 COMMON 1
+sprintf@fval C5 0 BANK1 1
+___awdiv@counter 25 0 BANK0 1
+_f DA 0 BANK1 1
 sprintf@f A8 0 BANK1 1
 __size_of_Lcd_Cmd 0 0 ABS 0
-___lwdiv@counter 28 0 BANK0 1
-_V1 E6 0 BANK1 1
-_V2 E5 0 BANK1 1
-_f1 19A 0 BANK3 1
+___lwdiv@counter 26 0 BANK0 1
+_V1 6F 0 BANK0 1
+_V2 D9 0 BANK1 1
 __size_of_cfg_adc 0 0 ABS 0
 __size_of__Umul8_16 0 0 ABS 0
 _RD0 40 0 ABS 0
 _RC1 39 0 ABS 0
-_v11 E0 0 BANK1 1
+_v11 D5 0 BANK1 1
 _RD1 41 0 ABS 0
 _RD2 42 0 ABS 0
-_v22 DC 0 BANK1 1
+_v22 D1 0 BANK1 1
 _RD3 43 0 ABS 0
-_v33 D8 0 BANK1 1
 _RD4 44 0 ABS 0
 _RD5 45 0 ABS 0
 _RD6 46 0 ABS 0
 _RD7 47 0 ABS 0
 __S0 2000 0 ABS 0
-__S1 1A4 0 ABS 0
+__S1 E4 0 ABS 0
 __S2 0 0 ABS 0
 __S3 0 0 ABS 0
-_op1 78 0 COMMON 1
 __Hintentry C 0 CODE 0
 __Lintentry 4 0 CODE 0
 __pintentry 4 0 CODE 0
+<<<<<<< HEAD
 __end_of_Lcd_Write_String 1AF0 0 CODE 0
 _Lcd_Write_Char 1926 0 CODE 0
 __end_of___awdiv 1E0B 0 CODE 0
@@ -38,18 +37,34 @@ ___fladd@signs 6C 0 BANK0 1
 __end_of___fleq 1BD3 0 CODE 0
 ___flneg@f1 20 0 BANK0 1
 _main 805 0 CODE 0
+=======
+__end_of_Lcd_Write_String 1C99 0 CODE 0
+_Lcd_Write_Char 1B27 0 CODE 0
+__end_of___awdiv 874 0 CODE 0
+_isr 1ABE 0 CODE 0
+___fladd@signs 68 0 BANK0 1
+__end_of___fleq 1D79 0 CODE 0
+___flneg@f1 73 0 COMMON 1
+_TXIF 64 0 ABS 0
+_main 874 0 CODE 0
+>>>>>>> parent of a4453d3 (Todo funciona menos último contador)
 ___sp 0 0 STACK 2
 btemp 7E 0 ABS 0
-?___fladd 5C 0 BANK0 1
+?___fladd 58 0 BANK0 1
 start C 0 CODE 0
+<<<<<<< HEAD
 _conv 1A6A 0 CODE 0
 ___fltol@f1 5B 0 BANK0 1
 _RCREG 1A 0 ABS 0
+=======
+_conv 1C15 0 CODE 0
+___fltol@f1 57 0 BANK0 1
+_isdigit$1016 73 0 COMMON 1
+>>>>>>> parent of a4453d3 (Todo funciona menos último contador)
 _TRISA 85 0 ABS 0
 _TRISB 86 0 ABS 0
 _TRISC 87 0 ABS 0
 _TXREG 19 0 ABS 0
-_PORTA 5 0 ABS 0
 __size_of___fleq 0 0 ABS 0
 reset_vec 0 0 CODE 0
 _TRISD 88 0 ABS 0
@@ -58,61 +73,97 @@ __end_of___flmul C9D 0 CODE 0
 _TRISE 89 0 ABS 0
 _ANSEL 188 0 ABS 0
 wtemp0 7E 0 ABS 0
-?___flneg 20 0 BANK0 1
-scale@scl 5A 0 BANK0 1
+?___flneg 73 0 COMMON 1
+scale@scl 56 0 BANK0 1
 interrupt_function 4 0 CODE 0
 __Hconfig 2009 0 CONFIG 4
 __Lconfig 0 0 CONFIG 4
+<<<<<<< HEAD
 __end_of_cfg_adc 190C 0 CODE 0
 __powers_ 1010 0 STRING 0
 __end_of_Lcd_Init 1B83 0 CODE 0
+=======
+__end_of_cfg_adc 1B0D 0 CODE 0
+__powers_ 1810 0 STRING 0
+__end_of_Lcd_Init 1D29 0 CODE 0
+send_crct@i 75 0 COMMON 1
+>>>>>>> parent of a4453d3 (Todo funciona menos último contador)
 ?___llmod 20 0 BANK0 1
-?___awmod 20 0 BANK0 1
-__end_of__stringtab 1010 0 STRING 0
-?___lwmod 20 0 BANK0 1
+?___awmod 73 0 COMMON 1
+__end_of__stringtab 1810 0 STRING 0
+?___lwmod 73 0 COMMON 1
 ?___flsub A0 0 BANK1 1
 _scale C9D 0 CODE 0
+<<<<<<< HEAD
 _cfg_inte 18A6 0 CODE 0
+=======
+_cfg_inte 1A91 0 CODE 0
+>>>>>>> parent of a4453d3 (Todo funciona menos último contador)
 __Hram 0 0 ABS 0
 __Lram 0 0 ABS 0
-Lcd_Set_Cursor@b 21 0 BANK0 1
+Lcd_Set_Cursor@b 77 0 COMMON 1
 ___flge@ff1 20 0 BANK0 1
 __size_of_isr 0 0 ABS 0
+<<<<<<< HEAD
 _bmenu E7 0 BANK1 1
 ?_conv 48 0 BANK0 1
+=======
+?_conv 44 0 BANK0 1
+>>>>>>> parent of a4453d3 (Todo funciona menos último contador)
 ?_sprintf A8 0 BANK1 1
-___xxtofl 1E87 0 CODE 0
+___xxtofl 103B 0 CODE 0
 ___fleq@ff1 20 0 BANK0 1
 __Hfunctab 0 0 ENTRY 0
 __Lfunctab 0 0 ENTRY 0
+<<<<<<< HEAD
 __end_of_cfg_io 18CF 0 CODE 0
 ___flge@ff2 24 0 BANK0 1
 _Lcd_Init 1B36 0 CODE 0
 __tdiv_to_l_@quot 2C 0 BANK0 1
 ?___fltol 5B 0 BANK0 1
+=======
+__end_of_cfg_io 1010 0 CODE 0
+___flge@ff2 24 0 BANK0 1
+_Lcd_Init 1CDF 0 CODE 0
+__tdiv_to_l_@quot 28 0 BANK0 1
+?___fltol 57 0 BANK0 1
+>>>>>>> parent of a4453d3 (Todo funciona menos último contador)
 __Hcommon 0 0 ABS 0
+_scale$1202 52 0 BANK0 1
 __Lcommon 0 0 ABS 0
+<<<<<<< HEAD
 __end_of_Lcd_Write_Char 1941 0 CODE 0
+=======
+__end_of_Lcd_Write_Char 1B42 0 CODE 0
+>>>>>>> parent of a4453d3 (Todo funciona menos último contador)
 _PIE1bits 8C 0 ABS 0
 __Heeprom_data 0 0 EEDATA 3
 __Leeprom_data 0 0 EEDATA 3
-?___flmul 2E 0 BANK0 1
+?___flmul 2A 0 BANK0 1
 _PIR1bits C 0 ABS 0
 ___fleq@ff2 24 0 BANK0 1
-sprintf@ap BE 0 BANK1 1
+sprintf@ap B6 0 BANK1 1
 ___int_sp 0 0 STACK 2
 ?___lldiv 20 0 BANK0 1
+<<<<<<< HEAD
 ?___awdiv 24 0 BANK0 1
 _Lcd_Port 1A2C 0 CODE 0
+=======
+?___awdiv 20 0 BANK0 1
+_Lcd_Port 1BD7 0 CODE 0
+>>>>>>> parent of a4453d3 (Todo funciona menos último contador)
 _SPBRGH 9A 0 ABS 0
 _ANSELH 189 0 ABS 0
-?___lwdiv 24 0 BANK0 1
+?___lwdiv 20 0 BANK0 1
 _ADRESH 1E 0 ABS 0
 __Habs1 0 0 ABS 0
 __Labs1 0 0 ABS 0
+<<<<<<< HEAD
 _int_uart 1CD4 0 CODE 0
+=======
+>>>>>>> parent of a4453d3 (Todo funciona menos último contador)
 __Hsfr0 0 0 ABS 0
-__end_of__powers_ 1044 0 STRING 0
+__end_of__powers_ 1844 0 STRING 0
 __Lsfr0 0 0 ABS 0
 __Hsfr1 0 0 ABS 0
 __Lsfr1 0 0 ABS 0
@@ -121,17 +172,27 @@ __Hsfr2 0 0 ABS 0
 __Lsfr2 0 0 ABS 0
 __Hsfr3 0 0 ABS 0
 __Lsfr3 0 0 ABS 0
+<<<<<<< HEAD
+=======
+send_char@dato 73 0 COMMON 1
+>>>>>>> parent of a4453d3 (Todo funciona menos último contador)
 ?__tdiv_to_l_ 20 0 BANK0 1
-__Umul8_16@multiplier 26 0 BANK0 1
+__Umul8_16@multiplier 24 0 BANK0 1
 __size_of_cfg_usart 0 0 ABS 0
-__npowers_ 1044 0 STRING 0
-__end_of___fltol 1E87 0 CODE 0
+__npowers_ 1844 0 STRING 0
+__end_of___fltol 1F5C 0 CODE 0
 ___stackhi 0 0 ABS 0
+<<<<<<< HEAD
 __end_of___flsub 1C23 0 CODE 0
 conv@aa 54 0 BANK0 1
+=======
+__end_of___flsub 1DC9 0 CODE 0
+conv@aa 50 0 BANK0 1
+>>>>>>> parent of a4453d3 (Todo funciona menos último contador)
 __div_to_l_@f1 20 0 BANK0 1
-__end_of_dpowers 10A0 0 STRING 0
+__end_of_dpowers 18A0 0 STRING 0
 __end_of_scale 1000 0 CODE 0
+<<<<<<< HEAD
 _Lcd_Write_String 1AAA 0 CODE 0
 __end_of___flge 116E 0 CODE 0
 __end_of___awmod 1CD4 0 CODE 0
@@ -168,10 +229,53 @@ ___awdiv@sign 2A 0 BANK0 1
 __size_of__div_to_l_ 0 0 ABS 0
 psplit$0 E0036 0 ABS 0
 __end_of___flneg 7FC 0 CODE 0
+=======
+_Lcd_Write_String 1C55 0 CODE 0
+__end_of___flge 2000 0 CODE 0
+__end_of___awmod 1E78 0 CODE 0
+__Hcode 0 0 ABS 0
+__Lcode 0 0 ABS 0
+_Lcd_Clear 1AB1 0 CODE 0
+___flge 1F5C 0 CODE 0
+?_scale 44 0 BANK0 1
+_fround$1200 53 0 BANK0 1
+sprintf@sp C9 0 BANK1 1
+_fround 5B8 0 CODE 0
+__HcstackBANK0 0 0 ABS 0
+__LcstackBANK0 0 0 ABS 0
+_cfg_io 1001 0 CODE 0
+__pcstackBANK0 20 0 BANK0 1
+___fleq 1D29 0 CODE 0
+___awmod@sign 79 0 COMMON 1
+_send_char 1AA7 0 CODE 0
+saved_w 7E 0 ABS 0
+__Hinit C 0 CODE 0
+__Linit C 0 CODE 0
+___wmul 1B63 0 CODE 0
+__end_of_main 93C 0 CODE 0
+__end_of_Lcd_Cmd 1B27 0 CODE 0
+__Htext 0 0 ABS 0
+__Ltext 0 0 ABS 0
+__div_to_l_ 11B4 0 CODE 0
+__Umul8_16@product 20 0 BANK0 1
+sprintf@width BD 0 BANK1 1
+___wmul@multiplier 73 0 COMMON 1
+?___xxtofl 73 0 COMMON 1
+___flmul@sign 37 0 BANK0 1
+end_of_initialization 1C 0 CODE 0
+__Umul8_16 1BAE 0 CODE 0
+_fround$1201 4F 0 BANK0 1
+___awdiv@sign 26 0 BANK0 1
+__size_of__div_to_l_ 0 0 ABS 0
+send_crct@st 77 0 COMMON 1
+psplit$0 C0035 0 ABS 0
+__end_of___flneg 80B 0 CODE 0
+>>>>>>> parent of a4453d3 (Todo funciona menos último contador)
 ___stacklo 0 0 ABS 0
 __size_of_Lcd_Clear 0 0 ABS 0
-___wmul@multiplicand 22 0 BANK0 1
+___wmul@multiplicand 75 0 COMMON 1
 __size_of_cfg_io 0 0 ABS 0
+<<<<<<< HEAD
 __stringtab 1000 0 STRING 0
 __end_of_cfg_usart 18F6 0 CODE 0
 _scale$1196 56 0 BANK0 1
@@ -179,17 +283,32 @@ fround@prec 5B 0 BANK0 1
 __HdataBANK1 0 0 ABS 0
 __LdataBANK1 0 0 ABS 0
 __pdataBANK1 E7 0 BANK1 1
+=======
+__stringtab 1800 0 STRING 0
+__end_of_cfg_usart 1AF7 0 CODE 0
+_send_crct 1B42 0 CODE 0
+fround@prec 57 0 BANK0 1
+>>>>>>> parent of a4453d3 (Todo funciona menos último contador)
 _RCSTAbits 18 0 ABS 0
 _TXSTAbits 98 0 ABS 0
 _PORTCbits 7 0 ABS 0
 __Hstrings 0 0 ABS 0
 __Lstrings 0 0 ABS 0
+<<<<<<< HEAD
 __pstrings 1000 0 STRING 0
 ___fladd@grs 6F 0 BANK0 1
 __end_of_conv 1AAA 0 CODE 0
 __Hbank0 0 0 ABS 0
 __Lbank0 0 0 ABS 0
 _Lcd_Set_Cursor 197A 0 CODE 0
+=======
+__pstrings 1800 0 STRING 0
+___fladd@grs 6B 0 BANK0 1
+__end_of_conv 1C55 0 CODE 0
+__Hbank0 0 0 ABS 0
+__Lbank0 0 0 ABS 0
+_Lcd_Set_Cursor 1B88 0 CODE 0
+>>>>>>> parent of a4453d3 (Todo funciona menos último contador)
 __Hbank1 0 0 ABS 0
 __Lbank1 0 0 ABS 0
 __Hbank2 0 0 ABS 0
@@ -197,15 +316,21 @@ __Lbank2 0 0 ABS 0
 __Hbank3 0 0 ABS 0
 __Lbank3 0 0 ABS 0
 ___latbits 2 0 ABS 0
+<<<<<<< HEAD
 _cfg_usart 18E1 0 CODE 0
+=======
+_cfg_usart 1AE2 0 CODE 0
+__size_of_send_char 0 0 ABS 0
+__size_of_send_crct 0 0 ABS 0
+>>>>>>> parent of a4453d3 (Todo funciona menos último contador)
 __Hpowerup 0 0 CODE 0
 __Lpowerup 0 0 CODE 0
 __div_to_l_@f2 24 0 BANK0 1
-__size_of_int_uart 0 0 ABS 0
-__Umul8_16@multiplicand 75 0 COMMON 1
-___flmul@grs 3D 0 BANK0 1
-__ptext1 14B4 0 CODE 0
+__Umul8_16@multiplicand 73 0 COMMON 1
+___flmul@grs 38 0 BANK0 1
+__ptext1 14FC 0 CODE 0
 __ptext2 C9D 0 CODE 0
+<<<<<<< HEAD
 __ptext3 1C79 0 CODE 0
 __ptext4 1DA2 0 CODE 0
 __ptext5 18CF 0 CODE 0
@@ -217,10 +342,24 @@ __LcstackBANK1 0 0 ABS 0
 __ptext8 1AF0 0 CODE 0
 sprintf@val BF 0 BANK1 1
 __ptext9 1F43 0 CODE 0
+=======
+__ptext3 1E1F 0 CODE 0
+__ptext4 80B 0 CODE 0
+__ptext5 1AD0 0 CODE 0
+__ptext6 5B8 0 CODE 0
+__ptext7 7C5 0 CODE 0
+Lcd_Set_Cursor@a 20 0 BANK0 1
+__HcstackBANK1 0 0 ABS 0
+__LcstackBANK1 0 0 ABS 0
+__ptext8 1C99 0 CODE 0
+sprintf@val B7 0 BANK1 1
+__ptext9 10F7 0 CODE 0
+>>>>>>> parent of a4453d3 (Todo funciona menos último contador)
 __pcstackBANK1 A0 0 BANK1 1
-__end_of__npowers_ 1078 0 STRING 0
+__end_of__npowers_ 1878 0 STRING 0
 __Hclrtext 0 0 ABS 0
 __Lclrtext 0 0 ABS 0
+<<<<<<< HEAD
 sprintf@eexp CB 0 BANK1 1
 __end_of__initialization 2A 0 CODE 0
 Lcd_Write_String@a 20 0 BANK0 1
@@ -263,22 +402,74 @@ ___flmul 93C 0 CODE 0
 ?___wmul 20 0 BANK0 1
 _isdigit 18CF 0 CODE 0
 __Hcinit 2E 0 CODE 0
+=======
+sprintf@eexp C3 0 BANK1 1
+__end_of__initialization 1C 0 CODE 0
+Lcd_Write_String@a 76 0 COMMON 1
+Lcd_Write_String@i 78 0 COMMON 1
+__size_of___xxtofl 0 0 ABS 0
+_BAUDCTLbits 187 0 ABS 0
+__end_of___lwdiv 1CDF 0 CODE 0
+__tdiv_to_l_@f1 20 0 BANK0 1
+__end_of__div_to_l_ 1274 0 CODE 0
+_Lcd_Cmd 1B0D 0 CODE 0
+__size_of_scale 0 0 ABS 0
+_cfg_adc 1AF7 0 CODE 0
+__size_of___flge 0 0 ABS 0
+_int_adc 1010 0 CODE 0
+___fladd 1274 0 CODE 0
+__size_of_fround 0 0 ABS 0
+Lcd_Set_Cursor@temp 21 0 BANK0 1
+___flneg 800 0 CODE 0
+__Hstack 0 0 STACK 2
+__Lstack 0 0 STACK 2
+___llmod 1DC9 0 CODE 0
+__end_of___lldiv 1EE0 0 CODE 0
+___awmod 1E1F 0 CODE 0
+_cfg_clk 1A97 0 CODE 0
+___lwmod 7C5 0 CODE 0
+__Hspace_0 2000 0 ABS 0
+___flsub 1D79 0 CODE 0
+?_fround 44 0 BANK0 1
+__Lspace_0 0 0 ABS 0
+__end_of_isr 1AD0 0 CODE 0
+_sprintf 14FC 0 CODE 0
+__Hspace_1 E4 0 ABS 0
+__Lspace_1 0 0 ABS 0
+___fltol 1EE0 0 CODE 0
+__Hspace_2 0 0 ABS 0
+__Lspace_2 0 0 ABS 0
+___flmul 93C 0 CODE 0
+?___wmul 73 0 COMMON 1
+_isdigit 1AD0 0 CODE 0
+__Hcinit 20 0 CODE 0
+>>>>>>> parent of a4453d3 (Todo funciona menos último contador)
 __Lcinit F 0 CODE 0
-___lldiv 1D3A 0 CODE 0
-___awdiv 1DA2 0 CODE 0
+___lldiv 1E78 0 CODE 0
+___awdiv 80B 0 CODE 0
 __size_of_Lcd_Write_String 0 0 ABS 0
 __Hspace_3 0 0 ABS 0
+<<<<<<< HEAD
 ___lwdiv 1AF0 0 CODE 0
 __Lspace_3 0 0 ABS 0
 __size_of_main 0 0 ABS 0
 __size_of___flmul 0 0 ABS 0
 _dpowers 1078 0 STRING 0
 __end_of_Lcd_Set_Cursor 19A0 0 CODE 0
+=======
+___lwdiv 1C99 0 CODE 0
+__Lspace_3 0 0 ABS 0
+__size_of_main 0 0 ABS 0
+__size_of___flmul 0 0 ABS 0
+_dpowers 1878 0 STRING 0
+__end_of_Lcd_Set_Cursor 1BAE 0 CODE 0
+>>>>>>> parent of a4453d3 (Todo funciona menos último contador)
 __size_of_int_adc 0 0 ABS 0
 __Hspace_4 4010 0 ABS 0
 __size_of_Lcd_Set_Cursor 0 0 ABS 0
 __Lspace_4 0 0 ABS 0
 ?__div_to_l_ 20 0 BANK0 1
+<<<<<<< HEAD
 ___xxtofl@sign 28 0 BANK0 1
 __tdiv_to_l_ 1F43 0 CODE 0
 __div_to_l_@exp1 2D 0 BANK0 1
@@ -294,9 +485,29 @@ clear_ram0 189E 0 CODE 0
 sprintf@tmpval C7 0 BANK1 1
 __size_of_cfg_inte 0 0 ABS 0
 __size_of___lwdiv 0 0 ABS 0
+=======
+___xxtofl@sign 24 0 BANK0 1
+__tdiv_to_l_ 10F7 0 CODE 0
+__div_to_l_@exp1 79 0 COMMON 1
+___fltol@exp1 61 0 BANK0 1
+__end_of_cfg_inte 1A97 0 CODE 0
+__end_of_send_crct 1B63 0 CODE 0
+__end_of_isdigit 1AE2 0 CODE 0
+?__Umul8_16 73 0 COMMON 1
+__end_of_sprintf 5B8 0 CODE 0
+__end_of_Lcd_Clear 1ABE 0 CODE 0
+clear_ram0 1A9F 0 CODE 0
+sprintf@tmpval BF 0 BANK1 1
+__size_of_cfg_inte 0 0 ABS 0
+__size_of___lwdiv 0 0 ABS 0
+__HbssBANK0 0 0 ABS 0
+__LbssBANK0 0 0 ABS 0
+>>>>>>> parent of a4453d3 (Todo funciona menos último contador)
 __size_of___flsub 0 0 ABS 0
-___flmul@temp 46 0 BANK0 1
+__pbssBANK0 6F 0 BANK0 1
+___flmul@temp 42 0 BANK0 1
 __size_of_isdigit 0 0 ABS 0
+<<<<<<< HEAD
 _fround$1195 53 0 BANK0 1
 sprintf@flag C3 0 BANK1 1
 __end_of___fladd 14B4 0 CODE 0
@@ -357,10 +568,68 @@ __ptext29 1AAA 0 CODE 0
 _OSCCONbits 8F 0 ABS 0
 _INTCONbits B 0 ABS 0
 __Umul8_16@word_mpld 24 0 BANK0 1
+=======
+sprintf@flag BB 0 BANK1 1
+__end_of___fladd 14FC 0 CODE 0
+__HbssBANK1 0 0 ABS 0
+__LbssBANK1 0 0 ABS 0
+___xxtofl@arg 26 0 BANK0 1
+__pbssBANK1 CD 0 BANK1 1
+__ptext10 11B4 0 CODE 0
+__ptext20 1B42 0 CODE 0
+__ptext11 1B63 0 CODE 0
+__ptext30 1AF7 0 CODE 0
+__ptext21 1AA7 0 CODE 0
+__ptext12 1DC9 0 CODE 0
+__ptext31 1C55 0 CODE 0
+__ptext22 1C15 0 CODE 0
+__ptext13 1E78 0 CODE 0
+__ptext32 1B27 0 CODE 0
+_ADCON0bits 1F 0 ABS 0
+__end_of_cfg_clk 1A9F 0 CODE 0
+_ADCON1bits 9F 0 ABS 0
+__ptext23 103B 0 CODE 0
+sprintf@prec CA 0 BANK1 1
+__size_of___awdiv 0 0 ABS 0
+__ptext14 1EE0 0 CODE 0
+__ptext33 1B88 0 CODE 0
+__ptext24 93C 0 CODE 0
+__end_of__tdiv_to_l_ 11B4 0 CODE 0
+__ptext15 1D79 0 CODE 0
+__ptext34 1CDF 0 CODE 0
+__ptext25 1BAE 0 CODE 0
+__ptext16 1274 0 CODE 0
+__ptext35 1AB1 0 CODE 0
+__ptext26 1AE2 0 CODE 0
+___llmod@divisor 20 0 BANK0 1
+__ptext17 800 0 CODE 0
+__ptext36 1B0D 0 CODE 0
+pnum$text1 C 0 ABS 0
+___awmod@divisor 73 0 COMMON 1
+__end_of___lwmod 7FF 0 CODE 0
+__ptext27 1001 0 CODE 0
+___lwmod@divisor 73 0 COMMON 1
+__ptext18 1F5C 0 CODE 0
+__ptext37 1BD7 0 CODE 0
+___fltol@sign1 60 0 BANK0 1
+__ptext28 1A91 0 CODE 0
+__HbssCOMMON 0 0 ABS 0
+__LbssCOMMON 0 0 ABS 0
+__ptext19 1D29 0 CODE 0
+__ptext38 1ABE 0 CODE 0
+__pbssCOMMON 7A 0 COMMON 1
+__ptext29 1A97 0 CODE 0
+__ptext39 1010 0 CODE 0
+_OSCCONbits 8F 0 ABS 0
+_INTCONbits B 0 ABS 0
+__end_of_send_char 1AB1 0 CODE 0
+__Umul8_16@word_mpld 22 0 BANK0 1
+>>>>>>> parent of a4453d3 (Todo funciona menos último contador)
 __Hend_init F 0 CODE 0
 __Lend_init C 0 CODE 0
-Lcd_Write_Char@a 77 0 COMMON 1
+Lcd_Write_Char@a 75 0 COMMON 1
 __size_of_Lcd_Init 0 0 ABS 0
+<<<<<<< HEAD
 __end_of_fround 7EF 0 CODE 0
 ___lldiv@divisor 20 0 BANK0 1
 __size_of___lldiv 0 0 ABS 0
@@ -369,20 +638,32 @@ ___lwdiv@divisor 24 0 BANK0 1
 __size_of___fladd 0 0 ABS 0
 __end_of___llmod 1C79 0 CODE 0
 __tdiv_to_l_@cntr 30 0 BANK0 1
+=======
+__end_of_fround 7C5 0 CODE 0
+___lldiv@divisor 20 0 BANK0 1
+__size_of___lldiv 0 0 ABS 0
+___awdiv@divisor 20 0 BANK0 1
+___lwdiv@divisor 20 0 BANK0 1
+__size_of___fladd 0 0 ABS 0
+__end_of___llmod 1E1F 0 CODE 0
+__tdiv_to_l_@cntr 2C 0 BANK0 1
+>>>>>>> parent of a4453d3 (Todo funciona menos último contador)
 __size_of_conv 0 0 ABS 0
 __size_of___wmul 0 0 ABS 0
 __Hreset_vec 3 0 CODE 0
 __Lreset_vec 0 0 CODE 0
-___xxtofl@exp 29 0 BANK0 1
-__tdiv_to_l_@exp1 31 0 BANK0 1
-__div_to_l_@cntr 2C 0 BANK0 1
+___xxtofl@exp 25 0 BANK0 1
+_sprintf$1203 B2 0 BANK1 1
+__tdiv_to_l_@exp1 2D 0 BANK0 1
+__div_to_l_@cntr 78 0 COMMON 1
 intlevel0 0 0 ENTRY 0
 intlevel1 0 0 ENTRY 0
-___xxtofl@val 20 0 BANK0 1
+___xxtofl@val 73 0 COMMON 1
 __size_of__tdiv_to_l_ 0 0 ABS 0
 intlevel2 0 0 ENTRY 0
 intlevel3 0 0 ENTRY 0
 intlevel4 0 0 ENTRY 0
+<<<<<<< HEAD
 __end_of_Lcd_Port 1A6A 0 CODE 0
 pnum$text1_split_1 36 0 ABS 0
 __tdiv_to_l_@f2 24 0 BANK0 1
@@ -390,14 +671,24 @@ intlevel5 0 0 ENTRY 0
 __size_of_Lcd_Port 0 0 ABS 0
 conv@result 50 0 BANK0 1
 __end_of__Umul8_16 19F0 0 CODE 0
+=======
+__end_of_Lcd_Port 1C15 0 CODE 0
+pnum$text1_split_1 35 0 ABS 0
+__tdiv_to_l_@f2 24 0 BANK0 1
+intlevel5 0 0 ENTRY 0
+__size_of_Lcd_Port 0 0 ABS 0
+conv@result 4C 0 BANK0 1
+__end_of__Umul8_16 1BD7 0 CODE 0
+>>>>>>> parent of a4453d3 (Todo funciona menos último contador)
 __size_of___lwmod 0 0 ABS 0
 __size_of___fltol 0 0 ABS 0
-___fladd@aexp 6D 0 BANK0 1
+___fladd@aexp 69 0 BANK0 1
 __size_of_Lcd_Write_Char 0 0 ABS 0
-__div_to_l_@quot 28 0 BANK0 1
+__div_to_l_@quot 74 0 COMMON 1
 __HcstackCOMMON 0 0 ABS 0
 __LcstackCOMMON 0 0 ABS 0
 __pcstackCOMMON 70 0 COMMON 1
+<<<<<<< HEAD
 __end_of___wmul 19C7 0 CODE 0
 ___fladd@bexp 6E 0 BANK0 1
 start_initialization F 0 CODE 0
@@ -411,37 +702,53 @@ __Lmaintext 0 0 ABS 0
 ___fladd@a 60 0 BANK0 1
 __pmaintext 805 0 CODE 0
 ___fladd@b 5C 0 BANK0 1
+=======
+__end_of___wmul 1B88 0 CODE 0
+___fladd@bexp 6A 0 BANK0 1
+start_initialization F 0 CODE 0
+___lldiv@quotient 74 0 COMMON 1
+___awdiv@quotient 27 0 BANK0 1
+___lwdiv@quotient 24 0 BANK0 1
+__end_of_int_adc 103B 0 CODE 0
+__end_of___xxtofl 10F7 0 CODE 0
+__Hmaintext 0 0 ABS 0
+__Lmaintext 0 0 ABS 0
+___fladd@a 5C 0 BANK0 1
+__pmaintext 874 0 CODE 0
+___fladd@b 58 0 BANK0 1
+>>>>>>> parent of a4453d3 (Todo funciona menos último contador)
 __size_of_sprintf 0 0 ABS 0
 __size_of___awmod 0 0 ABS 0
 ___flmul@aexp 3C 0 BANK0 1
 __size_of___flneg 0 0 ABS 0
 __initialization F 0 CODE 0
-___flmul@bexp 41 0 BANK0 1
+___flmul@bexp 3D 0 BANK0 1
 ___flsub@a A0 0 BANK1 1
-__stringbase 100F 0 STRING 0
-Lcd_Cmd@a 20 0 BANK0 1
-___flmul@prod 42 0 BANK0 1
+__stringbase 180F 0 STRING 0
+Lcd_Cmd@a 76 0 COMMON 1
+___flmul@prod 3E 0 BANK0 1
 ___flsub@b A4 0 BANK1 1
 ___llmod@dividend 24 0 BANK0 1
-___awmod@dividend 22 0 BANK0 1
-___lwmod@dividend 22 0 BANK0 1
-___llmod@counter 76 0 COMMON 1
-___awmod@counter 76 0 COMMON 1
-___wmul@product 75 0 COMMON 1
-___lwmod@counter 76 0 COMMON 1
-___flmul@a 32 0 BANK0 1
-Lcd_Port@a 75 0 COMMON 1
-___flmul@b 2E 0 BANK0 1
-sprintf@c D4 0 BANK1 1
+___awmod@dividend 75 0 COMMON 1
+___lwmod@dividend 75 0 COMMON 1
+___llmod@counter 74 0 COMMON 1
+___awmod@counter 78 0 COMMON 1
+___wmul@product 77 0 COMMON 1
+___lwmod@counter 78 0 COMMON 1
+___flmul@a 2E 0 BANK0 1
+Lcd_Port@a 73 0 COMMON 1
+___flmul@b 2A 0 BANK0 1
+sprintf@c CC 0 BANK1 1
 __size_of___llmod 0 0 ABS 0
 ___lldiv@dividend 24 0 BANK0 1
-isdigit@c 76 0 COMMON 1
-___awdiv@dividend 26 0 BANK0 1
+isdigit@c 74 0 COMMON 1
+___awdiv@dividend 22 0 BANK0 1
 %segments
 reset_vec 0 5 CODE 0 0
-intentry 8 FF9 CODE 8 0
-cstackCOMMON 70 78 COMMON 70 1
+intentry 8 FFD CODE 8 0
+cstackCOMMON 70 7A COMMON 70 1
 cstackBANK0 20 6F BANK0 20 1
+<<<<<<< HEAD
 cstackBANK1 A0 E7 BANK1 A0 1
 bssBANK3 190 1A3 BANK3 190 1
 text2 193A 1FFF CODE 193A 0
@@ -549,46 +856,140 @@ main.c
 185 928 0 CODE 0
 187 92E 0 CODE 0
 188 935 0 CODE 0
+=======
+cstackBANK1 A0 E3 BANK1 A0 1
+text2 193A 1FFF CODE 193A 0
+text24 1278 1939 CODE 1278 0
+text1 29F8 2FFF CODE 29F8 0
+text16 24E8 29F7 CODE 24E8 0
+maintext 10E8 1277 CODE 10E8 0
+text10 2368 24E7 CODE 2368 0
+text9 21EE 2367 CODE 21EE 0
+text23 2076 21ED CODE 2076 0
+strings 3000 316D STRING 3000 0
+text18 3EB8 3FFF CODE 3EB8 0
+text14 3DC0 3EB7 CODE 3DC0 0
+text4 1016 10E7 CODE 1016 0
+text13 3CF0 3DBF CODE 3CF0 0
+text3 3C3E 3CEF CODE 3C3E 0
+text12 3B92 3C3D CODE 3B92 0
+text15 3AF2 3B91 CODE 3AF2 0
+text19 3A52 3AF1 CODE 3A52 0
+text34 39BE 3A51 CODE 39BE 0
+text8 3932 39BD CODE 3932 0
+text31 38AA 3931 CODE 38AA 0
+text22 382A 38A9 CODE 382A 0
+text37 37AE 3829 CODE 37AE 0
+text39 2020 2075 CODE 2020 0
+text25 375C 37AD CODE 375C 0
+text33 3710 375B CODE 3710 0
+text11 36C6 370F CODE 36C6 0
+text20 3684 36C5 CODE 3684 0
+text32 364E 3683 CODE 364E 0
+text36 361A 364D CODE 361A 0
+text30 35EE 3619 CODE 35EE 0
+text26 35C4 35ED CODE 35C4 0
+text5 35A0 35C3 CODE 35A0 0
+text38 357C 359F CODE 357C 0
+text27 2002 201F CODE 2002 0
+text35 3562 357B CODE 3562 0
+text17 1000 1015 CODE 1000 0
+text21 354E 3561 CODE 354E 0
+clrtext 353E 354D CODE 353E 0
+text29 352E 353D CODE 352E 0
+text28 3522 352D CODE 3522 0
+%locals
+dist/default/production\2LAB2.X.production.o
+C:\Users\gerar\AppData\Local\Temp\sjpk.s
+1114 F 0 CODE 0
+1117 F 0 CODE 0
+1167 F 0 CODE 0
+1170 10 0 CODE 0
+1171 11 0 CODE 0
+1172 12 0 CODE 0
+1175 13 0 CODE 0
+1176 14 0 CODE 0
+1177 15 0 CODE 0
+1178 16 0 CODE 0
+1179 17 0 CODE 0
+1185 1C 0 CODE 0
+1187 1C 0 CODE 0
+1188 1D 0 CODE 0
+1154 1A9F 0 CODE 0
+1155 1A9F 0 CODE 0
+1156 1AA0 0 CODE 0
+1157 1AA0 0 CODE 0
+1158 1AA1 0 CODE 0
+1159 1AA2 0 CODE 0
+1160 1AA3 0 CODE 0
+1161 1AA4 0 CODE 0
+1162 1AA5 0 CODE 0
+1163 1AA6 0 CODE 0
+main.c
+110 874 0 CODE 0
+111 874 0 CODE 0
+112 879 0 CODE 0
+113 87E 0 CODE 0
+114 883 0 CODE 0
+115 888 0 CODE 0
+118 88D 0 CODE 0
+119 892 0 CODE 0
+122 895 0 CODE 0
+123 89A 0 CODE 0
+124 8A2 0 CODE 0
+125 8AB 0 CODE 0
+126 8CB 0 CODE 0
+130 8E9 0 CODE 0
+131 8F1 0 CODE 0
+132 907 0 CODE 0
+136 910 0 CODE 0
+137 914 0 CODE 0
+139 91A 0 CODE 0
+141 929 0 CODE 0
+142 92F 0 CODE 0
+143 936 0 CODE 0
+147 939 0 CODE 0
+>>>>>>> parent of a4453d3 (Todo funciona menos último contador)
 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\doprnt.c
-505 14B4 0 CODE 0
-550 14B7 0 CODE 0
-553 14BB 0 CODE 0
-555 14BE 0 CODE 0
-558 14C4 0 CODE 0
-559 14CF 0 CODE 0
-563 14D0 0 CODE 0
-565 14D2 0 CODE 0
-614 14D4 0 CODE 0
-615 14E4 0 CODE 0
-617 14E8 0 CODE 0
-618 150B 0 CODE 0
-619 1522 0 CODE 0
-628 1532 0 CODE 0
-629 1540 0 CODE 0
-630 1541 0 CODE 0
-645 1545 0 CODE 0
-646 1547 0 CODE 0
-647 1548 0 CODE 0
-648 156B 0 CODE 0
-646 1582 0 CODE 0
-652 1593 0 CODE 0
-654 1595 0 CODE 0
-688 1597 0 CODE 0
-689 1597 0 CODE 0
-690 1598 0 CODE 0
-848 1599 0 CODE 0
-851 15B5 0 CODE 0
-853 15C3 0 CODE 0
-855 15C7 0 CODE 0
-856 15CB 0 CODE 0
-857 15DD 0 CODE 0
-858 1604 0 CODE 0
-859 1639 0 CODE 0
-861 163D 0 CODE 0
-862 1641 0 CODE 0
-863 1668 0 CODE 0
-864 1673 0 CODE 0
-865 1679 0 CODE 0
+505 14FC 0 CODE 0
+550 14FF 0 CODE 0
+553 1503 0 CODE 0
+555 1506 0 CODE 0
+558 150C 0 CODE 0
+559 1517 0 CODE 0
+563 1518 0 CODE 0
+565 151A 0 CODE 0
+614 151C 0 CODE 0
+615 152C 0 CODE 0
+617 1530 0 CODE 0
+618 1545 0 CODE 0
+619 155C 0 CODE 0
+628 156C 0 CODE 0
+629 157A 0 CODE 0
+630 157B 0 CODE 0
+645 157F 0 CODE 0
+646 1581 0 CODE 0
+647 1582 0 CODE 0
+648 1597 0 CODE 0
+646 15AE 0 CODE 0
+652 15BF 0 CODE 0
+654 15C1 0 CODE 0
+688 15C3 0 CODE 0
+689 15C3 0 CODE 0
+690 15C4 0 CODE 0
+848 15C5 0 CODE 0
+851 15E1 0 CODE 0
+853 15EF 0 CODE 0
+855 15F3 0 CODE 0
+856 15F7 0 CODE 0
+857 1609 0 CODE 0
+858 1630 0 CODE 0
+859 1649 0 CODE 0
+861 164D 0 CODE 0
+862 1651 0 CODE 0
+863 1678 0 CODE 0
+864 1683 0 CODE 0
+865 1689 0 CODE 0
 866 169C 0 CODE 0
 867 16BF 0 CODE 0
 868 16C3 0 CODE 0
@@ -616,6 +1017,7 @@ C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\doprnt.c
 448 FD3 0 CODE 0
 449 FFF 0 CODE 0
 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\awmod.c
+<<<<<<< HEAD
 5 1C79 0 CODE 0
 12 1C79 0 CODE 0
 13 1C7A 0 CODE 0
@@ -637,33 +1039,57 @@ C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\awmod.c
 32 1CCA 0 CODE 0
 33 1CCF 0 CODE 0
 34 1CD3 0 CODE 0
+=======
+5 1E1F 0 CODE 0
+12 1E1F 0 CODE 0
+13 1E20 0 CODE 0
+14 1E24 0 CODE 0
+15 1E29 0 CODE 0
+17 1E2B 0 CODE 0
+18 1E2F 0 CODE 0
+19 1E34 0 CODE 0
+20 1E3A 0 CODE 0
+21 1E3C 0 CODE 0
+22 1E3D 0 CODE 0
+23 1E44 0 CODE 0
+21 1E48 0 CODE 0
+26 1E4C 0 CODE 0
+27 1E56 0 CODE 0
+28 1E5C 0 CODE 0
+29 1E63 0 CODE 0
+31 1E69 0 CODE 0
+32 1E6E 0 CODE 0
+33 1E73 0 CODE 0
+34 1E77 0 CODE 0
+>>>>>>> parent of a4453d3 (Todo funciona menos último contador)
 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\awdiv.c
-5 1DA2 0 CODE 0
-13 1DA2 0 CODE 0
-14 1DA5 0 CODE 0
-15 1DA9 0 CODE 0
-16 1DAE 0 CODE 0
-18 1DB0 0 CODE 0
-19 1DB4 0 CODE 0
-20 1DB9 0 CODE 0
-22 1DBD 0 CODE 0
-23 1DBF 0 CODE 0
-24 1DC5 0 CODE 0
-25 1DC7 0 CODE 0
-26 1DC8 0 CODE 0
-27 1DCF 0 CODE 0
-25 1DD3 0 CODE 0
-30 1DD7 0 CODE 0
-31 1DDE 0 CODE 0
-32 1DE8 0 CODE 0
-33 1DEE 0 CODE 0
-35 1DEF 0 CODE 0
-36 1DF6 0 CODE 0
-38 1DFC 0 CODE 0
-39 1E01 0 CODE 0
-40 1E06 0 CODE 0
-41 1E0A 0 CODE 0
+5 80B 0 CODE 0
+13 80B 0 CODE 0
+14 80E 0 CODE 0
+15 812 0 CODE 0
+16 817 0 CODE 0
+18 819 0 CODE 0
+19 81D 0 CODE 0
+20 822 0 CODE 0
+22 826 0 CODE 0
+23 828 0 CODE 0
+24 82E 0 CODE 0
+25 830 0 CODE 0
+26 831 0 CODE 0
+27 838 0 CODE 0
+25 83C 0 CODE 0
+30 840 0 CODE 0
+31 847 0 CODE 0
+32 851 0 CODE 0
+33 857 0 CODE 0
+35 858 0 CODE 0
+36 85F 0 CODE 0
+38 865 0 CODE 0
+39 86A 0 CODE 0
+40 86F 0 CODE 0
+41 873 0 CODE 0
 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\isdigit.c
+<<<<<<< HEAD
 8 18CF 0 CODE 0
 14 18D0 0 CODE 0
 15 18E0 0 CODE 0
@@ -706,69 +1132,114 @@ C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\lwdiv.c
 27 1B2B 0 CODE 0
 29 1B31 0 CODE 0
 30 1B35 0 CODE 0
+=======
+8 1AD0 0 CODE 0
+14 1AD1 0 CODE 0
+15 1AE1 0 CODE 0
+C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\doprnt.c
+417 5B8 0 CODE 0
+421 5BB 0 CODE 0
+422 5C1 0 CODE 0
+423 6D0 0 CODE 0
+424 6D6 0 CODE 0
+425 781 0 CODE 0
+426 7C4 0 CODE 0
+C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\lwmod.c
+5 7C5 0 CODE 0
+12 7C5 0 CODE 0
+13 7CB 0 CODE 0
+14 7CD 0 CODE 0
+15 7CE 0 CODE 0
+16 7D5 0 CODE 0
+14 7D9 0 CODE 0
+19 7DD 0 CODE 0
+20 7E7 0 CODE 0
+21 7ED 0 CODE 0
+22 7F4 0 CODE 0
+24 7FA 0 CODE 0
+25 7FE 0 CODE 0
+C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\lwdiv.c
+5 1C99 0 CODE 0
+13 1C99 0 CODE 0
+14 1C9D 0 CODE 0
+15 1CA3 0 CODE 0
+16 1CA5 0 CODE 0
+17 1CA6 0 CODE 0
+18 1CAD 0 CODE 0
+16 1CB1 0 CODE 0
+21 1CB5 0 CODE 0
+22 1CBC 0 CODE 0
+23 1CC6 0 CODE 0
+24 1CCC 0 CODE 0
+26 1CCD 0 CODE 0
+27 1CD4 0 CODE 0
+29 1CDA 0 CODE 0
+30 1CDE 0 CODE 0
+>>>>>>> parent of a4453d3 (Todo funciona menos último contador)
 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\ftdivl.c
-60 1F43 0 CODE 0
-66 1F43 0 CODE 0
-67 1F56 0 CODE 0
-68 1F5F 0 CODE 0
-69 1F71 0 CODE 0
-70 1F71 0 CODE 0
-71 1F72 0 CODE 0
-72 1F78 0 CODE 0
-73 1F79 0 CODE 0
-74 1F7F 0 CODE 0
-75 1F87 0 CODE 0
-76 1F89 0 CODE 0
-77 1F8E 0 CODE 0
-79 1F92 0 CODE 0
-80 1F9B 0 CODE 0
-81 1FA9 0 CODE 0
-82 1FB3 0 CODE 0
-84 1FB4 0 CODE 0
-85 1FBC 0 CODE 0
-86 1FC2 0 CODE 0
-87 1FC6 0 CODE 0
-90 1FCE 0 CODE 0
-91 1FD7 0 CODE 0
-93 1FE0 0 CODE 0
-96 1FE7 0 CODE 0
-97 1FF0 0 CODE 0
-98 1FF2 0 CODE 0
-95 1FF2 0 CODE 0
-100 1FF7 0 CODE 0
-101 1FFF 0 CODE 0
+60 10F7 0 CODE 0
+66 10F7 0 CODE 0
+67 110A 0 CODE 0
+68 1113 0 CODE 0
+69 1125 0 CODE 0
+70 1125 0 CODE 0
+71 1126 0 CODE 0
+72 112C 0 CODE 0
+73 112D 0 CODE 0
+74 1133 0 CODE 0
+75 113B 0 CODE 0
+76 113D 0 CODE 0
+77 1142 0 CODE 0
+79 1146 0 CODE 0
+80 114F 0 CODE 0
+81 115D 0 CODE 0
+82 1167 0 CODE 0
+84 1168 0 CODE 0
+85 1170 0 CODE 0
+86 1176 0 CODE 0
+87 117A 0 CODE 0
+90 1182 0 CODE 0
+91 118B 0 CODE 0
+93 1194 0 CODE 0
+96 119B 0 CODE 0
+97 11A4 0 CODE 0
+98 11A6 0 CODE 0
+95 11A6 0 CODE 0
+100 11AB 0 CODE 0
+101 11B3 0 CODE 0
 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\fldivl.c
-60 116E 0 CODE 0
-66 116E 0 CODE 0
-67 117B 0 CODE 0
-68 1184 0 CODE 0
-69 1190 0 CODE 0
-70 1190 0 CODE 0
-71 1191 0 CODE 0
-72 1199 0 CODE 0
-73 119A 0 CODE 0
-74 11A2 0 CODE 0
-75 11AA 0 CODE 0
-76 11AC 0 CODE 0
-77 11B1 0 CODE 0
-79 11B5 0 CODE 0
-80 11BE 0 CODE 0
-81 11D0 0 CODE 0
-82 11DE 0 CODE 0
-84 11DF 0 CODE 0
-85 11E8 0 CODE 0
-86 11EE 0 CODE 0
-87 11F2 0 CODE 0
-90 11FA 0 CODE 0
-91 1203 0 CODE 0
-93 120C 0 CODE 0
-96 1213 0 CODE 0
-97 121C 0 CODE 0
-98 121E 0 CODE 0
-95 121E 0 CODE 0
-100 1223 0 CODE 0
-101 122B 0 CODE 0
+60 11B4 0 CODE 0
+66 11B4 0 CODE 0
+67 11C1 0 CODE 0
+68 11CA 0 CODE 0
+69 11D6 0 CODE 0
+70 11D6 0 CODE 0
+71 11D7 0 CODE 0
+72 11DF 0 CODE 0
+73 11E0 0 CODE 0
+74 11E8 0 CODE 0
+75 11F0 0 CODE 0
+76 11F2 0 CODE 0
+77 11F7 0 CODE 0
+79 11FB 0 CODE 0
+80 1204 0 CODE 0
+81 1216 0 CODE 0
+82 1224 0 CODE 0
+84 1225 0 CODE 0
+85 122E 0 CODE 0
+86 1234 0 CODE 0
+87 1238 0 CODE 0
+90 1240 0 CODE 0
+91 1249 0 CODE 0
+93 1252 0 CODE 0
+96 1259 0 CODE 0
+97 1262 0 CODE 0
+98 1264 0 CODE 0
+95 1264 0 CODE 0
+100 1269 0 CODE 0
+101 1273 0 CODE 0
 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\Umul16.c
+<<<<<<< HEAD
 15 19A0 0 CODE 0
 43 19A0 0 CODE 0
 45 19A2 0 CODE 0
@@ -792,44 +1263,70 @@ C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\llmod.c
 22 1C6A 0 CODE 0
 24 1C70 0 CODE 0
 25 1C78 0 CODE 0
+=======
+15 1B63 0 CODE 0
+43 1B63 0 CODE 0
+45 1B65 0 CODE 0
+46 1B69 0 CODE 0
+47 1B6F 0 CODE 0
+48 1B76 0 CODE 0
+49 1B7D 0 CODE 0
+52 1B83 0 CODE 0
+53 1B87 0 CODE 0
+C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\llmod.c
+5 1DC9 0 CODE 0
+12 1DC9 0 CODE 0
+13 1DD3 0 CODE 0
+14 1DD5 0 CODE 0
+15 1DD6 0 CODE 0
+16 1DDF 0 CODE 0
+14 1DE3 0 CODE 0
+19 1DE7 0 CODE 0
+20 1DF9 0 CODE 0
+21 1E07 0 CODE 0
+22 1E10 0 CODE 0
+24 1E16 0 CODE 0
+25 1E1E 0 CODE 0
+>>>>>>> parent of a4453d3 (Todo funciona menos último contador)
 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\__lldiv.c
-5 1D3A 0 CODE 0
-13 1D3A 0 CODE 0
-14 1D44 0 CODE 0
-15 1D4C 0 CODE 0
-16 1D4E 0 CODE 0
-17 1D4F 0 CODE 0
-18 1D58 0 CODE 0
-16 1D5C 0 CODE 0
-21 1D60 0 CODE 0
-22 1D69 0 CODE 0
-23 1D7B 0 CODE 0
-24 1D89 0 CODE 0
-26 1D8A 0 CODE 0
-27 1D93 0 CODE 0
-29 1D99 0 CODE 0
-30 1DA1 0 CODE 0
+5 1E78 0 CODE 0
+13 1E78 0 CODE 0
+14 1E80 0 CODE 0
+15 1E8A 0 CODE 0
+16 1E8C 0 CODE 0
+17 1E8D 0 CODE 0
+18 1E96 0 CODE 0
+16 1E9A 0 CODE 0
+21 1E9E 0 CODE 0
+22 1EA7 0 CODE 0
+23 1EB9 0 CODE 0
+24 1EC7 0 CODE 0
+26 1EC8 0 CODE 0
+27 1ED1 0 CODE 0
+29 1ED7 0 CODE 0
+30 1EDF 0 CODE 0
 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\fltol.c
-43 1E0B 0 CODE 0
-47 1E0B 0 CODE 0
-48 1E18 0 CODE 0
-49 1E21 0 CODE 0
-50 1E36 0 CODE 0
-51 1E37 0 CODE 0
-52 1E3F 0 CODE 0
-53 1E41 0 CODE 0
-54 1E45 0 CODE 0
-57 1E4D 0 CODE 0
-58 1E56 0 CODE 0
-60 1E5F 0 CODE 0
-63 1E66 0 CODE 0
-64 1E6F 0 CODE 0
-65 1E71 0 CODE 0
-62 1E71 0 CODE 0
-67 1E76 0 CODE 0
-68 1E7B 0 CODE 0
-70 1E86 0 CODE 0
+43 1EE0 0 CODE 0
+47 1EE0 0 CODE 0
+48 1EED 0 CODE 0
+49 1EF6 0 CODE 0
+50 1F0B 0 CODE 0
+51 1F0C 0 CODE 0
+52 1F14 0 CODE 0
+53 1F16 0 CODE 0
+54 1F1A 0 CODE 0
+57 1F22 0 CODE 0
+58 1F2B 0 CODE 0
+60 1F34 0 CODE 0
+63 1F3B 0 CODE 0
+64 1F44 0 CODE 0
+65 1F46 0 CODE 0
+62 1F46 0 CODE 0
+67 1F4B 0 CODE 0
+68 1F50 0 CODE 0
+70 1F5B 0 CODE 0
 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\sprcadd.c
+<<<<<<< HEAD
 242 1BD3 0 CODE 0
 248 1BD3 0 CODE 0
 249 1BD7 0 CODE 0
@@ -963,21 +1460,157 @@ C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\flneg.c
 18 7F9 0 CODE 0
 19 7FB 0 CODE 0
 20 7FB 0 CODE 0
+=======
+242 1D79 0 CODE 0
+248 1D79 0 CODE 0
+249 1D7D 0 CODE 0
+250 1DC8 0 CODE 0
+10 1274 0 CODE 0
+21 1274 0 CODE 0
+22 127B 0 CODE 0
+23 1281 0 CODE 0
+24 1285 0 CODE 0
+28 1286 0 CODE 0
+30 128B 0 CODE 0
+32 1290 0 CODE 0
+35 1298 0 CODE 0
+37 1299 0 CODE 0
+38 129A 0 CODE 0
+41 129B 0 CODE 0
+44 12A3 0 CODE 0
+46 12A8 0 CODE 0
+47 12AE 0 CODE 0
+49 12AF 0 CODE 0
+50 12B5 0 CODE 0
+51 12B9 0 CODE 0
+55 12BA 0 CODE 0
+57 12BF 0 CODE 0
+59 12C4 0 CODE 0
+62 12CC 0 CODE 0
+64 12CD 0 CODE 0
+65 12CE 0 CODE 0
+68 12CF 0 CODE 0
+69 12D7 0 CODE 0
+75 12D7 0 CODE 0
+77 12DD 0 CODE 0
+78 12E1 0 CODE 0
+81 12E5 0 CODE 0
+82 12E9 0 CODE 0
+83 12ED 0 CODE 0
+84 12F1 0 CODE 0
+85 12F5 0 CODE 0
+86 12F9 0 CODE 0
+87 12FD 0 CODE 0
+88 1301 0 CODE 0
+89 1305 0 CODE 0
+90 1309 0 CODE 0
+91 130D 0 CODE 0
+92 1311 0 CODE 0
+93 1315 0 CODE 0
+94 1319 0 CODE 0
+95 131D 0 CODE 0
+98 1321 0 CODE 0
+100 1322 0 CODE 0
+101 1339 0 CODE 0
+102 1348 0 CODE 0
+103 1350 0 CODE 0
+104 1354 0 CODE 0
+106 1355 0 CODE 0
+109 1355 0 CODE 0
+110 1359 0 CODE 0
+111 1361 0 CODE 0
+113 1362 0 CODE 0
+115 1364 0 CODE 0
+116 1368 0 CODE 0
+118 1369 0 CODE 0
+119 1372 0 CODE 0
+106 1376 0 CODE 0
+121 137E 0 CODE 0
+124 137E 0 CODE 0
+127 1382 0 CODE 0
+128 1387 0 CODE 0
+132 1390 0 CODE 0
+134 13A7 0 CODE 0
+135 13AB 0 CODE 0
+136 13AF 0 CODE 0
+137 13B7 0 CODE 0
+139 13B8 0 CODE 0
+141 13BA 0 CODE 0
+142 13BE 0 CODE 0
+144 13BF 0 CODE 0
+145 13C8 0 CODE 0
+153 13CD 0 CODE 0
+154 13E3 0 CODE 0
+155 1421 0 CODE 0
+156 1425 0 CODE 0
+157 1427 0 CODE 0
+158 142C 0 CODE 0
+162 143B 0 CODE 0
+163 1449 0 CODE 0
+166 1449 0 CODE 0
+167 1456 0 CODE 0
+172 145F 0 CODE 0
+173 1468 0 CODE 0
+174 146C 0 CODE 0
+175 146D 0 CODE 0
+176 146D 0 CODE 0
+177 1471 0 CODE 0
+178 1473 0 CODE 0
+180 1474 0 CODE 0
+182 1476 0 CODE 0
+183 147B 0 CODE 0
+171 147D 0 CODE 0
+192 1481 0 CODE 0
+193 1482 0 CODE 0
+194 1486 0 CODE 0
+195 148C 0 CODE 0
+196 148E 0 CODE 0
+197 148F 0 CODE 0
+198 148F 0 CODE 0
+203 1494 0 CODE 0
+204 1499 0 CODE 0
+205 14A7 0 CODE 0
+206 14AB 0 CODE 0
+207 14C4 0 CODE 0
+208 14C9 0 CODE 0
+211 14CD 0 CODE 0
+215 14CD 0 CODE 0
+216 14D7 0 CODE 0
+218 14DF 0 CODE 0
+219 14E4 0 CODE 0
+225 14E5 0 CODE 0
+226 14E9 0 CODE 0
+227 14EA 0 CODE 0
+230 14EB 0 CODE 0
+231 14EF 0 CODE 0
+232 14EF 0 CODE 0
+233 14F6 0 CODE 0
+234 14FA 0 CODE 0
+235 14FB 0 CODE 0
+237 14FB 0 CODE 0
+C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\flneg.c
+15 800 0 CODE 0
+17 800 0 CODE 0
+18 808 0 CODE 0
+19 80A 0 CODE 0
+20 80A 0 CODE 0
+>>>>>>> parent of a4453d3 (Todo funciona menos último contador)
 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\flge.c
-4 10CA 0 CODE 0
-7 10CA 0 CODE 0
-8 10E0 0 CODE 0
-9 10E8 0 CODE 0
-10 10FC 0 CODE 0
-12 1104 0 CODE 0
-13 1108 0 CODE 0
-14 112C 0 CODE 0
-15 1130 0 CODE 0
-16 1154 0 CODE 0
-17 1156 0 CODE 0
-18 1158 0 CODE 0
-19 116D 0 CODE 0
+4 1F5C 0 CODE 0
+7 1F5C 0 CODE 0
+8 1F72 0 CODE 0
+9 1F7A 0 CODE 0
+10 1F8E 0 CODE 0
+12 1F96 0 CODE 0
+13 1F9A 0 CODE 0
+14 1FBE 0 CODE 0
+15 1FC2 0 CODE 0
+16 1FE6 0 CODE 0
+17 1FE8 0 CODE 0
+18 1FEA 0 CODE 0
+19 1FFF 0 CODE 0
 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\fleq.c
+<<<<<<< HEAD
 4 1B83 0 CODE 0
 7 1B83 0 CODE 0
 8 1B99 0 CODE 0
@@ -990,36 +1623,61 @@ main.c
 271 1A6D 0 CODE 0
 272 1AA1 0 CODE 0
 273 1AA9 0 CODE 0
+=======
+4 1D29 0 CODE 0
+7 1D29 0 CODE 0
+8 1D3F 0 CODE 0
+9 1D47 0 CODE 0
+10 1D5B 0 CODE 0
+11 1D63 0 CODE 0
+12 1D78 0 CODE 0
+main.c
+209 1B42 0 CODE 0
+210 1B43 0 CODE 0
+211 1B45 0 CODE 0
+212 1B46 0 CODE 0
+213 1B51 0 CODE 0
+211 1B57 0 CODE 0
+215 1B62 0 CODE 0
+217 1AA7 0 CODE 0
+218 1AA8 0 CODE 0
+219 1AAE 0 CODE 0
+220 1AB0 0 CODE 0
+222 1C15 0 CODE 0
+224 1C18 0 CODE 0
+225 1C4C 0 CODE 0
+226 1C54 0 CODE 0
+>>>>>>> parent of a4453d3 (Todo funciona menos último contador)
 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\xxtofl.c
-10 1E87 0 CODE 0
-15 1E8A 0 CODE 0
-16 1E93 0 CODE 0
-17 1EA2 0 CODE 0
-19 1EA3 0 CODE 0
-20 1EAB 0 CODE 0
-21 1EAB 0 CODE 0
-22 1EB3 0 CODE 0
-23 1EBC 0 CODE 0
-24 1EC0 0 CODE 0
-25 1EC1 0 CODE 0
-26 1EC5 0 CODE 0
-24 1ECE 0 CODE 0
-29 1ED5 0 CODE 0
-30 1ED9 0 CODE 0
-31 1EE7 0 CODE 0
-32 1EF0 0 CODE 0
-28 1EF0 0 CODE 0
-34 1EF7 0 CODE 0
-35 1EF9 0 CODE 0
-33 1F02 0 CODE 0
-37 1F0C 0 CODE 0
-38 1F10 0 CODE 0
-39 1F18 0 CODE 0
-40 1F1A 0 CODE 0
-41 1F30 0 CODE 0
-42 1F39 0 CODE 0
-43 1F3A 0 CODE 0
-44 1F42 0 CODE 0
+10 103B 0 CODE 0
+15 103E 0 CODE 0
+16 1047 0 CODE 0
+17 1056 0 CODE 0
+19 1057 0 CODE 0
+20 105F 0 CODE 0
+21 105F 0 CODE 0
+22 1067 0 CODE 0
+23 1070 0 CODE 0
+24 1074 0 CODE 0
+25 1075 0 CODE 0
+26 1079 0 CODE 0
+24 1082 0 CODE 0
+29 1089 0 CODE 0
+30 108D 0 CODE 0
+31 109B 0 CODE 0
+32 10A4 0 CODE 0
+28 10A4 0 CODE 0
+34 10AB 0 CODE 0
+35 10AD 0 CODE 0
+33 10B6 0 CODE 0
+37 10C0 0 CODE 0
+38 10C4 0 CODE 0
+39 10CC 0 CODE 0
+40 10CE 0 CODE 0
+41 10E4 0 CODE 0
+42 10ED 0 CODE 0
+43 10EE 0 CODE 0
+44 10F6 0 CODE 0
 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\sprcmul.c
 8 93C 0 CODE 0
 17 93C 0 CODE 0
@@ -1106,6 +1764,7 @@ C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\sprcmul.c
 203 C94 0 CODE 0
 205 C9C 0 CODE 0
 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\Umul8_16.c
+<<<<<<< HEAD
 4 19C7 0 CODE 0
 5 19CA 0 CODE 0
 6 19CC 0 CODE 0
@@ -1343,3 +2002,221 @@ C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\doprnt.c
 553 5C9 0 CODE 0
 1564 5DD 0 CODE 0
 1567 5E1 0 CODE 0
+=======
+4 1BAE 0 CODE 0
+5 1BB1 0 CODE 0
+6 1BB3 0 CODE 0
+51 1BBA 0 CODE 0
+52 1BBE 0 CODE 0
+53 1BC4 0 CODE 0
+54 1BC4 0 CODE 0
+55 1BCB 0 CODE 0
+56 1BCD 0 CODE 0
+59 1BD2 0 CODE 0
+60 1BD6 0 CODE 0
+main.c
+181 1AE2 0 CODE 0
+183 1AE2 0 CODE 0
+184 1AE5 0 CODE 0
+186 1AE6 0 CODE 0
+188 1AE9 0 CODE 0
+189 1AED 0 CODE 0
+191 1AEE 0 CODE 0
+192 1AF1 0 CODE 0
+193 1AF2 0 CODE 0
+195 1AF3 0 CODE 0
+197 1AF6 0 CODE 0
+152 1001 0 CODE 0
+153 1001 0 CODE 0
+154 1004 0 CODE 0
+156 1006 0 CODE 0
+157 100A 0 CODE 0
+158 100B 0 CODE 0
+159 100C 0 CODE 0
+160 100D 0 CODE 0
+162 100F 0 CODE 0
+199 1A91 0 CODE 0
+201 1A91 0 CODE 0
+202 1A92 0 CODE 0
+203 1A93 0 CODE 0
+204 1A96 0 CODE 0
+177 1A97 0 CODE 0
+178 1A97 0 CODE 0
+179 1A9D 0 CODE 0
+180 1A9E 0 CODE 0
+164 1AF7 0 CODE 0
+165 1AF7 0 CODE 0
+166 1AFA 0 CODE 0
+167 1AFB 0 CODE 0
+169 1AFC 0 CODE 0
+170 1AFF 0 CODE 0
+171 1B00 0 CODE 0
+172 1B04 0 CODE 0
+173 1B09 0 CODE 0
+175 1B0C 0 CODE 0
+LCD.c
+110 1C55 0 CODE 0
+112 1C55 0 CODE 0
+113 1C58 0 CODE 0
+114 1C98 0 CODE 0
+94 1B27 0 CODE 0
+98 1B28 0 CODE 0
+99 1B2B 0 CODE 0
+100 1B31 0 CODE 0
+101 1B34 0 CODE 0
+102 1B39 0 CODE 0
+103 1B3C 0 CODE 0
+108 1B41 0 CODE 0
+69 1B88 0 CODE 0
+71 1B8B 0 CODE 0
+72 1B90 0 CODE 0
+73 1B95 0 CODE 0
+74 1B9B 0 CODE 0
+75 1BA2 0 CODE 0
+76 1BA7 0 CODE 0
+78 1BAD 0 CODE 0
+80 1CDF 0 CODE 0
+81 1CDF 0 CODE 0
+82 1CE5 0 CODE 0
+83 1CEE 0 CODE 0
+84 1CF4 0 CODE 0
+85 1CFD 0 CODE 0
+86 1D03 0 CODE 0
+87 1D10 0 CODE 0
+89 1D16 0 CODE 0
+90 1D1C 0 CODE 0
+91 1D22 0 CODE 0
+92 1D28 0 CODE 0
+64 1AB1 0 CODE 0
+65 1AB1 0 CODE 0
+66 1AB7 0 CODE 0
+67 1ABD 0 CODE 0
+56 1B0D 0 CODE 0
+57 1B0E 0 CODE 0
+58 1B11 0 CODE 0
+59 1B17 0 CODE 0
+60 1B1A 0 CODE 0
+61 1B23 0 CODE 0
+62 1B26 0 CODE 0
+13 1BD7 0 CODE 0
+15 1BD8 0 CODE 0
+16 1BDC 0 CODE 0
+17 1BE0 0 CODE 0
+18 1BE0 0 CODE 0
+20 1BE3 0 CODE 0
+21 1BE7 0 CODE 0
+22 1BE9 0 CODE 0
+23 1BE9 0 CODE 0
+25 1BEA 0 CODE 0
+26 1BEE 0 CODE 0
+27 1BF0 0 CODE 0
+28 1BF0 0 CODE 0
+30 1BF1 0 CODE 0
+31 1BF5 0 CODE 0
+32 1BF7 0 CODE 0
+33 1BF7 0 CODE 0
+35 1BF8 0 CODE 0
+36 1BFC 0 CODE 0
+37 1BFE 0 CODE 0
+38 1BFE 0 CODE 0
+40 1BFF 0 CODE 0
+41 1C03 0 CODE 0
+42 1C05 0 CODE 0
+43 1C05 0 CODE 0
+45 1C06 0 CODE 0
+46 1C0A 0 CODE 0
+47 1C0C 0 CODE 0
+48 1C0C 0 CODE 0
+50 1C0D 0 CODE 0
+51 1C11 0 CODE 0
+52 1C13 0 CODE 0
+53 1C13 0 CODE 0
+54 1C14 0 CODE 0
+main.c
+86 1ABE 0 CODE 0
+88 1ABE 0 CODE 0
+89 1AC4 0 CODE 0
+91 1AC9 0 CODE 0
+86 4 0 CODE 0
+93 1010 0 CODE 0
+94 1010 0 CODE 0
+95 101B 0 CODE 0
+96 101F 0 CODE 0
+97 1023 0 CODE 0
+98 1024 0 CODE 0
+99 102D 0 CODE 0
+100 1033 0 CODE 0
+102 1039 0 CODE 0
+104 103A 0 CODE 0
+C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\doprnt.c
+1142 20 0 CODE 0
+1146 7F 0 CODE 0
+1147 A8 0 CODE 0
+1148 B0 0 CODE 0
+1149 B1 0 CODE 0
+1151 B9 0 CODE 0
+1152 D7 0 CODE 0
+1155 122 0 CODE 0
+1156 12A 0 CODE 0
+1157 12B 0 CODE 0
+1158 160 0 CODE 0
+1159 18F 0 CODE 0
+1162 191 0 CODE 0
+1163 193 0 CODE 0
+1164 1CA 0 CODE 0
+1168 1D4 0 CODE 0
+1169 1E9 0 CODE 0
+1174 1EF 0 CODE 0
+1175 1F5 0 CODE 0
+1176 201 0 CODE 0
+1207 208 0 CODE 0
+1206 216 0 CODE 0
+1214 223 0 CODE 0
+1216 231 0 CODE 0
+1227 23D 0 CODE 0
+1228 298 0 CODE 0
+1229 2D7 0 CODE 0
+1232 2E3 0 CODE 0
+1222 2E3 0 CODE 0
+1234 2EB 0 CODE 0
+1235 2F8 0 CODE 0
+1233 2FE 0 CODE 0
+1237 30B 0 CODE 0
+1238 31A 0 CODE 0
+1240 321 0 CODE 0
+1241 327 0 CODE 0
+1245 330 0 CODE 0
+1247 335 0 CODE 0
+1253 340 0 CODE 0
+1254 3B8 0 CODE 0
+1255 3B9 0 CODE 0
+1256 414 0 CODE 0
+1257 453 0 CODE 0
+1258 45F 0 CODE 0
+1254 4BA 0 CODE 0
+1262 4C2 0 CODE 0
+1263 4CD 0 CODE 0
+1261 4D3 0 CODE 0
+1316 4DA 0 CODE 0
+1317 4E8 0 CODE 0
+1365 4EE 0 CODE 0
+1366 4F9 0 CODE 0
+1367 500 0 CODE 0
+1368 50F 0 CODE 0
+1371 518 0 CODE 0
+1372 52C 0 CODE 0
+1374 532 0 CODE 0
+1375 536 0 CODE 0
+1376 544 0 CODE 0
+1378 54D 0 CODE 0
+1407 551 0 CODE 0
+1408 55C 0 CODE 0
+1410 568 0 CODE 0
+1450 56C 0 CODE 0
+1456 572 0 CODE 0
+1464 589 0 CODE 0
+1465 595 0 CODE 0
+553 59F 0 CODE 0
+1564 5B3 0 CODE 0
+1567 5B7 0 CODE 0
+>>>>>>> parent of a4453d3 (Todo funciona menos último contador)

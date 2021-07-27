@@ -64,7 +64,6 @@ void cfg_adc(void);
 void cfg_inte(void);
 void cfg_clk(void);
 void int_adc(void);
-void int_uart(void);
 void cfg_usart(void);
 void send_crct(char st[]);
 void send_char(char dato);
@@ -73,16 +72,19 @@ double conv(unsigned char aa);
 
 unsigned char V1;
 unsigned char V2;
-unsigned char V3 = 0;
 
+<<<<<<< HEAD
 char bmenu = 1;
 char f1[10];
 char f2[10];
 char op1 = 0;
+=======
+char f[10];
+>>>>>>> parent of a4453d3 (Todo funciona menos último contador)
 double v11;
 double v22;
-double v33;
-
+double g = 0;
+char val = 0;
 
 /*------------------------------------------------------------------------------
 INTERRUPCIONES
@@ -93,23 +95,22 @@ void __interrupt() isr(void){
     if (PIR1bits.ADIF){       //Revisión bandera ADC
         int_adc();
     }
-    if (PIR1bits.RCIF){       //Revisión entrada UART
-        int_uart();
-    }
 }
 
 void int_adc(){               //Interrupción ADC
     if(ADCON0bits.CHS == 5){  //Primer ciclo de ADC (ADRESH A PUERTO)
         V1 = ADRESH;
-        /*PORTA = ADRESH;*/
+        ADCON0bits.CHS = 6;
         }   
-    else{                     //Segundo ciclo de ADC (ADRESH A PUERTO)
+    else if(ADCON0bits.CHS == 6){                     //Segundo ciclo de ADC (ADRESH A PUERTO)
         V2 = ADRESH;
+        ADCON0bits.CHS = 5;
         }   
     PIR1bits.ADIF = 0;        //Clear de bandera ADC
     
 }
 
+<<<<<<< HEAD
 void int_uart(){
     TXREG = 12;
     if (RCREG == 43){
@@ -135,6 +136,8 @@ void int_uart(){
         bmenu = 1;
 }
 }    
+=======
+>>>>>>> parent of a4453d3 (Todo funciona menos último contador)
 /*------------------------------------------------------------------------------
 MAIN
 ------------------------------------------------------------------------------*/
@@ -146,20 +149,21 @@ void main() {
     cfg_adc();
     cfg_usart();
     
-    Lcd_Init();
-    ADCON0bits.GO = 1;
   
-    while(1){
-    
+  Lcd_Init();
+  ADCON0bits.GO = 1;
+  
+  while(1){
       Lcd_Clear();
       Lcd_Set_Cursor(1,1);
-      Lcd_Write_String(" S1:   S2:  S3:  ");
+      Lcd_Write_String("S1:   S2:   S3:");
       v11 = conv(V1);
       v22 = conv(V2);
-      v33 = conv(V3);
       
-
+   
+    
       Lcd_Set_Cursor(2,1);
+<<<<<<< HEAD
       sprintf(f1, "%3.1fV %3.2fV %3.2fV",v11, v22, v33);
       Lcd_Write_String(f1);
 
@@ -177,16 +181,33 @@ void main() {
      
       __delay_ms(100);
       
+=======
+      sprintf(f, "%3.2fV",v11);
+      Lcd_Write_String(f);
+
+    
+   
+      TXREG = '\f';
+      send_crct(f);
+    
+      __delay_ms(2000);
+
+>>>>>>> parent of a4453d3 (Todo funciona menos último contador)
       if(ADCON0bits.GO == 0){  //Proceso al acabar conversión
-        if (ADCON0bits.CHS == 5){
-            ADCON0bits.CHS = 6;
+              __delay_us(100);     //Delay para no traslapar conversiones
+              ADCON0bits.GO = 1;
         }
+<<<<<<< HEAD
         else{
             ADCON0bits.CHS = 5;
           }
         __delay_us(50);     //Delay para no traslapar conversiones
         ADCON0bits.GO = 1;
     }  
+=======
+      return;
+    }
+>>>>>>> parent of a4453d3 (Todo funciona menos último contador)
 }
 }    
 
@@ -202,7 +223,6 @@ void cfg_io(void) {
     TRISA = 0X00;
     TRISD = 0X00;
     TRISE = 0x03;   //Entradas RE0 y RE1
-    PORTA = 0X00;
     return;
 }
 
@@ -246,8 +266,6 @@ void cfg_inte(){
     INTCONbits.GIE = 1;  //Enable Interrupciones globales
     INTCONbits.PEIE = 1; //Enable interrupciones perifericas
     PIE1bits.RCIE = 1;   //Enable interrupcion del UART
-    PIE1bits.ADIE = 1;   //Enable interrupción del ADC
-    PIR1bits.ADIF = 0;
 }
 
 /*------------------------------------------------------------------------------
