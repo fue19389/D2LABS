@@ -2,7 +2,8 @@
 #include <pic16f887.h>
 #include "adc.h"
 
-uint8_t valadc(uint8_t aa){
-    aa = ADRESH;
-    return aa;
+double valadc(unsigned char adcval){
+    double adcv; //int adcv;
+    adcv = ADRESH ;
+    return adcv;
 }

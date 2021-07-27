@@ -12,8 +12,8 @@
 
 #include <xc.h> // include processor files - each processor file is guarded.  
 
-uint8_t num = 0;
-uint8_t valadc(uint8_t aa);
+//unsigned char adcval;
+//double valadc(unsigned char adcval);
 
 #endif	/* XC_HEADER_TEMPLATE_H */
 

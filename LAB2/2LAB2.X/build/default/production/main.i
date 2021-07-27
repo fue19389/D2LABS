@@ -7,7 +7,7 @@
 # 1 "C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\\pic\\include\\language_support.h" 1 3
 # 2 "<built-in>" 2
 # 1 "main.c" 2
-# 11 "main.c"
+# 18 "main.c"
 #pragma config FOSC = EXTRC_NOCLKOUT
 #pragma config WDTE = OFF
 #pragma config PWRTE = OFF
@@ -22,6 +22,12 @@
 
 #pragma config BOR4V = BOR40V
 #pragma config WRT = OFF
+
+
+
+
+
+
 
 
 # 1 "C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\\pic\\include\\xc.h" 1 3
@@ -2504,7 +2510,7 @@ extern __bank0 unsigned char __resetbits;
 extern __bank0 __bit __powerdown;
 extern __bank0 __bit __timeout;
 # 28 "C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\\pic\\include\\xc.h" 2 3
-# 26 "main.c" 2
+# 39 "main.c" 2
 
 # 1 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c90\\stdint.h" 1 3
 # 13 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c90\\stdint.h" 3
@@ -2639,7 +2645,7 @@ typedef int16_t intptr_t;
 
 
 typedef uint16_t uintptr_t;
-# 27 "main.c" 2
+# 40 "main.c" 2
 
 # 1 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c90\\string.h" 1 3
 
@@ -2692,7 +2698,7 @@ extern char * strchr(const char *, int);
 extern char * strichr(const char *, int);
 extern char * strrchr(const char *, int);
 extern char * strrichr(const char *, int);
-# 28 "main.c" 2
+# 41 "main.c" 2
 
 # 1 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c90\\stdlib.h" 1 3
 
@@ -2777,7 +2783,7 @@ extern char * ltoa(char * buf, long val, int base);
 extern char * ultoa(char * buf, unsigned long val, int base);
 
 extern char * ftoa(float f, int * status);
-# 29 "main.c" 2
+# 42 "main.c" 2
 
 # 1 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c90\\stdio.h" 1 3
 # 11 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c90\\stdio.h" 3
@@ -2859,8 +2865,8 @@ extern int vsscanf(const char *, const char *, va_list) __attribute__((unsupport
 #pragma printf_check(sprintf) const
 extern int sprintf(char *, const char *, ...);
 extern int printf(const char *, ...);
-# 30 "main.c" 2
-# 41 "main.c"
+# 43 "main.c" 2
+
 # 1 "./LCD.h" 1
 # 63 "./LCD.h"
 void Lcd_Port(char a);
@@ -2880,33 +2886,34 @@ void Lcd_Write_String(char *a);
 void Lcd_Shift_Right(void);
 
 void Lcd_Shift_Left(void);
-# 41 "main.c" 2
+# 44 "main.c" 2
 
 # 1 "./adc.h" 1
-# 15 "./adc.h"
-uint8_t num = 0;
-uint8_t valadc(uint8_t aa);
-# 42 "main.c" 2
-
-
-
-void cfg_io();
-void cfg_adc();
-void int_adc();
-void cfg_usart();
+# 45 "main.c" 2
+# 62 "main.c"
+void cfg_io(void);
+void cfg_adc(void);
+void cfg_inte(void);
+void cfg_clk(void);
+void int_adc(void);
+void cfg_usart(void);
 void send_crct(char st[]);
 void send_char(char dato);
 
-double conv(uint8_t aa);
+double conv(unsigned char aa);
 
-uint8_t V1;
-uint8_t V2;
+unsigned char V1;
+unsigned char V2;
 
 char f[10];
 double v11;
 double v22;
 double g = 0;
 char val = 0;
+
+
+
+
 
 void __attribute__((picinterrupt(("")))) isr(void){
 
@@ -2917,11 +2924,11 @@ void __attribute__((picinterrupt(("")))) isr(void){
 
 void int_adc(){
     if(ADCON0bits.CHS == 5){
-        V1 = valadc(val);
+        V1 = ADRESH;
         ADCON0bits.CHS = 6;
         }
-    else{
-        V2 = valadc(val);
+    else if(ADCON0bits.CHS == 6){
+        V2 = ADRESH;
         ADCON0bits.CHS = 5;
         }
     PIR1bits.ADIF = 0;
@@ -2930,44 +2937,51 @@ void int_adc(){
 
 
 
-void main(void) {
-  cfg_io();
-  cfg_adc();
-  unsigned int a;
-  TRISD = 0x00;
-  TRISCbits.TRISC6 = 0;
-  TRISCbits.TRISC7 = 0;
+
+
+void main() {
+    cfg_io();
+    cfg_clk();
+    cfg_inte();
+    cfg_adc();
+    cfg_usart();
+
+
   Lcd_Init();
   ADCON0bits.GO = 1;
 
   while(1){
-
-    Lcd_Clear();
-    Lcd_Set_Cursor(1,1);
-    Lcd_Write_String("S1: S2: S3:");
-    v11 = conv(V1);
-    v22 = conv(V2);
-
-    Lcd_Set_Cursor(2,1);
-    sprintf(f, "%3.2fV",v11);
-    Lcd_Write_String(f);
+      Lcd_Clear();
+      Lcd_Set_Cursor(1,1);
+      Lcd_Write_String("S1:   S2:   S3:");
+      v11 = conv(V1);
+      v22 = conv(V2);
 
 
 
-    TXREG = '\f';
-    send_crct("HOLA");
+      Lcd_Set_Cursor(2,1);
+      sprintf(f, "%3.2fV",v11);
+      Lcd_Write_String(f);
 
-    _delay((unsigned long)((2000)*(8000000/4000.0)));
 
-    if(ADCON0bits.GO == 0){
-            _delay((unsigned long)((100)*(8000000/4000000.0)));
-            ADCON0bits.GO = 1;
-         }
-    return;
+
+      TXREG = '\f';
+      send_crct(f);
+
+      _delay((unsigned long)((2000)*(8000000/4000.0)));
+
+      if(ADCON0bits.GO == 0){
+              _delay((unsigned long)((100)*(8000000/4000000.0)));
+              ADCON0bits.GO = 1;
+        }
+      return;
+    }
 }
-}
 
-void cfg_io(){
+
+
+
+void cfg_io(void) {
     ANSELH = 0x00;
     ANSEL = 0x20;
 
@@ -2976,6 +2990,7 @@ void cfg_io(){
     TRISA = 0X00;
     TRISD = 0X00;
     TRISE = 0x03;
+    return;
 }
 
 void cfg_adc() {
@@ -2991,24 +3006,18 @@ void cfg_adc() {
 
 }
 
-double conv(uint8_t aa ){
-    double result;
-    result = aa*0.0196;
-    return result;
-}
-
-void cfg_usart(){
-
+void cfg_clk(){
     OSCCONbits.IRCF = 0b100;
     OSCCONbits.SCS = 1;
-
+}
+void cfg_usart(){
 
     TXSTAbits.SYNC = 0;
     TXSTAbits.BRGH = 1;
 
     BAUDCTLbits.BRG16 = 1;
 
-    SPBRG = 51;
+    SPBRG = 25;
     SPBRGH = 0;
 
     RCSTAbits.SPEN = 1;
@@ -3018,6 +3027,16 @@ void cfg_usart(){
     TXSTAbits.TXEN = 1;
 
 }
+
+void cfg_inte(){
+
+    INTCONbits.GIE = 1;
+    INTCONbits.PEIE = 1;
+    PIE1bits.RCIE = 1;
+}
+
+
+
 
 void send_crct(char st[]){
     int i = 0;
@@ -3030,4 +3049,10 @@ void send_crct(char st[]){
 void send_char(char dato){
     while(!TXIF);
     TXREG = dato;
+}
+
+double conv(unsigned char aa){
+    double result;
+    result = aa*0.0196;
+    return result;
 }

@@ -236,27 +236,24 @@ Version 4.0 HI-TECH Software Intermediate Code
 "3546
 [; ;C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f887.h: 3546: __asm("EECON2 equ 018Dh");
 [; <" EECON2 equ 018Dh ;# ">
-"15 ./adc.h
-[; ;./adc.h: 15: uint8_t num = 0;
-[v _num `uc ~T0 @X0 1 e ]
-[i _num
--> -> 0 `i `uc
-]
 "5 adc.c
-[; ;adc.c: 5: uint8_t valadc(uint8_t aa){
-[v _valadc `(uc ~T0 @X0 1 ef1`uc ]
+[; ;adc.c: 5: double valadc(unsigned char adcval){
+[v _valadc `(d ~T0 @X0 1 ef1`uc ]
 {
 [e :U _valadc ]
-[v _aa `uc ~T0 @X0 1 r1 ]
+[v _adcval `uc ~T0 @X0 1 r1 ]
 [f ]
 "6
-[; ;adc.c: 6:     aa = ADRESH;
-[e = _aa _ADRESH ]
+[; ;adc.c: 6:     double adcv;
+[v _adcv `d ~T0 @X0 1 a ]
 "7
-[; ;adc.c: 7:     return aa;
-[e ) _aa ]
-[e $UE 138  ]
+[; ;adc.c: 7:     adcv = ADRESH ;
+[e = _adcv -> _ADRESH `d ]
 "8
-[; ;adc.c: 8: }
+[; ;adc.c: 8:     return adcv;
+[e ) _adcv ]
+[e $UE 138  ]
+"9
+[; ;adc.c: 9: }
 [e :UE 138 ]
 }

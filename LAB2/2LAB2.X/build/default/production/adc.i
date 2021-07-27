@@ -2625,14 +2625,11 @@ extern __bank0 __bit __powerdown;
 extern __bank0 __bit __timeout;
 # 28 "C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\\pic\\include\\xc.h" 2 3
 # 13 "./adc.h" 2
-
-
-uint8_t num = 0;
-uint8_t valadc(uint8_t aa);
 # 3 "adc.c" 2
 
 
-uint8_t valadc(uint8_t aa){
-    aa = ADRESH;
-    return aa;
+double valadc(unsigned char adcval){
+    double adcv;
+    adcv = ADRESH ;
+    return adcv;
 }
