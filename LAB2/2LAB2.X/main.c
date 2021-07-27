@@ -109,16 +109,22 @@ void int_adc(){               //Interrupción ADC
 }
 
 void int_uart(){
-    TXREG = '\f';
+    //TXREG = 12;
+    //PORTA = RCREG;
+    //RCREG = 0X2B;
     if (RCREG == 43){
+        //RCREG = 0;
         TXREG = 43;
-        PORTA++;
-        __delay_ms(3000);   
+        V3++;
+        //__delay_ms(3000);  
+        //RCREG = 0;
     }
     if (RCREG == 45){
+        //RCREG = 0;
         TXREG = 45;
-        PORTA--;
-        __delay_ms(3000);   
+        V3--;
+        //__delay_ms(3000);  
+        //RCREG = 0;
     }
 }
 /*------------------------------------------------------------------------------
@@ -172,12 +178,13 @@ void main() {
 /*------------------------------------------------------------------------------
 CONFIG GENERAL
 ------------------------------------------------------------------------------*/
-void cfg_io(void) {
+void cfg_io() {
     ANSELH = 0x00;  //Seteo de inputs como digitales
     ANSEL = 0x20;   //Seteo de inputs RE0 y RE1 como analógicos
     
     TRISB = 0x03;   //Pines RB0, RB1, como entradas
-    TRISC = 0x00;   //PORTC, PORTA, PORTD como salidas
+    TRISCbits.TRISC0 = 0;   //PORTC, PORTA, PORTD como salidas
+    TRISCbits.TRISC1 = 0;
     TRISA = 0X00;
     TRISD = 0X00;
     TRISE = 0x03;   //Entradas RE0 y RE1

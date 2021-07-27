@@ -2941,16 +2941,22 @@ void int_adc(){
 }
 
 void int_uart(){
-    TXREG = '\f';
+
+
+
     if (RCREG == 43){
+
         TXREG = 43;
-        PORTA++;
-        _delay((unsigned long)((3000)*(8000000/4000.0)));
+        V3++;
+
+
     }
     if (RCREG == 45){
+
         TXREG = 45;
-        PORTA--;
-        _delay((unsigned long)((3000)*(8000000/4000.0)));
+        V3--;
+
+
     }
 }
 
@@ -3004,12 +3010,13 @@ void main() {
 
 
 
-void cfg_io(void) {
+void cfg_io() {
     ANSELH = 0x00;
     ANSEL = 0x20;
 
     TRISB = 0x03;
-    TRISC = 0x00;
+    TRISCbits.TRISC0 = 0;
+    TRISCbits.TRISC1 = 0;
     TRISA = 0X00;
     TRISD = 0X00;
     TRISE = 0x03;
