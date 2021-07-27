@@ -2942,21 +2942,13 @@ void int_adc(){
 
 void int_uart(){
 
-
-
     if (RCREG == 43){
-
         TXREG = 43;
         V3++;
-
-
     }
     if (RCREG == 45){
-
         TXREG = 45;
         V3--;
-
-
     }
 }
 
@@ -2972,6 +2964,9 @@ void main() {
 
     Lcd_Init();
     ADCON0bits.GO = 1;
+
+
+
 
     while(1){
 
@@ -3060,7 +3055,6 @@ void cfg_usart(){
 }
 
 void cfg_inte(){
-
     INTCONbits.GIE = 1;
     INTCONbits.PEIE = 1;
     PIE1bits.RCIE = 1;

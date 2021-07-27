@@ -64,7 +64,7 @@ text1_split_1 CODE 0 25 25 57C 2
 strings STRING 0 1000 1000 C7 2
 clrtext CODE 0 197E 197E 8 2
 config CONFIG 4 2007 2007 2 2
-$C:\Users\gerar\AppData\Local\Temp\s1kc.o
+$C:\Users\gerar\AppData\Local\Temp\s6eg.o
 reset_vec CODE 0 0 0 3 2
 end_init CODE 0 C C 3 2
 config CONFIG 4 2007 2007 2 2
@@ -119,21 +119,21 @@ STRING 1800-1975 2
 # All other numeric values are in decimal.
 %LINETAB
 $dist/default/production\2LAB2.X.production.o
-F cinit CODE >1137:C:\Users\gerar\AppData\Local\Temp\s1kc.s
-F cinit CODE >1140:C:\Users\gerar\AppData\Local\Temp\s1kc.s
-F cinit CODE >1190:C:\Users\gerar\AppData\Local\Temp\s1kc.s
-10 cinit CODE >1191:C:\Users\gerar\AppData\Local\Temp\s1kc.s
-11 cinit CODE >1192:C:\Users\gerar\AppData\Local\Temp\s1kc.s
-12 cinit CODE >1193:C:\Users\gerar\AppData\Local\Temp\s1kc.s
-13 cinit CODE >1194:C:\Users\gerar\AppData\Local\Temp\s1kc.s
-18 cinit CODE >1197:C:\Users\gerar\AppData\Local\Temp\s1kc.s
-19 cinit CODE >1198:C:\Users\gerar\AppData\Local\Temp\s1kc.s
-1A cinit CODE >1199:C:\Users\gerar\AppData\Local\Temp\s1kc.s
-1B cinit CODE >1200:C:\Users\gerar\AppData\Local\Temp\s1kc.s
-1C cinit CODE >1201:C:\Users\gerar\AppData\Local\Temp\s1kc.s
-21 cinit CODE >1207:C:\Users\gerar\AppData\Local\Temp\s1kc.s
-21 cinit CODE >1209:C:\Users\gerar\AppData\Local\Temp\s1kc.s
-22 cinit CODE >1210:C:\Users\gerar\AppData\Local\Temp\s1kc.s
+F cinit CODE >1137:C:\Users\gerar\AppData\Local\Temp\s6eg.s
+F cinit CODE >1140:C:\Users\gerar\AppData\Local\Temp\s6eg.s
+F cinit CODE >1190:C:\Users\gerar\AppData\Local\Temp\s6eg.s
+10 cinit CODE >1191:C:\Users\gerar\AppData\Local\Temp\s6eg.s
+11 cinit CODE >1192:C:\Users\gerar\AppData\Local\Temp\s6eg.s
+12 cinit CODE >1193:C:\Users\gerar\AppData\Local\Temp\s6eg.s
+13 cinit CODE >1194:C:\Users\gerar\AppData\Local\Temp\s6eg.s
+18 cinit CODE >1197:C:\Users\gerar\AppData\Local\Temp\s6eg.s
+19 cinit CODE >1198:C:\Users\gerar\AppData\Local\Temp\s6eg.s
+1A cinit CODE >1199:C:\Users\gerar\AppData\Local\Temp\s6eg.s
+1B cinit CODE >1200:C:\Users\gerar\AppData\Local\Temp\s6eg.s
+1C cinit CODE >1201:C:\Users\gerar\AppData\Local\Temp\s6eg.s
+21 cinit CODE >1207:C:\Users\gerar\AppData\Local\Temp\s6eg.s
+21 cinit CODE >1209:C:\Users\gerar\AppData\Local\Temp\s6eg.s
+22 cinit CODE >1210:C:\Users\gerar\AppData\Local\Temp\s6eg.s
 4 intentry CODE >89:C:\Users\gerar\Desktop\UVG\6to Semestre\Digital_2\D2LABS\LAB2\2LAB2.X\main.c
 25 text1_split_1 CODE >1142:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\doprnt.c
 76 text1_split_1 CODE >1146:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\doprnt.c
@@ -213,13 +213,13 @@ E8 text1_split_1 CODE >1157:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90
 1A42 text40 CODE >107:C:\Users\gerar\Desktop\UVG\6to Semestre\Digital_2\D2LABS\LAB2\2LAB2.X\main.c
 1A45 text40 CODE >109:C:\Users\gerar\Desktop\UVG\6to Semestre\Digital_2\D2LABS\LAB2\2LAB2.X\main.c
 1A63 text39 CODE >111:C:\Users\gerar\Desktop\UVG\6to Semestre\Digital_2\D2LABS\LAB2\2LAB2.X\main.c
-1A63 text39 CODE >115:C:\Users\gerar\Desktop\UVG\6to Semestre\Digital_2\D2LABS\LAB2\2LAB2.X\main.c
-1A6B text39 CODE >117:C:\Users\gerar\Desktop\UVG\6to Semestre\Digital_2\D2LABS\LAB2\2LAB2.X\main.c
-1A6D text39 CODE >118:C:\Users\gerar\Desktop\UVG\6to Semestre\Digital_2\D2LABS\LAB2\2LAB2.X\main.c
-1A73 text39 CODE >122:C:\Users\gerar\Desktop\UVG\6to Semestre\Digital_2\D2LABS\LAB2\2LAB2.X\main.c
-1A7A text39 CODE >124:C:\Users\gerar\Desktop\UVG\6to Semestre\Digital_2\D2LABS\LAB2\2LAB2.X\main.c
-1A7C text39 CODE >125:C:\Users\gerar\Desktop\UVG\6to Semestre\Digital_2\D2LABS\LAB2\2LAB2.X\main.c
-1A80 text39 CODE >129:C:\Users\gerar\Desktop\UVG\6to Semestre\Digital_2\D2LABS\LAB2\2LAB2.X\main.c
+1A63 text39 CODE >113:C:\Users\gerar\Desktop\UVG\6to Semestre\Digital_2\D2LABS\LAB2\2LAB2.X\main.c
+1A6B text39 CODE >114:C:\Users\gerar\Desktop\UVG\6to Semestre\Digital_2\D2LABS\LAB2\2LAB2.X\main.c
+1A6D text39 CODE >115:C:\Users\gerar\Desktop\UVG\6to Semestre\Digital_2\D2LABS\LAB2\2LAB2.X\main.c
+1A73 text39 CODE >117:C:\Users\gerar\Desktop\UVG\6to Semestre\Digital_2\D2LABS\LAB2\2LAB2.X\main.c
+1A7A text39 CODE >118:C:\Users\gerar\Desktop\UVG\6to Semestre\Digital_2\D2LABS\LAB2\2LAB2.X\main.c
+1A7C text39 CODE >119:C:\Users\gerar\Desktop\UVG\6to Semestre\Digital_2\D2LABS\LAB2\2LAB2.X\main.c
+1A80 text39 CODE >121:C:\Users\gerar\Desktop\UVG\6to Semestre\Digital_2\D2LABS\LAB2\2LAB2.X\main.c
 1A46 text38 CODE >89:C:\Users\gerar\Desktop\UVG\6to Semestre\Digital_2\D2LABS\LAB2\2LAB2.X\main.c
 1A46 text38 CODE >91:C:\Users\gerar\Desktop\UVG\6to Semestre\Digital_2\D2LABS\LAB2\2LAB2.X\main.c
 1A4C text38 CODE >92:C:\Users\gerar\Desktop\UVG\6to Semestre\Digital_2\D2LABS\LAB2\2LAB2.X\main.c
@@ -303,49 +303,49 @@ E8 text1_split_1 CODE >1157:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90
 1B7E text31 CODE >112:C:\Users\gerar\Desktop\UVG\6to Semestre\Digital_2\D2LABS\LAB2\2LAB2.X\LCD.c
 1B83 text31 CODE >113:C:\Users\gerar\Desktop\UVG\6to Semestre\Digital_2\D2LABS\LAB2\2LAB2.X\LCD.c
 1BC3 text31 CODE >114:C:\Users\gerar\Desktop\UVG\6to Semestre\Digital_2\D2LABS\LAB2\2LAB2.X\LCD.c
-19DF text30 CODE >195:C:\Users\gerar\Desktop\UVG\6to Semestre\Digital_2\D2LABS\LAB2\2LAB2.X\main.c
-19DF text30 CODE >196:C:\Users\gerar\Desktop\UVG\6to Semestre\Digital_2\D2LABS\LAB2\2LAB2.X\main.c
-19E2 text30 CODE >197:C:\Users\gerar\Desktop\UVG\6to Semestre\Digital_2\D2LABS\LAB2\2LAB2.X\main.c
-19E3 text30 CODE >198:C:\Users\gerar\Desktop\UVG\6to Semestre\Digital_2\D2LABS\LAB2\2LAB2.X\main.c
-19E4 text30 CODE >200:C:\Users\gerar\Desktop\UVG\6to Semestre\Digital_2\D2LABS\LAB2\2LAB2.X\main.c
-19E7 text30 CODE >201:C:\Users\gerar\Desktop\UVG\6to Semestre\Digital_2\D2LABS\LAB2\2LAB2.X\main.c
-19E8 text30 CODE >202:C:\Users\gerar\Desktop\UVG\6to Semestre\Digital_2\D2LABS\LAB2\2LAB2.X\main.c
-19EC text30 CODE >203:C:\Users\gerar\Desktop\UVG\6to Semestre\Digital_2\D2LABS\LAB2\2LAB2.X\main.c
-19F1 text30 CODE >204:C:\Users\gerar\Desktop\UVG\6to Semestre\Digital_2\D2LABS\LAB2\2LAB2.X\main.c
-19F4 text30 CODE >206:C:\Users\gerar\Desktop\UVG\6to Semestre\Digital_2\D2LABS\LAB2\2LAB2.X\main.c
-1976 text29 CODE >208:C:\Users\gerar\Desktop\UVG\6to Semestre\Digital_2\D2LABS\LAB2\2LAB2.X\main.c
-1976 text29 CODE >209:C:\Users\gerar\Desktop\UVG\6to Semestre\Digital_2\D2LABS\LAB2\2LAB2.X\main.c
-197C text29 CODE >210:C:\Users\gerar\Desktop\UVG\6to Semestre\Digital_2\D2LABS\LAB2\2LAB2.X\main.c
-197D text29 CODE >211:C:\Users\gerar\Desktop\UVG\6to Semestre\Digital_2\D2LABS\LAB2\2LAB2.X\main.c
-1986 text28 CODE >230:C:\Users\gerar\Desktop\UVG\6to Semestre\Digital_2\D2LABS\LAB2\2LAB2.X\main.c
-1986 text28 CODE >232:C:\Users\gerar\Desktop\UVG\6to Semestre\Digital_2\D2LABS\LAB2\2LAB2.X\main.c
-1987 text28 CODE >233:C:\Users\gerar\Desktop\UVG\6to Semestre\Digital_2\D2LABS\LAB2\2LAB2.X\main.c
-1988 text28 CODE >234:C:\Users\gerar\Desktop\UVG\6to Semestre\Digital_2\D2LABS\LAB2\2LAB2.X\main.c
-198B text28 CODE >235:C:\Users\gerar\Desktop\UVG\6to Semestre\Digital_2\D2LABS\LAB2\2LAB2.X\main.c
-198C text28 CODE >236:C:\Users\gerar\Desktop\UVG\6to Semestre\Digital_2\D2LABS\LAB2\2LAB2.X\main.c
-198F text28 CODE >237:C:\Users\gerar\Desktop\UVG\6to Semestre\Digital_2\D2LABS\LAB2\2LAB2.X\main.c
-19B7 text27 CODE >181:C:\Users\gerar\Desktop\UVG\6to Semestre\Digital_2\D2LABS\LAB2\2LAB2.X\main.c
-19B7 text27 CODE >182:C:\Users\gerar\Desktop\UVG\6to Semestre\Digital_2\D2LABS\LAB2\2LAB2.X\main.c
-19BA text27 CODE >183:C:\Users\gerar\Desktop\UVG\6to Semestre\Digital_2\D2LABS\LAB2\2LAB2.X\main.c
-19BC text27 CODE >185:C:\Users\gerar\Desktop\UVG\6to Semestre\Digital_2\D2LABS\LAB2\2LAB2.X\main.c
-19C0 text27 CODE >186:C:\Users\gerar\Desktop\UVG\6to Semestre\Digital_2\D2LABS\LAB2\2LAB2.X\main.c
-19C1 text27 CODE >187:C:\Users\gerar\Desktop\UVG\6to Semestre\Digital_2\D2LABS\LAB2\2LAB2.X\main.c
-19C2 text27 CODE >188:C:\Users\gerar\Desktop\UVG\6to Semestre\Digital_2\D2LABS\LAB2\2LAB2.X\main.c
-19C3 text27 CODE >189:C:\Users\gerar\Desktop\UVG\6to Semestre\Digital_2\D2LABS\LAB2\2LAB2.X\main.c
-19C4 text27 CODE >190:C:\Users\gerar\Desktop\UVG\6to Semestre\Digital_2\D2LABS\LAB2\2LAB2.X\main.c
-19C6 text27 CODE >191:C:\Users\gerar\Desktop\UVG\6to Semestre\Digital_2\D2LABS\LAB2\2LAB2.X\main.c
-19C9 text27 CODE >193:C:\Users\gerar\Desktop\UVG\6to Semestre\Digital_2\D2LABS\LAB2\2LAB2.X\main.c
-19CA text26 CODE >212:C:\Users\gerar\Desktop\UVG\6to Semestre\Digital_2\D2LABS\LAB2\2LAB2.X\main.c
-19CA text26 CODE >214:C:\Users\gerar\Desktop\UVG\6to Semestre\Digital_2\D2LABS\LAB2\2LAB2.X\main.c
-19CD text26 CODE >215:C:\Users\gerar\Desktop\UVG\6to Semestre\Digital_2\D2LABS\LAB2\2LAB2.X\main.c
-19CE text26 CODE >217:C:\Users\gerar\Desktop\UVG\6to Semestre\Digital_2\D2LABS\LAB2\2LAB2.X\main.c
-19D1 text26 CODE >219:C:\Users\gerar\Desktop\UVG\6to Semestre\Digital_2\D2LABS\LAB2\2LAB2.X\main.c
-19D5 text26 CODE >220:C:\Users\gerar\Desktop\UVG\6to Semestre\Digital_2\D2LABS\LAB2\2LAB2.X\main.c
-19D6 text26 CODE >222:C:\Users\gerar\Desktop\UVG\6to Semestre\Digital_2\D2LABS\LAB2\2LAB2.X\main.c
-19D9 text26 CODE >223:C:\Users\gerar\Desktop\UVG\6to Semestre\Digital_2\D2LABS\LAB2\2LAB2.X\main.c
-19DA text26 CODE >224:C:\Users\gerar\Desktop\UVG\6to Semestre\Digital_2\D2LABS\LAB2\2LAB2.X\main.c
-19DB text26 CODE >226:C:\Users\gerar\Desktop\UVG\6to Semestre\Digital_2\D2LABS\LAB2\2LAB2.X\main.c
-19DE text26 CODE >228:C:\Users\gerar\Desktop\UVG\6to Semestre\Digital_2\D2LABS\LAB2\2LAB2.X\main.c
+19DF text30 CODE >190:C:\Users\gerar\Desktop\UVG\6to Semestre\Digital_2\D2LABS\LAB2\2LAB2.X\main.c
+19DF text30 CODE >191:C:\Users\gerar\Desktop\UVG\6to Semestre\Digital_2\D2LABS\LAB2\2LAB2.X\main.c
+19E2 text30 CODE >192:C:\Users\gerar\Desktop\UVG\6to Semestre\Digital_2\D2LABS\LAB2\2LAB2.X\main.c
+19E3 text30 CODE >193:C:\Users\gerar\Desktop\UVG\6to Semestre\Digital_2\D2LABS\LAB2\2LAB2.X\main.c
+19E4 text30 CODE >195:C:\Users\gerar\Desktop\UVG\6to Semestre\Digital_2\D2LABS\LAB2\2LAB2.X\main.c
+19E7 text30 CODE >196:C:\Users\gerar\Desktop\UVG\6to Semestre\Digital_2\D2LABS\LAB2\2LAB2.X\main.c
+19E8 text30 CODE >197:C:\Users\gerar\Desktop\UVG\6to Semestre\Digital_2\D2LABS\LAB2\2LAB2.X\main.c
+19EC text30 CODE >198:C:\Users\gerar\Desktop\UVG\6to Semestre\Digital_2\D2LABS\LAB2\2LAB2.X\main.c
+19F1 text30 CODE >199:C:\Users\gerar\Desktop\UVG\6to Semestre\Digital_2\D2LABS\LAB2\2LAB2.X\main.c
+19F4 text30 CODE >201:C:\Users\gerar\Desktop\UVG\6to Semestre\Digital_2\D2LABS\LAB2\2LAB2.X\main.c
+1976 text29 CODE >203:C:\Users\gerar\Desktop\UVG\6to Semestre\Digital_2\D2LABS\LAB2\2LAB2.X\main.c
+1976 text29 CODE >204:C:\Users\gerar\Desktop\UVG\6to Semestre\Digital_2\D2LABS\LAB2\2LAB2.X\main.c
+197C text29 CODE >205:C:\Users\gerar\Desktop\UVG\6to Semestre\Digital_2\D2LABS\LAB2\2LAB2.X\main.c
+197D text29 CODE >206:C:\Users\gerar\Desktop\UVG\6to Semestre\Digital_2\D2LABS\LAB2\2LAB2.X\main.c
+1986 text28 CODE >225:C:\Users\gerar\Desktop\UVG\6to Semestre\Digital_2\D2LABS\LAB2\2LAB2.X\main.c
+1986 text28 CODE >226:C:\Users\gerar\Desktop\UVG\6to Semestre\Digital_2\D2LABS\LAB2\2LAB2.X\main.c
+1987 text28 CODE >227:C:\Users\gerar\Desktop\UVG\6to Semestre\Digital_2\D2LABS\LAB2\2LAB2.X\main.c
+1988 text28 CODE >228:C:\Users\gerar\Desktop\UVG\6to Semestre\Digital_2\D2LABS\LAB2\2LAB2.X\main.c
+198B text28 CODE >229:C:\Users\gerar\Desktop\UVG\6to Semestre\Digital_2\D2LABS\LAB2\2LAB2.X\main.c
+198C text28 CODE >230:C:\Users\gerar\Desktop\UVG\6to Semestre\Digital_2\D2LABS\LAB2\2LAB2.X\main.c
+198F text28 CODE >231:C:\Users\gerar\Desktop\UVG\6to Semestre\Digital_2\D2LABS\LAB2\2LAB2.X\main.c
+19B7 text27 CODE >176:C:\Users\gerar\Desktop\UVG\6to Semestre\Digital_2\D2LABS\LAB2\2LAB2.X\main.c
+19B7 text27 CODE >177:C:\Users\gerar\Desktop\UVG\6to Semestre\Digital_2\D2LABS\LAB2\2LAB2.X\main.c
+19BA text27 CODE >178:C:\Users\gerar\Desktop\UVG\6to Semestre\Digital_2\D2LABS\LAB2\2LAB2.X\main.c
+19BC text27 CODE >180:C:\Users\gerar\Desktop\UVG\6to Semestre\Digital_2\D2LABS\LAB2\2LAB2.X\main.c
+19C0 text27 CODE >181:C:\Users\gerar\Desktop\UVG\6to Semestre\Digital_2\D2LABS\LAB2\2LAB2.X\main.c
+19C1 text27 CODE >182:C:\Users\gerar\Desktop\UVG\6to Semestre\Digital_2\D2LABS\LAB2\2LAB2.X\main.c
+19C2 text27 CODE >183:C:\Users\gerar\Desktop\UVG\6to Semestre\Digital_2\D2LABS\LAB2\2LAB2.X\main.c
+19C3 text27 CODE >184:C:\Users\gerar\Desktop\UVG\6to Semestre\Digital_2\D2LABS\LAB2\2LAB2.X\main.c
+19C4 text27 CODE >185:C:\Users\gerar\Desktop\UVG\6to Semestre\Digital_2\D2LABS\LAB2\2LAB2.X\main.c
+19C6 text27 CODE >186:C:\Users\gerar\Desktop\UVG\6to Semestre\Digital_2\D2LABS\LAB2\2LAB2.X\main.c
+19C9 text27 CODE >188:C:\Users\gerar\Desktop\UVG\6to Semestre\Digital_2\D2LABS\LAB2\2LAB2.X\main.c
+19CA text26 CODE >207:C:\Users\gerar\Desktop\UVG\6to Semestre\Digital_2\D2LABS\LAB2\2LAB2.X\main.c
+19CA text26 CODE >209:C:\Users\gerar\Desktop\UVG\6to Semestre\Digital_2\D2LABS\LAB2\2LAB2.X\main.c
+19CD text26 CODE >210:C:\Users\gerar\Desktop\UVG\6to Semestre\Digital_2\D2LABS\LAB2\2LAB2.X\main.c
+19CE text26 CODE >212:C:\Users\gerar\Desktop\UVG\6to Semestre\Digital_2\D2LABS\LAB2\2LAB2.X\main.c
+19D1 text26 CODE >214:C:\Users\gerar\Desktop\UVG\6to Semestre\Digital_2\D2LABS\LAB2\2LAB2.X\main.c
+19D5 text26 CODE >215:C:\Users\gerar\Desktop\UVG\6to Semestre\Digital_2\D2LABS\LAB2\2LAB2.X\main.c
+19D6 text26 CODE >217:C:\Users\gerar\Desktop\UVG\6to Semestre\Digital_2\D2LABS\LAB2\2LAB2.X\main.c
+19D9 text26 CODE >218:C:\Users\gerar\Desktop\UVG\6to Semestre\Digital_2\D2LABS\LAB2\2LAB2.X\main.c
+19DA text26 CODE >219:C:\Users\gerar\Desktop\UVG\6to Semestre\Digital_2\D2LABS\LAB2\2LAB2.X\main.c
+19DB text26 CODE >221:C:\Users\gerar\Desktop\UVG\6to Semestre\Digital_2\D2LABS\LAB2\2LAB2.X\main.c
+19DE text26 CODE >223:C:\Users\gerar\Desktop\UVG\6to Semestre\Digital_2\D2LABS\LAB2\2LAB2.X\main.c
 806 text25 CODE >4:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\Umul8_16.c
 809 text25 CODE >5:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\Umul8_16.c
 80B text25 CODE >6:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\Umul8_16.c
@@ -470,21 +470,21 @@ C9C text24 CODE >205:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common
 1FF6 text23 CODE >42:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\xxtofl.c
 1FF7 text23 CODE >43:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\xxtofl.c
 1FFF text23 CODE >44:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\xxtofl.c
-1B3E text22 CODE >255:C:\Users\gerar\Desktop\UVG\6to Semestre\Digital_2\D2LABS\LAB2\2LAB2.X\main.c
-1B41 text22 CODE >257:C:\Users\gerar\Desktop\UVG\6to Semestre\Digital_2\D2LABS\LAB2\2LAB2.X\main.c
-1B75 text22 CODE >258:C:\Users\gerar\Desktop\UVG\6to Semestre\Digital_2\D2LABS\LAB2\2LAB2.X\main.c
-1B7D text22 CODE >259:C:\Users\gerar\Desktop\UVG\6to Semestre\Digital_2\D2LABS\LAB2\2LAB2.X\main.c
-1990 text21 CODE >250:C:\Users\gerar\Desktop\UVG\6to Semestre\Digital_2\D2LABS\LAB2\2LAB2.X\main.c
-1991 text21 CODE >251:C:\Users\gerar\Desktop\UVG\6to Semestre\Digital_2\D2LABS\LAB2\2LAB2.X\main.c
-1997 text21 CODE >252:C:\Users\gerar\Desktop\UVG\6to Semestre\Digital_2\D2LABS\LAB2\2LAB2.X\main.c
-1999 text21 CODE >253:C:\Users\gerar\Desktop\UVG\6to Semestre\Digital_2\D2LABS\LAB2\2LAB2.X\main.c
-1A81 text20 CODE >242:C:\Users\gerar\Desktop\UVG\6to Semestre\Digital_2\D2LABS\LAB2\2LAB2.X\main.c
-1A82 text20 CODE >243:C:\Users\gerar\Desktop\UVG\6to Semestre\Digital_2\D2LABS\LAB2\2LAB2.X\main.c
-1A84 text20 CODE >244:C:\Users\gerar\Desktop\UVG\6to Semestre\Digital_2\D2LABS\LAB2\2LAB2.X\main.c
-1A85 text20 CODE >245:C:\Users\gerar\Desktop\UVG\6to Semestre\Digital_2\D2LABS\LAB2\2LAB2.X\main.c
-1A90 text20 CODE >246:C:\Users\gerar\Desktop\UVG\6to Semestre\Digital_2\D2LABS\LAB2\2LAB2.X\main.c
-1A96 text20 CODE >244:C:\Users\gerar\Desktop\UVG\6to Semestre\Digital_2\D2LABS\LAB2\2LAB2.X\main.c
-1AA1 text20 CODE >248:C:\Users\gerar\Desktop\UVG\6to Semestre\Digital_2\D2LABS\LAB2\2LAB2.X\main.c
+1B3E text22 CODE >249:C:\Users\gerar\Desktop\UVG\6to Semestre\Digital_2\D2LABS\LAB2\2LAB2.X\main.c
+1B41 text22 CODE >251:C:\Users\gerar\Desktop\UVG\6to Semestre\Digital_2\D2LABS\LAB2\2LAB2.X\main.c
+1B75 text22 CODE >252:C:\Users\gerar\Desktop\UVG\6to Semestre\Digital_2\D2LABS\LAB2\2LAB2.X\main.c
+1B7D text22 CODE >253:C:\Users\gerar\Desktop\UVG\6to Semestre\Digital_2\D2LABS\LAB2\2LAB2.X\main.c
+1990 text21 CODE >244:C:\Users\gerar\Desktop\UVG\6to Semestre\Digital_2\D2LABS\LAB2\2LAB2.X\main.c
+1991 text21 CODE >245:C:\Users\gerar\Desktop\UVG\6to Semestre\Digital_2\D2LABS\LAB2\2LAB2.X\main.c
+1997 text21 CODE >246:C:\Users\gerar\Desktop\UVG\6to Semestre\Digital_2\D2LABS\LAB2\2LAB2.X\main.c
+1999 text21 CODE >247:C:\Users\gerar\Desktop\UVG\6to Semestre\Digital_2\D2LABS\LAB2\2LAB2.X\main.c
+1A81 text20 CODE >236:C:\Users\gerar\Desktop\UVG\6to Semestre\Digital_2\D2LABS\LAB2\2LAB2.X\main.c
+1A82 text20 CODE >237:C:\Users\gerar\Desktop\UVG\6to Semestre\Digital_2\D2LABS\LAB2\2LAB2.X\main.c
+1A84 text20 CODE >238:C:\Users\gerar\Desktop\UVG\6to Semestre\Digital_2\D2LABS\LAB2\2LAB2.X\main.c
+1A85 text20 CODE >239:C:\Users\gerar\Desktop\UVG\6to Semestre\Digital_2\D2LABS\LAB2\2LAB2.X\main.c
+1A90 text20 CODE >240:C:\Users\gerar\Desktop\UVG\6to Semestre\Digital_2\D2LABS\LAB2\2LAB2.X\main.c
+1A96 text20 CODE >238:C:\Users\gerar\Desktop\UVG\6to Semestre\Digital_2\D2LABS\LAB2\2LAB2.X\main.c
+1AA1 text20 CODE >242:C:\Users\gerar\Desktop\UVG\6to Semestre\Digital_2\D2LABS\LAB2\2LAB2.X\main.c
 1C54 text19 CODE >4:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\fleq.c
 1C54 text19 CODE >7:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\fleq.c
 1C6A text19 CODE >8:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\fleq.c
@@ -904,43 +904,43 @@ FFF text2 CODE >449:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\
 1794 text1 CODE >1138:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\doprnt.c
 17A3 text1 CODE >1139:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\doprnt.c
 17EA text1 CODE >1142:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\doprnt.c
-82F maintext CODE >134:C:\Users\gerar\Desktop\UVG\6to Semestre\Digital_2\D2LABS\LAB2\2LAB2.X\main.c
-82F maintext CODE >135:C:\Users\gerar\Desktop\UVG\6to Semestre\Digital_2\D2LABS\LAB2\2LAB2.X\main.c
-834 maintext CODE >136:C:\Users\gerar\Desktop\UVG\6to Semestre\Digital_2\D2LABS\LAB2\2LAB2.X\main.c
-839 maintext CODE >137:C:\Users\gerar\Desktop\UVG\6to Semestre\Digital_2\D2LABS\LAB2\2LAB2.X\main.c
-83E maintext CODE >138:C:\Users\gerar\Desktop\UVG\6to Semestre\Digital_2\D2LABS\LAB2\2LAB2.X\main.c
-843 maintext CODE >139:C:\Users\gerar\Desktop\UVG\6to Semestre\Digital_2\D2LABS\LAB2\2LAB2.X\main.c
-848 maintext CODE >141:C:\Users\gerar\Desktop\UVG\6to Semestre\Digital_2\D2LABS\LAB2\2LAB2.X\main.c
-84D maintext CODE >142:C:\Users\gerar\Desktop\UVG\6to Semestre\Digital_2\D2LABS\LAB2\2LAB2.X\main.c
-850 maintext CODE >146:C:\Users\gerar\Desktop\UVG\6to Semestre\Digital_2\D2LABS\LAB2\2LAB2.X\main.c
-855 maintext CODE >147:C:\Users\gerar\Desktop\UVG\6to Semestre\Digital_2\D2LABS\LAB2\2LAB2.X\main.c
-85D maintext CODE >148:C:\Users\gerar\Desktop\UVG\6to Semestre\Digital_2\D2LABS\LAB2\2LAB2.X\main.c
-866 maintext CODE >149:C:\Users\gerar\Desktop\UVG\6to Semestre\Digital_2\D2LABS\LAB2\2LAB2.X\main.c
-886 maintext CODE >150:C:\Users\gerar\Desktop\UVG\6to Semestre\Digital_2\D2LABS\LAB2\2LAB2.X\main.c
-8A4 maintext CODE >151:C:\Users\gerar\Desktop\UVG\6to Semestre\Digital_2\D2LABS\LAB2\2LAB2.X\main.c
-8C2 maintext CODE >154:C:\Users\gerar\Desktop\UVG\6to Semestre\Digital_2\D2LABS\LAB2\2LAB2.X\main.c
-8CA maintext CODE >155:C:\Users\gerar\Desktop\UVG\6to Semestre\Digital_2\D2LABS\LAB2\2LAB2.X\main.c
-8EE maintext CODE >156:C:\Users\gerar\Desktop\UVG\6to Semestre\Digital_2\D2LABS\LAB2\2LAB2.X\main.c
-8F7 maintext CODE >159:C:\Users\gerar\Desktop\UVG\6to Semestre\Digital_2\D2LABS\LAB2\2LAB2.X\main.c
-8FB maintext CODE >160:C:\Users\gerar\Desktop\UVG\6to Semestre\Digital_2\D2LABS\LAB2\2LAB2.X\main.c
-901 maintext CODE >163:C:\Users\gerar\Desktop\UVG\6to Semestre\Digital_2\D2LABS\LAB2\2LAB2.X\main.c
-910 maintext CODE >165:C:\Users\gerar\Desktop\UVG\6to Semestre\Digital_2\D2LABS\LAB2\2LAB2.X\main.c
-916 maintext CODE >166:C:\Users\gerar\Desktop\UVG\6to Semestre\Digital_2\D2LABS\LAB2\2LAB2.X\main.c
-921 maintext CODE >167:C:\Users\gerar\Desktop\UVG\6to Semestre\Digital_2\D2LABS\LAB2\2LAB2.X\main.c
-927 maintext CODE >168:C:\Users\gerar\Desktop\UVG\6to Semestre\Digital_2\D2LABS\LAB2\2LAB2.X\main.c
-928 maintext CODE >170:C:\Users\gerar\Desktop\UVG\6to Semestre\Digital_2\D2LABS\LAB2\2LAB2.X\main.c
-92E maintext CODE >172:C:\Users\gerar\Desktop\UVG\6to Semestre\Digital_2\D2LABS\LAB2\2LAB2.X\main.c
-935 maintext CODE >173:C:\Users\gerar\Desktop\UVG\6to Semestre\Digital_2\D2LABS\LAB2\2LAB2.X\main.c
-197E clrtext CODE >1177:C:\Users\gerar\AppData\Local\Temp\s1kc.s
-197E clrtext CODE >1178:C:\Users\gerar\AppData\Local\Temp\s1kc.s
-197F clrtext CODE >1179:C:\Users\gerar\AppData\Local\Temp\s1kc.s
-197F clrtext CODE >1180:C:\Users\gerar\AppData\Local\Temp\s1kc.s
-1980 clrtext CODE >1181:C:\Users\gerar\AppData\Local\Temp\s1kc.s
-1981 clrtext CODE >1182:C:\Users\gerar\AppData\Local\Temp\s1kc.s
-1982 clrtext CODE >1183:C:\Users\gerar\AppData\Local\Temp\s1kc.s
-1983 clrtext CODE >1184:C:\Users\gerar\AppData\Local\Temp\s1kc.s
-1984 clrtext CODE >1185:C:\Users\gerar\AppData\Local\Temp\s1kc.s
-1985 clrtext CODE >1186:C:\Users\gerar\AppData\Local\Temp\s1kc.s
+82F maintext CODE >126:C:\Users\gerar\Desktop\UVG\6to Semestre\Digital_2\D2LABS\LAB2\2LAB2.X\main.c
+82F maintext CODE >127:C:\Users\gerar\Desktop\UVG\6to Semestre\Digital_2\D2LABS\LAB2\2LAB2.X\main.c
+834 maintext CODE >128:C:\Users\gerar\Desktop\UVG\6to Semestre\Digital_2\D2LABS\LAB2\2LAB2.X\main.c
+839 maintext CODE >129:C:\Users\gerar\Desktop\UVG\6to Semestre\Digital_2\D2LABS\LAB2\2LAB2.X\main.c
+83E maintext CODE >130:C:\Users\gerar\Desktop\UVG\6to Semestre\Digital_2\D2LABS\LAB2\2LAB2.X\main.c
+843 maintext CODE >131:C:\Users\gerar\Desktop\UVG\6to Semestre\Digital_2\D2LABS\LAB2\2LAB2.X\main.c
+848 maintext CODE >133:C:\Users\gerar\Desktop\UVG\6to Semestre\Digital_2\D2LABS\LAB2\2LAB2.X\main.c
+84D maintext CODE >134:C:\Users\gerar\Desktop\UVG\6to Semestre\Digital_2\D2LABS\LAB2\2LAB2.X\main.c
+850 maintext CODE >141:C:\Users\gerar\Desktop\UVG\6to Semestre\Digital_2\D2LABS\LAB2\2LAB2.X\main.c
+855 maintext CODE >142:C:\Users\gerar\Desktop\UVG\6to Semestre\Digital_2\D2LABS\LAB2\2LAB2.X\main.c
+85D maintext CODE >143:C:\Users\gerar\Desktop\UVG\6to Semestre\Digital_2\D2LABS\LAB2\2LAB2.X\main.c
+866 maintext CODE >144:C:\Users\gerar\Desktop\UVG\6to Semestre\Digital_2\D2LABS\LAB2\2LAB2.X\main.c
+886 maintext CODE >145:C:\Users\gerar\Desktop\UVG\6to Semestre\Digital_2\D2LABS\LAB2\2LAB2.X\main.c
+8A4 maintext CODE >146:C:\Users\gerar\Desktop\UVG\6to Semestre\Digital_2\D2LABS\LAB2\2LAB2.X\main.c
+8C2 maintext CODE >149:C:\Users\gerar\Desktop\UVG\6to Semestre\Digital_2\D2LABS\LAB2\2LAB2.X\main.c
+8CA maintext CODE >150:C:\Users\gerar\Desktop\UVG\6to Semestre\Digital_2\D2LABS\LAB2\2LAB2.X\main.c
+8EE maintext CODE >151:C:\Users\gerar\Desktop\UVG\6to Semestre\Digital_2\D2LABS\LAB2\2LAB2.X\main.c
+8F7 maintext CODE >154:C:\Users\gerar\Desktop\UVG\6to Semestre\Digital_2\D2LABS\LAB2\2LAB2.X\main.c
+8FB maintext CODE >155:C:\Users\gerar\Desktop\UVG\6to Semestre\Digital_2\D2LABS\LAB2\2LAB2.X\main.c
+901 maintext CODE >158:C:\Users\gerar\Desktop\UVG\6to Semestre\Digital_2\D2LABS\LAB2\2LAB2.X\main.c
+910 maintext CODE >160:C:\Users\gerar\Desktop\UVG\6to Semestre\Digital_2\D2LABS\LAB2\2LAB2.X\main.c
+916 maintext CODE >161:C:\Users\gerar\Desktop\UVG\6to Semestre\Digital_2\D2LABS\LAB2\2LAB2.X\main.c
+921 maintext CODE >162:C:\Users\gerar\Desktop\UVG\6to Semestre\Digital_2\D2LABS\LAB2\2LAB2.X\main.c
+927 maintext CODE >163:C:\Users\gerar\Desktop\UVG\6to Semestre\Digital_2\D2LABS\LAB2\2LAB2.X\main.c
+928 maintext CODE >165:C:\Users\gerar\Desktop\UVG\6to Semestre\Digital_2\D2LABS\LAB2\2LAB2.X\main.c
+92E maintext CODE >167:C:\Users\gerar\Desktop\UVG\6to Semestre\Digital_2\D2LABS\LAB2\2LAB2.X\main.c
+935 maintext CODE >168:C:\Users\gerar\Desktop\UVG\6to Semestre\Digital_2\D2LABS\LAB2\2LAB2.X\main.c
+197E clrtext CODE >1177:C:\Users\gerar\AppData\Local\Temp\s6eg.s
+197E clrtext CODE >1178:C:\Users\gerar\AppData\Local\Temp\s6eg.s
+197F clrtext CODE >1179:C:\Users\gerar\AppData\Local\Temp\s6eg.s
+197F clrtext CODE >1180:C:\Users\gerar\AppData\Local\Temp\s6eg.s
+1980 clrtext CODE >1181:C:\Users\gerar\AppData\Local\Temp\s6eg.s
+1981 clrtext CODE >1182:C:\Users\gerar\AppData\Local\Temp\s6eg.s
+1982 clrtext CODE >1183:C:\Users\gerar\AppData\Local\Temp\s6eg.s
+1983 clrtext CODE >1184:C:\Users\gerar\AppData\Local\Temp\s6eg.s
+1984 clrtext CODE >1185:C:\Users\gerar\AppData\Local\Temp\s6eg.s
+1985 clrtext CODE >1186:C:\Users\gerar\AppData\Local\Temp\s6eg.s
 # %SYMTAB Section
 # An enumeration of all symbols in the program.
 # The beginning of the section is indicated by %SYMTAB.
@@ -974,12 +974,12 @@ __end_of_Lcd_Port 367C 0 CODE 0 text37 dist/default/production\2LAB2.X.productio
 __size_of_cfg_inte 0 0 ABS 0 - dist/default/production\2LAB2.X.production.o
 __Hstrings 0 0 ABS 0 strings -
 _TXIF 64 0 ABS 0 - dist/default/production\2LAB2.X.production.o
-___sp 0 0 STACK 2 stack C:\Users\gerar\AppData\Local\Temp\s1kc.o
+___sp 0 0 STACK 2 stack C:\Users\gerar\AppData\Local\Temp\s6eg.o
 _conv 367C 0 CODE 0 text22 dist/default/production\2LAB2.X.production.o
 _main 105E 0 CODE 0 maintext dist/default/production\2LAB2.X.production.o
 btemp 7E 0 ABS 0 - dist/default/production\2LAB2.X.production.o
 _Lcd_Write_Char 341E 0 CODE 0 text32 dist/default/production\2LAB2.X.production.o
-start 18 0 CODE 0 init C:\Users\gerar\AppData\Local\Temp\s1kc.o
+start 18 0 CODE 0 init C:\Users\gerar\AppData\Local\Temp\s6eg.o
 ___flmul@aexp 3A 0 BANK0 1 cstackBANK0 dist/default/production\2LAB2.X.production.o
 ___flmul@bexp 3B 0 BANK0 1 cstackBANK0 dist/default/production\2LAB2.X.production.o
 ___flmul@prod 3C 0 BANK0 1 cstackBANK0 dist/default/production\2LAB2.X.production.o
@@ -1005,12 +1005,12 @@ __size_of_int_uart 0 0 ABS 0 - dist/default/production\2LAB2.X.production.o
 ___awmod@sign 79 0 COMMON 1 cstackCOMMON dist/default/production\2LAB2.X.production.o
 __end_of__npowers_ 20F0 0 STRING 0 strings dist/default/production\2LAB2.X.production.o
 _sprintf$1239 B5 0 BANK1 1 cstackBANK1 dist/default/production\2LAB2.X.production.o
-intlevel0 0 0 ENTRY 0 functab C:\Users\gerar\AppData\Local\Temp\s1kc.o
-intlevel1 0 0 ENTRY 0 functab C:\Users\gerar\AppData\Local\Temp\s1kc.o
-intlevel2 0 0 ENTRY 0 functab C:\Users\gerar\AppData\Local\Temp\s1kc.o
-intlevel3 0 0 ENTRY 0 functab C:\Users\gerar\AppData\Local\Temp\s1kc.o
-intlevel4 0 0 ENTRY 0 functab C:\Users\gerar\AppData\Local\Temp\s1kc.o
-intlevel5 0 0 ENTRY 0 functab C:\Users\gerar\AppData\Local\Temp\s1kc.o
+intlevel0 0 0 ENTRY 0 functab C:\Users\gerar\AppData\Local\Temp\s6eg.o
+intlevel1 0 0 ENTRY 0 functab C:\Users\gerar\AppData\Local\Temp\s6eg.o
+intlevel2 0 0 ENTRY 0 functab C:\Users\gerar\AppData\Local\Temp\s6eg.o
+intlevel3 0 0 ENTRY 0 functab C:\Users\gerar\AppData\Local\Temp\s6eg.o
+intlevel4 0 0 ENTRY 0 functab C:\Users\gerar\AppData\Local\Temp\s6eg.o
+intlevel5 0 0 ENTRY 0 functab C:\Users\gerar\AppData\Local\Temp\s6eg.o
 __size_of__div_to_l_ 0 0 ABS 0 - dist/default/production\2LAB2.X.production.o
 pnum$text1 B 0 ABS 0 - dist/default/production\2LAB2.X.production.o
 _OSCCONbits 8F 0 ABS 0 - dist/default/production\2LAB2.X.production.o
@@ -1066,8 +1066,8 @@ _send_crct 3502 0 CODE 0 text20 dist/default/production\2LAB2.X.production.o
 send_crct@i 75 0 COMMON 1 cstackCOMMON dist/default/production\2LAB2.X.production.o
 __end_of_int_uart 3502 0 CODE 0 text39 dist/default/production\2LAB2.X.production.o
 __Umul8_16@multiplicand 73 0 COMMON 1 cstackCOMMON dist/default/production\2LAB2.X.production.o
-___stackhi 0 0 ABS 0 - C:\Users\gerar\AppData\Local\Temp\s1kc.o
-___stacklo 0 0 ABS 0 - C:\Users\gerar\AppData\Local\Temp\s1kc.o
+___stackhi 0 0 ABS 0 - C:\Users\gerar\AppData\Local\Temp\s6eg.o
+___stacklo 0 0 ABS 0 - C:\Users\gerar\AppData\Local\Temp\s6eg.o
 _dpowers 20F0 0 STRING 0 strings dist/default/production\2LAB2.X.production.o
 _BAUDCTLbits 187 0 ABS 0 - dist/default/production\2LAB2.X.production.o
 __size_of__tdiv_to_l_ 0 0 ABS 0 - dist/default/production\2LAB2.X.production.o
@@ -1098,7 +1098,7 @@ __pcstackBANK1 A0 0 BANK1 1 cstackBANK1 dist/default/production\2LAB2.X.producti
 __tdiv_to_l_@f1 73 0 COMMON 1 cstackCOMMON dist/default/production\2LAB2.X.production.o
 __tdiv_to_l_@f2 77 0 COMMON 1 cstackCOMMON dist/default/production\2LAB2.X.production.o
 __size_of_Lcd_Cmd 0 0 ABS 0 - dist/default/production\2LAB2.X.production.o
-___int_sp 0 0 STACK 2 stack C:\Users\gerar\AppData\Local\Temp\s1kc.o
+___int_sp 0 0 STACK 2 stack C:\Users\gerar\AppData\Local\Temp\s6eg.o
 __end_of_int_adc 348C 0 CODE 0 text40 dist/default/production\2LAB2.X.production.o
 __Hbank0 0 0 ABS 0 bank0 -
 __Hbank1 0 0 ABS 0 bank1 -
@@ -1183,7 +1183,7 @@ __size_of_Lcd_Write_String 0 0 ABS 0 - dist/default/production\2LAB2.X.productio
 __stringtab 2000 0 STRING 0 strings dist/default/production\2LAB2.X.production.o
 Lcd_Write_String@a 76 0 COMMON 1 cstackCOMMON dist/default/production\2LAB2.X.production.o
 Lcd_Write_String@i 20 0 BANK0 1 cstackBANK0 dist/default/production\2LAB2.X.production.o
-reset_vec 0 0 CODE 0 reset_vec C:\Users\gerar\AppData\Local\Temp\s1kc.o
+reset_vec 0 0 CODE 0 reset_vec C:\Users\gerar\AppData\Local\Temp\s6eg.o
 __size_of_Lcd_Clear 0 0 ABS 0 - dist/default/production\2LAB2.X.production.o
 __end_of___xxtofl 4000 0 CODE 0 text23 dist/default/production\2LAB2.X.production.o
 __powers_ 2020 0 STRING 0 strings dist/default/production\2LAB2.X.production.o

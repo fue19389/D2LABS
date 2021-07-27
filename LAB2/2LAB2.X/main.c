@@ -108,23 +108,15 @@ void int_adc(){               //Interrupción ADC
     
 }
 
-void int_uart(){
-    //TXREG = 12;
-    //PORTA = RCREG;
-    //RCREG = 0X2B;
-    if (RCREG == 43){
-        //RCREG = 0;
-        TXREG = 43;
-        V3++;
-        //__delay_ms(3000);  
-        //RCREG = 0;
+void int_uart(){              //Interrupción USART
+
+    if (RCREG == 43){         //Acciones con caracter "+"
+        TXREG = 43;           //Display de "+"
+        V3++;                 //Incremento de variable
     }
-    if (RCREG == 45){
-        //RCREG = 0;
-        TXREG = 45;
-        V3--;
-        //__delay_ms(3000);  
-        //RCREG = 0;
+    if (RCREG == 45){         //Accinoes con caracter "-"
+        TXREG = 45;           //Display de "-"
+        V3--;                 //Decremento de variable
     }
 }
 /*------------------------------------------------------------------------------
@@ -138,39 +130,42 @@ void main() {
     cfg_adc();
     cfg_usart();
     
-    Lcd_Init();
-    ADCON0bits.GO = 1;
-  
+    Lcd_Init();                //Inicializar LCD
+    ADCON0bits.GO = 1;         //Iniciar conversión ADC
+/*------------------------------------------------------------------------------
+ LOOP PRINCIPAL
+------------------------------------------------------------------------------*/
+    
     while(1){
     
-      Lcd_Clear();
+      Lcd_Clear();           //Display LCD usando librerías primera línea
       Lcd_Set_Cursor(1,1);
       Lcd_Write_String(" S1:   S2:  S3:  ");
-      v11 = conv(V1);
+      v11 = conv(V1);        //Conversión de Binario a doble precisión "0.00"
       v22 = conv(V2);
       v33 = conv(V3);
       
 
-      Lcd_Set_Cursor(2,1);
+      Lcd_Set_Cursor(2,1);    //Display LCD usando librerías segunda línea
       sprintf(f1, "%3.1fV %3.2fV %3.2fV",v11, v22, v33);
       Lcd_Write_String(f1);
 
 
-      TXREG = '\f';
-      send_crct(f1);
+      TXREG = '\f';           //Clear del display 
+      send_crct(f1);          //Función para enviar valor a TXREG 
      
     
       __delay_ms(100);
       
       if(ADCON0bits.GO == 0){  //Proceso al acabar conversión
-        if (ADCON0bits.CHS == 5){
+        if (ADCON0bits.CHS == 5){ //Cambio de canal
             ADCON0bits.CHS = 6;
         }
         else{
-            ADCON0bits.CHS = 5;
+            ADCON0bits.CHS = 5;   //Cambio de canal
           }
         __delay_us(50);     //Delay para no traslapar conversiones
-        ADCON0bits.GO = 1;
+        ADCON0bits.GO = 1;  //Reinicio de conversión
       }  
    }
 }
@@ -209,7 +204,7 @@ void cfg_clk(){
     OSCCONbits.IRCF = 0b100; //IRCF = 100 (1MHz) 
     OSCCONbits.SCS = 1;   //Reloj interno habilitado
 }
-void cfg_usart(){
+void cfg_usart(){        //Configuración usart
 
     TXSTAbits.SYNC = 0;
     TXSTAbits.BRGH = 1;
@@ -227,8 +222,7 @@ void cfg_usart(){
             
 }
 
-void cfg_inte(){
-        //Configuración interrupciones
+void cfg_inte(){    //Configuración interrupciones
     INTCONbits.GIE = 1;  //Enable Interrupciones globales
     INTCONbits.PEIE = 1; //Enable interrupciones perifericas
     PIE1bits.RCIE = 1;   //Enable interrupcion del UART
@@ -240,10 +234,10 @@ void cfg_inte(){
 FUNCIONES
 ------------------------------------------------------------------------------*/
 void send_crct(char st[]){
-    int i = 0;              //Se declara una variable que recorrera la cadena
-    while (st[i] != 0){     //Mientras st no sea igual a 0
-        send_char(st[i]);  //Se enviara el caracter por caracter
-        i++;                //Se aumenta en 1 el caracter a mostrar en la cadena
+    int i = 0;              //Declaración variable que recorrera la cadena
+    while (st[i] != 0){     //Mientras st diferente de 0
+        send_char(st[i]);  //Se envía caracter por caracter
+        i++;                //Se incrementa el caracter
     }
 }
 
@@ -252,7 +246,7 @@ void send_char(char dato){
     TXREG = dato;           //Se envía el caracter
 }
 
-double conv(unsigned char aa){
+double conv(unsigned char aa){ //Función para convertir binario en doble preci.
     double result;
     result = aa*0.0196;
     return result;
